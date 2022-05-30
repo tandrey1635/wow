@@ -1,0 +1,2908 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Montserrat', sans-serif
+
+
+input
+    border: none
+    outline: none
+
+p
+    margin-bottom: 0!important
+
+a
+    display: block
+    text-decoration: none!important
+    font-weight: 700
+    &:hover
+        color: #564fff
+
+.navbar-expand-lg
+    justify-content: space-between!important
+.navbar-collapse
+    justify-content: space-between!important
+    flex-basis: 80%!important
+    margin: 0 auto
+
+.dropdown-menu   
+    border-radius: 10%!important
+    background: linear-gradient(180deg,#7932ff,#564fff) 
+.dropdown-item
+    border-radius: 10px
+    font-weight: 700!important
+    color: #d110eb!important
+    &:hover
+        filter: brightness(125%)
+        background: #ffc107!important
+        color: #d110eb!important
+
+
+/** Логотип **/    
+.navbar-brand
+    width: 350px
+    @media (max-width: 1170px)  
+        width: 20% 
+        margin: 0!important 
+    @media (max-width: 991.98px) 
+        width: 50%    
+    img
+        width: 100%
+
+
+/** Меню навигации **/  
+.navbar-nav
+    @media ( max-width: 991.98px)  
+        width: 60%
+
+/** Поиск в шапке **/    
+
+
+.form-control
+    width: 500px!important
+
+
+/** Валюта **/
+.navbar-nav .nav-link
+    color: #564fff!important
+    &:hover
+        filter: brightness(125%)
+/** Кнопка Входа и Регистрации в шапке **/    
+.nav__btn
+    margin: 10px
+    border-radius: 5px!important 
+    background: linear-gradient(180deg,#7932ff,#564fff)
+    outline: none
+    border: none
+    cursor: pointer
+    color: #fff
+    padding: 10px
+    @media ( max-width: 320px) 
+       font-size: 14px
+    &:hover
+        filter: brightness(125%)
+.enter   
+    background: rgba(142, 148, 247, 0.2)
+    color: #564fff
+    font-weight: 700        
+
+/** Бургер иконка **/    
+.navbar-toggler
+    display: none
+    background: #564fff!important
+    @media (max-width: 991.98px)
+        display: block
+.navbar-toggler-icon
+    display: block!important 
+    background: #0f0a1f!important 
+    height: 0.2em!important 
+    margin:  5px
+
+.nav-link
+    text-align: center
+    margin: 10px
+    border-radius: 20px!important 
+    @media (max-width: 400px)
+        font-size: 12px
+    &:hover
+        background: #ffc107!important 
+        color: #d110eb!important 
+        filter: brightness(125%)
+
+
+.nav-link.active
+    color: #04ffdd!important      
+    background: crimson!important      
+
+.nav-link-raids-armour, .nav-link-weapons, .nav-link-mounts, .nav-link-gold, .nav-link-professions, .nav-link-pvp, .nav-link-dungeons, .nav-link-raids, .nav-link-lvl-up, .nav-link-achievments
+    font-weight: 700
+    border-radius: 10px   
+    color: #fff!important 
+    background: linear-gradient(180deg,#7932ff,#564fff)!important
+
+body
+    background: #0f0a1f!important
+    height: 100%
+  
+.container
+    max-width: 1180px!important
+
+
+
+
+
+.header__top
+    min-height: 300px
+    background: url('img/logo/logo.png') no-repeat center
+    background-size: contain
+    @media ( max-width: 400px)  
+        min-height: 200px
+.navbar-collapse
+    flex-grow: 0!important
+    max-width: 100%
+
+.promo    
+    padding: 50px 0
+    min-height: 500px
+    &__info
+        width: 45%
+        @media ( max-width: 991.98px)
+            width: 70% 
+    &__raitings
+        width: 60%
+        background: url(img/logo/index-bg.png) no-repeat
+        min-height: 500px
+        background-size: 100%
+        background-position: center
+        @media ( max-width: 400px)
+            min-height: 300px
+        @media ( max-width: 991.98px)
+            width: 75%
+        @media ( max-width: 576px)  
+            width: 85%  
+    &__header
+        text-transform: uppercase    
+        color: #fff
+        font-weight: 900
+        font-size: 36px
+        @media (max-width: 1170px)
+            font-size: 32px  
+        @media (max-width: 767.98px)  
+            font-size: 26px  
+        @media (max-width: 500px)   
+            font-size: 20px 
+        @media (max-width: 400px)   
+            font-size: 15px     
+    &__text
+       font-weight: 700
+       font-size: 22px 
+       color: #9fa3e5 
+       @media (max-width: 500px)   
+            font-size: 20px 
+       @media (max-width: 400px)   
+            font-size: 13px         
+    .promo-btn
+        background: linear-gradient(180deg,#7932ff,#564fff)
+        padding: 10px 35px
+        text-transform: uppercase
+        color: #fff
+        border-radius: 5px
+        font-weight: 600
+        border: none
+        outline: none
+        @media (max-width: 1100px)  
+            padding: 10px 25px 
+        @media (max-width: 1024px)  
+            padding: 10px 15px  
+        @media (max-width: 369px)   
+            font-size: 14px         
+        &:hover
+            filter: brightness(125%)
+            color: #fff
+        &_color
+            background: rgba(142,148,247,.2)
+        &_color:hover
+            filter: brightness(125%)
+                
+            
+
+.services
+    .nav-item
+        position: relative
+    /** Dropdown меню **/
+    .nav-raids-armour, .nav-mounts, .nav-weapons, .nav-professions, .nav-gold, .nav-pvp, .nav-dungeons, .nav-raids, .nav-lvl-up, .nav-achievments
+        position: absolute
+        display: none
+        z-index: 10
+        padding: 5px 0
+
+    //нумерация основных табов  
+    .nav-item-raids-armour 
+        @media (max-width: 840px)
+            order: 1
+    .nav-item-dungeons   
+        @media (max-width: 840px) 
+            order: 2 
+    .nav-item-lvl-up
+        @media (max-width: 840px)
+            order: 3 
+        @media (max-width: 629px) 
+            order: 11                   
+    .nav-item-mounts
+        @media (max-width: 840px)
+            order: 6
+    .nav-item-weapons
+        @media (max-width: 840px)
+            order: 4  
+    .nav-item-professions   
+        @media (max-width: 840px)
+            order: 5
+        @media (max-width: 629px) 
+            order: 3      
+    .nav-item-gold
+        @media (max-width: 840px)
+            order: 9
+    .nav-item-pvp
+        @media (max-width: 840px)
+            order: 8
+    .nav-item-raids
+        @media (max-width: 840px)
+            order: 7
+    .nav-item-achievments
+        @media (max-width: 840px)
+            order: 10                             
+    .nav-link
+        width: 250px
+        @media (max-width: 840px)
+            width: 180px
+            font-size: 14px
+        @media (max-width: 690px)
+            width: 180px
+        @media (max-width: 429px) 
+            width: 150px
+        @media (max-width: 369px) 
+            width: 125px
+            font-size: 12px
+
+    .nav-item-raids-armour:hover .nav-raids-armour, .nav-item-professions:hover .nav-professions   
+        width: 540px
+        display: flex
+        flex-wrap: wrap
+        background: #000 
+        border-radius: 20px 
+        @media (max-width: 840px)
+            width: 400px
+        @media (max-width: 429px) 
+            width: 340px 
+        @media (max-width: 369px)  
+            width: 290px      
+         
+    .nav-item-weapons:hover .nav-weapons, .nav-item-mounts:hover .nav-mounts, .nav-item-gold:hover .nav-gold,  .nav-item-pvp:hover .nav-pvp, .nav-item-dungeons:hover .nav-dungeons, .nav-item-raids:hover .nav-raids, .nav-item-lvl-up:hover .nav-lvl-up, .nav-item-achievments:hover .nav-achievments
+        width: 270px
+        display: flex
+        flex-wrap: wrap
+        background: #000 
+        border-radius: 20px  
+        @media (max-width: 840px)
+            width: 200px 
+        @media (max-width: 429px) 
+            width: 170px 
+        @media (max-width: 369px)  
+            width: 145px               
+    
+    //нумерация табов рейдовой брони        
+    .nav-item-warrior
+        @media (max-width: 840px)
+            order: 1
+    .nav-item-druid
+        @media (max-width: 840px)
+            order: 2
+    .nav-item-priest
+        @media (max-width: 840px)
+            order: 3
+    .nav-item-mage
+        @media (max-width: 840px)
+            order: 4
+    .nav-item-monk
+        @media (max-width: 840px)
+            order: 5
+    .nav-item-hunter
+        @media (max-width: 840px)
+            order: 6
+    .nav-item-demon-hunter
+        @media (max-width: 840px)
+            order: 11
+        @media (max-width: 429px)
+            order: 12    
+    .nav-item-paladdin
+        @media (max-width: 840px)
+            order: 7
+    .nav-item-rogue
+        @media (max-width: 840px)
+            order: 8
+    .nav-item-death-knight
+        @media (max-width: 840px)
+            order: 9
+        @media (max-width: 429px)
+            order: 11    
+    .nav-item-warlock
+        @media (max-width: 840px)
+            order: 10
+    .nav-item-shaman
+        @media (max-width: 840px)
+            order: 12
+        @media (max-width: 429px)
+            order: 10          
+
+    //нумерация табов профессий
+    .nav-item-alchemy
+        @media (max-width: 429px)
+            order: 1
+    .nav-item-mining
+        @media (max-width: 429px)
+            order: 2
+    .nav-item-engineering
+        @media (max-width: 429px)
+            order: 3
+    .nav-item-leatherworking
+        @media (max-width: 429px)
+            order: 8
+    .nav-item-blacksmithing
+        @media (max-width: 429px)
+            order: 4
+    .nav-item-enchanting
+        @media (max-width: 429px)
+            order: 5
+    .nav-item-inscription
+        @media (max-width: 429px)
+            order: 7
+    .nav-item-tailoring
+        @media (max-width: 429px)
+            order: 6
+    .nav-item-skining
+        @media (max-width: 429px)
+            order: 9
+    .nav-item-herbalism
+        @media (max-width: 429px)
+            order: 10
+    .nav-item-jewelcrafting
+        @media (max-width: 429px)
+            order: 11
+    .nav-item-archaeology
+        @media (max-width: 429px)
+            order: 15
+        @media (max-width: 369px)
+            order: 13    
+    .nav-item-riding
+        @media (max-width: 429px)
+            order: 13
+        @media (max-width: 369px)
+            order: 15    
+    .nav-item-cooking
+        @media (max-width: 429px)
+            order: 14
+    .nav-item-first-aid
+        @media (max-width: 429px)
+            order: 12
+    .nav-item-fishing 
+        @media (max-width: 429px)
+            order: 16 
+
+
+         
+     
+    /** Фон цена, заголовок, кнопка у карточек классов **/  
+
+    .card
+        @media (max-width: 1100px) 
+            width: 25rem !important
+        @media (max-width: 991.98px)     
+            width: 30rem !important
+    .card-title
+        @media (max-width: 379px)  
+            font-size: 34px!important 
+        @media (max-width: 369px)  
+            font-size: 22px!important 
+    .card-text    
+        @media (max-width: 369px)  
+            font-size: 16px!important      
+    .price
+        @media (max-width: 369px)  
+            font-size: 18px!important  
+    .card-link
+        display: inline-block  
+    .card-footer
+        margin-bottom: 1rem
+        border: none
+        background: transparent      
+
+    .card-warrior
+        background: #854c27
+        transition: 0.5s all
+        .warrior
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.1) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-warrior
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #9f5812
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-warrior
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #9f5812
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)        
+    .price-warrior  
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #9f5812
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .btn-warrior
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #9f5812
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #9f5812!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all 
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+
+    .card-druid
+        background: #ED760E
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+        .druid
+            transition: 0.5s all 
+            transform: scale(1.1)
+            object-position: center 15px
+            object-fit: contain   
+            &:hover
+                transform: scale(1.15) 
+                transition: 0.5s all      
+    .card-title-druid
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #e1650e
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .card-text-druid
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #e1650e
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)         
+    .price-druid 
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #e1650e
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .btn-druid
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #e1650e
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #e1650e!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+
+
+    .card-priest
+        background: #fff
+        transition: 0.5s all
+        .priest
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.05) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-priest
+        color: #fff
+        font-weight: 900
+        font-size: 36px
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(125%) 
+    .card-text-priest
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #fff
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(125%)         
+    .price-priest 
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #fff
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(125%) 
+    .btn-priest
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        font-weight: 700
+        background: #fff!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        color: #fff
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(115%) 
+
+    .card-mage
+        background: deepskyblue
+        transition: 0.5s all
+        .mage
+            object-fit: contain
+            object-position: center 15px
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.1) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)     
+    .card-title-mage
+        color: #38b6ff
+        font-weight: 900
+        font-style: italic
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)
+    .card-text-mage
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #38b6ff
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)          
+    .price-mage
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #38b6ff
+        cursor: progress
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)
+    .btn-mage
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #38b6ff
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #38b6ff!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)  
+
+    .card-monk
+        background: #04f17a
+        transition: 0.5s all
+        .monk
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.1) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-monk
+        color: #0ad16d
+        font-weight: 900
+        font-style: italic
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-monk
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #0ad16d
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)        
+    .price-monk
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #0ad16d
+        cursor: progress
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .btn-monk
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #0ad16d
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #0ad16d!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(115%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+
+    .card-hunter
+        background: #86c566e8
+        transition: 0.5s all
+        .hunter
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.05) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-hunter
+        color: #76bf51e8
+        font-weight: 900
+        font-size: 36px
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .card-text-hunter
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #76bf51e8
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)          
+    .price-hunter
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #76bf51e8
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .btn-hunter
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #76bf51e8
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #76bf51e8!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+
+    .card-demon-hunter
+        background: #6f00cc
+        transition: 0.5s all
+        .demon-hunter
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.05) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-demon-hunter
+        color: #8B00FF
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .card-text-demon-hunter
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #8B00FF
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)          
+    .price-demon-hunter
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #8B00FF  
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .btn-demon-hunter
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #8B00FF  
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #8B00FF!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+            
+
+    .card-paladin
+        background: #F75394
+        transition: 0.5s all
+        .paladin
+            transition: 0.5s all 
+            object-fit: none
+            object-position: -30px -80px
+            @media (max-width: 991.98px)
+                object-position: center
+            &:hover
+                transform: scale(1.05) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-paladin
+        color:#e70987
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)
+    .card-text-paladin
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #e70987
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(115%)          
+    .price-paladin
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #e70987
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)
+    .btn-paladin
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #e70987
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #e70987!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+
+    .card-rogue
+        background: #ddcb17
+        transition: 0.5s all
+        .rogue
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.1) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-rogue
+        color:#f5e002
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)   
+    .card-text-rogue
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #f5e002
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)         
+    .price-rogue
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #f5e002
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)   
+    .btn-rogue
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #f5e002
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #f5e002!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+    .card-death-knight
+        background: #bf1e3c
+        transition: 0.5s all
+        .death-knight
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.05) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-death-knight
+        color: #b71332
+        font-weight: 900
+        font-style: italic
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)
+    .card-text-death-knight
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #b71332
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)           
+    .price-death-knight
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #b71332  
+        transition: 0.5s all
+        cursor: progress  
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)   
+            filter: brightness(105%)
+    .btn-death-knight
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #b71332
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #b71332!important
+        border: 1px solid #000 
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(115%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+
+    .card-warlock
+        background: #481677
+        transition: 0.5s all
+        .warlock
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.05) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-warlock
+        color:#6f0dbf
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(125%) 
+    .card-text-warlock
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #6f0dbf
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(125%)            
+    .price-warlock
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color:#6f0dbf   
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1) 
+            filter: brightness(125%) 
+    .btn-warlock
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #6f0dbf  
+        text-shadow: 2px 2px 2px #000 
+        font-weight: 700
+        background: #6f0dbf!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(125%)
+            transition: 0.5s all
+            transform: scale(1.1)           
+
+    .card-shaman
+        background: #0047AB
+        transition: 0.5s all
+        .shaman
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.05) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-shaman
+        color:#2042cf
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(115%) 
+    .card-text-shaman
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #2042cf
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(115%)           
+    .price-shaman
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color:#2042cf
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(115%)            
+    .btn-shaman
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #2042cf
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #2042cf!important
+        border: 1px solid #000 
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(115%)
+            transition: 0.5s all
+            transform: scale(1.1)        
+
+    /** Фон цена, заголовок, кнопка у карточек оружия **/ 
+
+    .card-one-handed-weapons, .card-two-handed-weapons, .card-range-weapons, .card-shields-weapons, .card-other-weapons
+        background: #854c27
+        transition: 0.5s all
+        .one-handed-weapons, .two-handed-weapons, .range-weapons, .shields-weapons, .other-weapons
+            object-fit: contain
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.05) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-one-handed-weapons, .card-title-two-handed-weapons, .card-title-range-weapons, .card-title-shields-weapons, .card-title-other-weapons
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #9f5812
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .card-title-one-handed-weapons 
+        color: lime  
+    .card-title-two-handed-weapons 
+        color: crimson  
+    .card-title-range-weapons 
+        color: #007bff 
+    .card-title-shields-weapons
+        color: #ffc107                 
+    .card-title-other-weapons 
+        color: orangered      
+    .card-text-one-handed-weapons, .card-text-two-handed-weapons, .card-text-range-weapons, .card-text-shields-weapons, .card-text-other-weapons
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #9f5812
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)  
+    .card-text-one-handed-weapons
+        color: lime   
+    .card-text-two-handed-weapons
+        color: crimson  
+    .card-text-range-weapons 
+        color: #007bff 
+    .card-text-shields-weapons
+        color: #ffc107                  
+    .card-text-other-weapons   
+        color: orangered                    
+    .price-one-handed-weapons, .price-two-handed-weapons, .price-range-weapons, .price-shields-weapons, .price-other-weapons      
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #9f5812
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .price-one-handed-weapons 
+        color: lime        
+    .price-two-handed-weapons 
+        color: crimson  
+    .price-range-weapons 
+        color: #007bff
+    .price-shields-weapons
+        color: #ffc107                   
+    .price-other-weapons
+        color: orangered         
+    .btn-one-handed-weapons, .btn-two-handed-weapons, .btn-range-weapons, .btn-shields-weapons, .btn-other-weapons
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #9f5812
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #9f5812!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+    .btn-one-handed-weapons 
+        background: lime!important   
+        color: lime 
+    .btn-two-handed-weapons 
+        background: crimson!important   
+        color: crimson   
+    .btn-range-weapons 
+        background: #007bff!important   
+        color: #007bff 
+    .btn-shields-weapons
+        background: #ffc107!important   
+        color: #ffc107            
+    .btn-other-weapons
+        background: orangered!important   
+        color: orangered        
+
+    /** Фон цена, заголовок, кнопка у карточек маунтов **/  
+    
+    .card-water-mounts
+        background: cyan
+        transition: 0.5s all
+        .water
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.05) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-water-mounts
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #00f3f3
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(115%)  
+    .card-text-water-mounts
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #00f3f3
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(115%)          
+    .price-water-mounts  
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color:#00f3f3
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(115%)  
+    .btn-water-mounts
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #00f3f3
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #00f3f3!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(115%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+
+    .card-eath-mounts
+        background: #854c27
+        transition: 0.5s all
+        .eath
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.05) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-eath-mounts
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #9f5812
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-eath-mounts
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #9f5812
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)        
+    .price-eath-mounts  
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #9f5812
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .btn-eath-mounts
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #9f5812
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #9f5812!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+    .card-fly-mounts
+        background: #2e86e5
+        transition: 0.5s all
+        .fly
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.05) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-fly-mounts
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #017afd
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(125%)
+    .card-text-fly-mounts
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #017afd
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(125%)        
+    .price-fly-mounts  
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #017afd
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(125%)
+    .btn-fly-mounts
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #017afd
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #017afd!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(125%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+
+    /** Фон цена, заголовок, кнопка у карточек профессий **/ 
+    .card-alchemy, .card-mining, .card-engineering, .card-leatherworking, .card-blacksmithing, .card-enchanting, .card-inscription, .card-tailoring, .card-skinning, .card-herbalism, .card-jewelcrafting, .card-archaeology, .card-riding, .card-cooking, .card-first-aid, .card-fishing
+        background: #854c27
+        transition: 0.5s all
+        .alchemy, .mining, .engineering, .leatherworking, .blacksmithing, .enchanting, .inscription, .tailoring, .skinning, .herbalism, .jewelcrafting, .archaeology, .riding, .cooking, .first-aid, .fishing
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.1) 
+                transition: 0.5s all           
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+        .mining, .leatherworking, .blacksmithing, .enchanting, .inscription, .tailoring, .skinning, .archaeology, .cooking, .first-aid
+            transform: scale(0.8) 
+            &:hover
+                transform: scale(1)
+        .inscription
+            object-position: 15px
+            transform: scale(0.7)  
+            &:hover
+                transform: scale(0.9)        
+        .tailoring
+            object-position: -20px
+            transform: scale(0.7)  
+            &:hover
+                transform: scale(0.9)  
+        .fishing
+            object-position: -30px  
+
+    .card-title-alchemy, .card-title-mining, .card-title-engineering, .card-title-leatherworking, .card-title-blacksmithing, .card-title-enchanting, .card-title-inscription, .card-title-tailoring, .card-title-skinning, .card-title-herbalism, .card-title-jewelcrafting, .card-title-archaeology, .card-title-riding, .card-title-cooking, .card-title-first-aid, .card-title-fishing
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #9f5812
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-alchemy, .card-text-mining, .card-text-engineering, .card-text-leatherworking, .card-text-blacksmithing, .card-text-enchanting, .card-text-inscription, .card-text-tailoring, .card-text-skinning, .card-text-herbalism, .card-text-jewelcrafting, .card-text-archaeology, .card-text-riding, .card-text-cooking, .card-text-first-aid, .card-text-fishing
+        font-weight: 900 
+        font-style: italic
+        font-size: 16px  
+        transition: 0.5s all
+        color: #9f5812
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)        
+    .price-alchemy, .price-mining, .price-engineering, .price-leatherworking, .price-blacksmithing, .price-enchanting, .price-inscription, .price-tailoring, .price-skinning, .price-herbalism, .price-jewelcrafting, .price-archaeology, .price-riding, .price-cooking, .price-first-aid, .price-fishing
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #9f5812
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .btn-alchemy, .btn-mining, .btn-engineering, .btn-leatherworking, .btn-blacksmithing, .btn-enchanting, .btn-inscription, .btn-tailoring, .btn-skinning, .btn-herbalism, .btn-jewelcrafting, .btn-archaeology, .btn-riding, .btn-cooking, .btn-first-aid, .btn-fishing
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #9f5812
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #9f5812!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all 
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+
+    /** Фон цена, заголовок, кнопка у карточек золота **/ 
+
+    // Картинка золота в цене   
+    .gold 
+        margin-left: 5px
+        width: 52px
+        height: 52px
+        @media (max-width: 369px)  
+            width: 22px
+            height: 22px   
+    .dollar
+        margin-left: 5px
+        width: 52px
+        height: 52px 
+        @media (max-width: 369px)  
+            width: 22px
+            height: 22px   
+
+    .card-gold-horde
+        background: #b90c1c
+        transition: 0.5s all
+        .horde
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.1) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-gold-horde
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #db0619
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-gold-horde
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #db0619
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)        
+    .price-gold-horde 
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #db0619
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+       
+    .btn-gold-horde
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #db0619
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #db0619!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all 
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+
+    .card-gold-alliance
+        background:#037afb
+        transition: 0.5s all
+        .alliance
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.1) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-gold-alliance
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #1686ff
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-gold-alliance
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #1686ff
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)        
+    .price-gold-alliance
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #1686ff
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+       
+    .btn-gold-alliance
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #1686ff
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #1686ff!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all 
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+
+    /** Фон цена, заголовок, кнопка у карточек PvP **/ 
+    .card-honor
+        background: linear-gradient(180deg, #854c27 30%, white 75%, #854c27)
+        transition: 0.5s all
+        .honor
+            filter: drop-shadow(5px 5px 20px red)
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.1) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-honor
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #9f5812
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-honor
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #9f5812
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)        
+    .price-honor
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #9f5812
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .btn-honor
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #9f5812
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #9f5812!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all 
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+    .card-arena
+        background: linear-gradient(180deg, #0b0979 30%, #fff 75%, #0b0979)
+        transition: 0.5s all
+        .arena, .arena-link
+            margin: 0 auto
+            filter: drop-shadow(5px 5px 20px red)
+            transition: 0.5s all 
+            transform: scale(0.9) 
+            &:hover
+                transform: scale(1) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-arena
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color:#4866ec
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-arena
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #4866ec
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)        
+    .price-arena
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #4866ec
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .btn-arena
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #4866ec
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #4866ec!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all 
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+    .card-rbg
+        background: linear-gradient(351deg, #854c27 20%, #0b0979 50%, #f90000 90%,#e17810)
+        transition: 0.5s all
+        .rbg
+            transform: scale(1.3)
+            filter: drop-shadow(5px 5px 20px red)
+            transition: 0.5s all 
+            &:hover
+                transform: scale(1.4) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-rbg
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #e17810
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-rbg
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #e17810
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)        
+    .price-rbg
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #e17810
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .btn-rbg
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #e17810
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #a95705!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all 
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+    /** Фон цена, заголовок, кнопка у карточек эпохальные подземелья **/
+    .card-mythic-10, .card-mythic-15
+        background: #0A0A0A
+        transition: 0.5s all
+        .mythic-10, .mythic-15
+            border-radius: 50%
+            transform: scale(0.9) 
+            transition: 0.7s all 
+            &:hover
+                border-radius: 0
+                transform: scale(1) 
+                transition: 0.7s all 
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-mythic-10, .card-title-mythic-15
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px crimson
+        font-size: 32px 
+        color: #000
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-mythic-10, .card-text-mythic-15
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #000
+        text-shadow: 2px 2px 2px crimson
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)        
+    .price-mythic-10, .price-mythic-15
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px crimson
+        color: #000
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .btn-mythic-10, .btn-mythic-15
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #000
+        text-shadow: 2px 2px 2px crimson
+        font-weight: 700
+        background: #000!important
+        border: 1px solid crimson
+        box-shadow: 5px 5px 10px crimson
+        transition: 0.5s all 
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1) 
+
+    /** Фон цена, заголовок, кнопка у карточек рейды **/
+    .card-raids-classic, .card-raids-warlord-of-draenor
+        background: #854c27
+        transition: 0.5s all
+        .classic, .warlord-of-draenor
+            border-radius: 50%
+            transform: scale(0.9) 
+            transition: 0.7s all 
+            &:hover
+                border-radius: 0
+                transform: scale(1) 
+                transition: 0.7s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-raids-classic, .card-title-raids-warlord-of-draenor
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #ffc107
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-raids-classic, .card-text-raids-warlord-of-draenor
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #9f5812
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)
+        .text-color-classic, .text-color-warlord-of-draenor 
+            color: #ffc107                
+    .price-raids-classic, .price-raids-warlord-of-draenor 
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #ffc107
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .btn-raids-classic, .btn-raids-warlord-of-draenor
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #ffc107
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #ffc107!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+
+    .card-raids-burning-crusade, .card-raids-legion
+        background: #136427
+        transition: 0.5s all
+        .burning-crusade, .legion
+            border-radius: 50%
+            transform: scale(0.9) 
+            transition: 0.7s all 
+            &:hover
+                border-radius: 0
+                transform: scale(1) 
+                transition: 0.7s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-raids-burning-crusade, .card-title-raids-legion
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #7bed09
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-raids-burning-crusade, .card-text-raids-legion
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #187e31
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)  
+        .text-color-burning-crusade, .text-color-legion
+            color: #7bed09       
+    .price-raids-burning-crusade, .price-raids-legion
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #7bed09
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .btn-raids-burning-crusade, .btn-raids-legion
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #7bed09
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #7bed09!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+    .card-raids-wrath-of-the-lich-king
+        background: #007FFF
+        transition: 0.5s all
+        .wrath-of-the-lich-king
+            border-radius: 50%
+            transform: scale(0.9) 
+            transition: 0.7s all 
+            &:hover
+                border-radius: 0
+                transform: scale(1) 
+                transition: 0.7s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-raids-wrath-of-the-lich-king
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #00BFFF
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-raids-wrath-of-the-lich-king
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #3094f9
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)  
+        .text-color-wrath-of-the-lich-king
+            color: #00BFFF       
+    .price-raids-wrath-of-the-lich-king
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #00BFFF 
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .btn-raids-wrath-of-the-lich-king
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #00BFFF 
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #00BFFF!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+    .card-raids-cataclysm
+        background: #D53E07
+        transition: 0.5s all
+        .cataclysm
+            border-radius: 50%
+            transform: scale(0.9) 
+            transition: 0.7s all 
+            &:hover
+                border-radius: 0
+                transform: scale(1) 
+                transition: 0.7s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-raids-cataclysm
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: orangered
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-raids-cataclysm
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #ff6900
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)  
+        .text-color-cataclysm
+            color: #FF4D00      
+    .price-raids-cataclysm
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #FF4D00 
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .btn-raids-cataclysm
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #FF4D00
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #FF4D00!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+    .card-raids-mists-of-pandaria
+        background: #04f17a
+        transition: 0.5s all
+        .mists-of-pandaria
+            border-radius: 50%
+            transform: scale(0.9) 
+            transition: 0.7s all 
+            &:hover
+                border-radius: 0
+                transform: scale(1) 
+                transition: 0.7s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-raids-mists-of-pandaria
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #0ad16d
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-raids-mists-of-pandaria
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #11a75c
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)  
+        .text-color-mists-of-pandaria
+            color: #0ad16d     
+    .price-raids-mists-of-pandaria
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #0ad16d 
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .btn-raids-mists-of-pandaria
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #0ad16d
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #0ad16d!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+    .card-raids-bfa
+        background: #481677
+        transition: 0.5s all
+        .bfa
+            border-radius: 50%
+            transform: scale(0.9) 
+            transition: 0.7s all 
+            &:hover
+                border-radius: 0
+                transform: scale(1) 
+                transition: 0.7s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-raids-bfa
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #8B00FF
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-raids-bfa
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #6d1bbb
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)  
+        .text-color-bfa
+            color: #8B00FF      
+    .price-raids-bfa
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #8B00FF
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .btn-raids-bfa
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #8B00FF
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #8B00FF!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+    .card-raids-shadowlands
+        background: #6d939c
+        transition: 0.5s all
+        .shadowlands
+            border-radius: 50%
+            transform: scale(0.9) 
+            transition: 0.7s all 
+            &:hover
+                border-radius: 0
+                transform: scale(1) 
+                transition: 0.7s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-raids-shadowlands
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #92c5d1
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-raids-shadowlands
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #9cb7bd
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)  
+        .text-color-shadowlands
+            color: #92c5d1     
+    .price-raids-shadowlands
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #92c5d1
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .btn-raids-shadowlands
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #92c5d1
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #92c5d1!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+    /** Фон цена, заголовок, кнопка у карточек прокачки персонажей **/
+
+    .card-lvl-up, .card-lvl-up-full
+        background: #ffc107
+        transition: 0.5s all
+        .lvl-up, .lvl-up-full
+            border-radius: 50%
+            transition: 0.5s all 
+            &:hover
+                border-radius: 0
+                transform: scale(1.01) 
+                transition: 0.5s all   
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-lvl-up, .card-title-lvl-up-full
+        color: #8b00ff
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(115%) 
+    .card-text-lvl-up, .card-text-lvl-up-full
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #8b00ff
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(115%)           
+    .price-lvl-up, .price-lvl-up-full
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #8b00ff
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(115%)            
+    .btn-lvl-up, .btn-lvl-up-full
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #8b00ff
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #8b00ff!important
+        border: 1px solid #000 
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all
+        &:hover
+            filter: brightness(115%)
+            transition: 0.5s all
+            transform: scale(1.1) 
+
+    /** Фон цена, заголовок, кнопка у карточек достижений **/
+
+    .card-achievments-quests
+        background: #854c27
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-achievments-quests
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #28a745
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-achievments-quests
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #28a745
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)        
+    .price-achievments-quests
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #28a745
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .btn-achievments-quests
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #28a745
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #28a745!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all 
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+    .card-achievments-max-equipments
+        background: crimson
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-achievments-max-equipments
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #38b6ff
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-achievments-max-equipments
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #38b6ff
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)        
+    .price-achievments-max-equipments 
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #38b6ff
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .btn-achievments-max-equipments
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #38b6ff
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #38b6ff!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all 
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+    .card-achievments-max-mounts
+        background: #59bf25
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-achievments-max-mounts
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #ffc107
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-achievments-max-mounts
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #ffc107
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)        
+    .price-achievments-max-mounts 
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #ffc107
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .btn-achievments-max-mounts
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #ffc107
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #ffc107!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all 
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+    .card-achievments-raids-explorer
+        background: #8b00ff
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-achievments-raids-explorer
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: #ff0018
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-achievments-raids-explorer
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: #ff0018
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)        
+    .price-achievments-raids-explorer
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: #ff0018
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .btn-achievments-raids-explorer
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: #ff0018
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: #ff0018!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all 
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+
+    .card-achievments-great-feats
+        background: #007bff
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.03)
+    .card-title-achievments-great-feats
+        font-weight: 900
+        font-style: italic
+        text-shadow: 2px 2px 5px #000
+        font-size: 36px 
+        color: gold
+        transition: 0.5s all
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%)  
+    .card-text-achievments-great-feats
+        font-weight: 900 
+        font-style: italic
+        font-size: 20px  
+        transition: 0.5s all
+        color: gold
+        text-shadow: 2px 2px 2px #000
+        &:hover
+            transform: scale(1.1) 
+            transition: 0.5s all
+            filter: brightness(105%)        
+    .price-achievments-great-feats
+        font-weight: 700
+        font-size: 36px
+        text-shadow: 2px 2px 5px #000
+        color: gold
+        transition: 0.5s all
+        cursor: progress
+        &:hover
+            transition: 0.5s all
+            transform: scale(1.1)
+            filter: brightness(105%) 
+    .btn-achievments-great-feats
+        padding: 8px
+        border-radius: 5px 
+        text-decoration: none
+        color: gold
+        text-shadow: 2px 2px 2px #000
+        font-weight: 700
+        background: gold!important
+        border: 1px solid #000
+        box-shadow: 5px 5px 10px #000
+        transition: 0.5s all 
+        &:hover
+            filter: brightness(105%)
+            transition: 0.5s all
+            transform: scale(1.1)
+
+
+
+.registrations
+    &__step 
+        @media (max-width: 1170px)
+            display: flex
+            flex-direction: column!important
+    &__header
+        color: #fff
+        font-weight: 900 
+        font-size: 32px 
+        @media (max-width: 400px)
+            font-size: 26px
+    &__title, .why__we__list
+        text-align: center
+        width: 185px
+        color: #fff
+        font-weight: 700
+        font-size: 18px 
+        margin: 0 auto 
+    &__title
+        margin-bottom: 20px    
+    &__text, .why__we, .why__we__title, .about__text
+        font-size: 14px
+        color: #9fa3e5  
+        font-weight: 400 
+    &__list
+        position: relative   
+        @media (max-width: 1170px)
+            margin-top: 20px 
+    &__img, .why__we__img
+        width: 60px
+        height: 60px
+        display: flex
+        margin: 0 auto
+        margin-bottom: 30px
+    .br
+        transform: rotate(90deg)
+        display: inline-block
+        height: 80px
+        position: absolute
+        top: -15px
+        border-right: 5px dashed #7932ff!important 
+        @media (max-width: 1170px)  
+            border: none!important 
+    &__text
+        text-align: center    
+    .why__we__info
+        background: #1f2249
+    .about__text
+        font-weight: 700
+        font-size: 17px 
+        text-align: center 
+        
+
+
+.footer
+    background: rgb(17, 22, 53)
+    min-height: 350px
+    &-dropdown
+        display: inline-block
+    &__top
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+    &__logo
+        object-fit: scale-down
+        width: 200px
+    &__btn
+        background: #564fff
+        color: yellow
+        border: none
+        outline: none
+        padding: 10px 35px
+        border-radius: 10px
+        font-weight: 700
+    &__text
+        text-align: center
+        font-weight: 700
+        font-size: 18px
+        color: #564fff
+
+
+
+
+/** Модальное окно регистрации**/
+.form-control-modal
+    width: 100%!important
+.form-check
+    padding-left: 0!important     
+.form-check-label
+    margin-top: 10px
+    font-size: 13px
+    @media (max-width: 369px)  
+        font-size: 10px     
+.form-check-label-enter
+    font-size: 16px 
+    @media (max-width: 369px)  
+        font-size: 12px        
+.form-check-input
+    position: static!important 
+    margin-top: 0!important 
+    margin-left: 0!important 
+    margin-right: 10px
+.form-check-input-enter
+    margin-top: 0.4rem!important 
+    
+
+.modal-content
+    padding: 20px 
+    @media (max-width: 575.98px)
+        max-width: 500px 
+        margin: 1.75rem auto
+    @media (max-width: 400px)  
+        padding: 5px        
+.modal-header, .modal-footer
+    border: none!important 
+
+.close
+    @media (max-width: 369px)  
+        padding: 0!important        
+
+.modal-title
+    text-transform: uppercase
+    font-weight: 900
+    font-size: 30px 
+    line-height: 1.2!important 
+    letter-spacing: -3px
+    @media (max-width: 575.98px)  
+        font-size: 22px      
+    @media (max-width: 369px)  
+        font-size: 18px         
+.modal-text
+    color: #564fff
+    @media (max-width: 369px)  
+        font-size: 12px     
+    &-enter
+        cursor: pointer
+.modal-user-ok, .modal-user-forget-password
+    color: #564fff
+    cursor: pointer
+    font-weight: 700
+    display: inline-block  
+    @media (max-width: 369px)  
+        font-size: 10px     
+    &:hover
+        color: #564fff
+.modal-user-forget-password
+    margin-top: 0.5rem
+.modal-btn, .btn-save, .btn-close
+    width: 100%!important     
+    background: linear-gradient(180deg, #7932ff, #564fff)
+    padding: 10px 35px
+    text-transform: uppercase
+    color: #fff
+    font-weight: 600
+    border: none
+    outline: none
+    border-radius: 5px
+    @media (max-width: 369px)  
+        font-size: 12px     
+    &:hover
+        filter: brightness(125%)
+    &-registration 
+        background: #fff 
+        color: #564fff
+        border: 1px solid #564fff   
+.btn-save, .btn-close
+    width: 100px!important
+    font-size: 12px
+    padding: 10px
+    background: #28a745
+    color: #fff
+    @media (max-width: 369px)  
+        font-size: 10px 
+        padding: 5px    
+.btn-close
+    background: #dc3545
+
+
+
+
+
+
+
+
+
+@import 'css/_warrior.sass'
+
+
+

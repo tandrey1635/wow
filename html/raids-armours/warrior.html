@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Воин</title>
+    <link rel="shortcut icon" href="../img/icons/favicon.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;600;700;900&family=Podkova:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    
+    <header class="header__top">
+
+    </header>
+
+    <header class="header">
+        <div class="container__fluide">
+            <nav class="navbar navbar-expand-lg navbar-light mt-5">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://worldofwarcraft.com/ru-ru/">
+                            Офицальный сайт World of Warcraft
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.noob-club.ru/">
+                            Гайды
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://raider.io/">
+                            Рейтинг
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=" https://www.wowprogress.com/">
+                            Лучшие игроки 
+                        </a>
+                    </li>
+                </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                &#8381
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Рубли (&#8381)</a>
+                                <a class="dropdown-item" href="#">Доллары ($)</a>
+                                <a class="dropdown-item" href="#">Евро (&#8364)</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline nav-form my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+                    </form>
+                    <button class="nav__btn" type="button">Войти или Зарегистрироватся</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="equipment">
+        <div class="container">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-warrior-armor-tab" data-toggle="pill" href="#pills-warrior-armor" role="tab" aria-selected="true">Доспехи для воина</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-tier-one-tab" data-toggle="pill" href="#pills-tier-one" role="tab" aria-selected="true">Тир 1</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-tier-two-tab" data-toggle="pill" href="#pills-tier-two" role="tab" aria-selected="false">Тир 2</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-temple-of-ahnqiraj-tab" data-toggle="pill" href="#pills-temple-of-ahnqiraj" role="tab" aria-selected="false">Храм Анкиража</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-three-tab" data-toggle="pill" href="#pills-tier-three" role="tab" aria-selected="false">Тир 3</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-four-tab" data-toggle="pill" href="#pills-tier-four" role="tab" aria-selected="false">Тир 4</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-five-tab" data-toggle="pill" href="#pills-tier-five" role="tab" aria-selected="false">Тир 5</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-six-tab" data-toggle="pill" href="#pills-tier-six" role="tab" aria-selected="false">Тир 6</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-sunwell-plateau-tab" data-toggle="pill" href="#pills-sunwell-plateau" role="tab" aria-selected="false">Плато Солнечного Колодца</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-seven-tab" data-toggle="pill" href="#pills-tier-seven" role="tab" aria-selected="false">Тир 7</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-eight-tab" data-toggle="pill" href="#pills-tier-eight" role="tab" aria-selected="false">Тир 8</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-nine-tab" data-toggle="pill" href="#pills-tier-nine" role="tab" aria-selected="false">Тир 9</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-ten-tab" data-toggle="pill" href="#pills-tier-ten" role="tab" aria-selected="false">Тир 10</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-eleven-tab" data-toggle="pill" href="#pills-tier-eleven" role="tab" aria-selected="false">Тир 11</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-twelve-tab" data-toggle="pill" href="#pills-tier-twelve" role="tab" aria-selected="false">Тир 12</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-thirteen-tab" data-toggle="pill" href="#pills-tier-thirteen" role="tab" aria-selected="false">Тир 13</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-fourteen-tab" data-toggle="pill" href="#pills-tier-fourteen" role="tab" aria-selected="false">Тир 14</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-fifteen-tab" data-toggle="pill" href="#pills-tier-fifteen" role="tab" aria-selected="false">Тир 15</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-sixteen-tab" data-toggle="pill" href="#pills-tier-sixteen" role="tab" aria-selected="false">Тир 16</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-seventeen-tab" data-toggle="pill" href="#pills-tier-seventeen" role="tab" aria-selected="false">Тир 17</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-eighteen-tab" data-toggle="pill" href="#pills-tier-eighteen" role="tab" aria-selected="false">Тир 18</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-nineteen-tab" data-toggle="pill" href="#pills-tier-nineteen" role="tab" aria-selected="false">Тир 19</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-twenty-tab" data-toggle="pill" href="#pills-tier-twenty" role="tab" aria-selected="false">Тир 20</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-twenty-one-tab" data-toggle="pill" href="#pills-tier-twenty-one" role="tab" aria-selected="false">Тир 21</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-uldir-tab" data-toggle="pill" href="#pills-uldir" role="tab" aria-selected="false">Ульдир</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-trial-of-valor-tab" data-toggle="pill" href="#pills-trial-of-valor" role="tab" aria-selected="false">Испытание доблести</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-dazaralor-tab" data-toggle="pill" href="#pills-dazaralor" role="tab" aria-selected="false">Дазар'алор</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-eternal-palace-tab" data-toggle="pill" href="#pills-eternal-palace" role="tab" aria-selected="false">Вечный Дворец</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-nyalotha-tab" data-toggle="pill" href="#pills-nyalotha" role="tab" aria-selected="false">Ни'алота</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-castle-nathria-tab" data-toggle="pill" href="#pills-castle-nathria" role="tab" aria-selected="false">Замок Натрия</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-sanctum-of-domination-tab" data-toggle="pill" href="#pills-sanctum-of-domination" role="tab" aria-selected="false">Cвятилище Господства</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-challenge-mod-set-tab" data-toggle="pill" href="#pills-challenge-mod-set" role="tab" aria-selected="false">Режим Испытаний</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-allie-races-set-tab" data-toggle="pill" href="#pills-allie-races-set" role="tab" aria-selected="false">Союзные Рассы</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-quests-tab" data-toggle="pill" href="#pills-quests" role="tab" aria-selected="false">За Квесты</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-covenant-tab" data-toggle="pill" href="#pills-covenant" role="tab" aria-selected="false">Ковенанты</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-warrior-armor" aria-labelledby="pills-warrior-armor-tab" role="tabpanel">
+                    <div class="card-box-main">
+
+                    </div>
+                </div> 
+                <div class="tab-pane fade" id="pills-tier-one" aria-labelledby="pills-tier-one-tab" role="tabpanel">
+                    <div class="card card-classic" style="width: 18rem;">
+                        <img src="../img/servises/equipment/armours/tier1/warrior/Battlegear-of-Might.png" class="card-img-top" alt="Броня Мощи">
+                        <div class="card-body">
+                            <h3 class="card-title text-warning card-title-classic">Броня Мощи</h3>
+                            <p class="card-text">Самый первый комплект брони для воина-танка который можно получить в рейде 60-го уровня Огненные недра дополнения <span class="text-classic">Classic.</span></p>
+                            <div class="card__info d-flex justify-content-between align-items-center">
+                                <p class="price-classic">80$</p>
+                                <a href="#" class="btn btn-primary">Подробнее</a>  
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="tab-pane fade" id="pills-tier-two" role="tabpanel" aria-labelledby="pills-tier-two-tab">
+                    <div class="card card-classic" style="width: 18rem;">
+                        <img src="../img/servises/equipment/armours/tier2/warrior/Battlegear-of-Wrath.png" class="card-img-top" alt="Броня Гнева">
+                        <div class="card-body">
+                            <h3 class="card-title text-warning card-title-classic">Броня Гнева</h3>
+                            <p class="card-text">Второй комплект брони для воина который можно получить в рейде 60-го уровня Логово Крыла Тьмы дополнения <span class="text-classic">Classic.</span></p>
+                            <div class="card__info d-flex justify-content-between align-items-center">
+                                <p class="price-classic">100$</p>
+                                <a href="#" class="btn btn-primary">Подробнее</a>  
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="tab-pane fade" id="pills-temple-of-ahnqiraj" role="tabpanel" aria-labelledby="pills-temple-of-ahnqiraj-tab">
+                    <div class="card card-classic" style="width: 18rem;">
+                        <img src="../img/servises/equipment/armours/temple-of-ahn'qiraj/plate/Conqueror's-Battlegear.png" class="card-img-top" alt="Броня Завоевателя">
+                        <div class="card-body">
+                            <h3 class="card-title text-warning card-title-classic">Броня Завоевателя</h3>
+                            <p class="card-text">Набор воина уровня 2.5 который можно получить с помощью выпадений из экземпляров рейда 60-го уровня Храм Ан'Киража дополнения <span class="text-classic">Classic.</span> А также квестов, связанных с теми же экземплярами.</p>
+                            <div class="card__info d-flex justify-content-between align-items-center">
+                                <p class="price-classic">150$</p>
+                                <a href="#" class="btn btn-primary">Подробнее</a>  
+                            </div>
+                        </div>
+                    </div>  
+                </div> 
+                <div class="tab-pane fade" id="pills-tier-three" role="tabpanel" aria-labelledby="pills-three-tab">
+                    <div class="card card-classic" style="width: 18rem;">
+                        <img src="../img/servises/equipment/armours/tier3/warrior/Dreadnaught's-Battlegear.png" class="card-img-top" alt="Броня Дредноута">
+                        <div class="card-body">
+                            <h3 class="card-title text-warning card-title-classic">Броня Дредноута</h3>
+                            <p class="card-text">Третий комплект брони для воина который можно получить в рейда 60-го уровня Наксрамас дополнения <span class="text-classic">Classic.</span></p>
+                            <div class="card__info d-flex justify-content-between align-items-center">
+                                <p class="price-classic">180$</p>
+                                <a href="#" class="btn btn-primary">Подробнее</a>  
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <div class="tab-pane fade" id="pills-tier-four" role="tabpanel" aria-labelledby="pills-four-tab">
+                    <div class="card card-burning-crusade" style="width: 18rem;">
+                        <img src="../img/servises/equipment/armours/tier4/warrior/Warbringer-Armor.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-warning card-title-burning-crusade">Доспехи Вестника Войны</h3>
+                            <p class="card-text">Первый комплект брони для воина из рейдов 70-го уровня дополнения <span class="text-burning-crusade ">The Burning Crusade.</span></p>
+                            <div class="card__info d-flex justify-content-between align-items-center">
+                                <p class="price-burning-crusade ">200$</p>
+                                <a href="#" class="btn btn-primary">Подробнее</a>  
+                            </div>
+                        </div>
+                    </div>  
+                </div> 
+                <div class="tab-pane fade" id="pills-tier-five" role="tabpanel" aria-labelledby="pills-five-tab">
+                    <div class="card card-burning-crusade" style="width: 18rem;">
+                        <img src="../img/servises/equipment/armours/tier5/warrior/Destroyer-Armor.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-warning card-title-burning-crusade">Доспехи Разрушителя</h3>
+                            <p class="card-text">Второй комплект брони для воина из рейдов 70-го уровня Крепость Бурь и Змеиное святилище дополнения <span class="text-burning-crusade ">The Burning Crusade.</span> Бей Наг и Принца Келесета!</p>
+                            <div class="card__info d-flex justify-content-between align-items-center">
+                                <p class="price-burning-crusade ">220$</p>
+                                <a href="#" class="btn btn-primary">Подробнее</a>  
+                            </div>
+                        </div>
+                    </div>  
+                </div>    
+                <div class="tab-pane fade" id="pills-tier-six" role="tabpanel" aria-labelledby="pills-six-tab">
+                    <div class="card card-burning-crusade" style="width: 18rem;">
+                        <img src="../img/servises/equipment/armours/tier6/warrior/Onslaught-Armor.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-warning card-title-burning-crusade">Доспехи Натиска</h3>
+                            <p class="card-text">Третий комплект брони для воина из рейдов 70-го уровня Гора Хиджал и Черный Храм дополнения <span class="text-burning-crusade ">The Burning Crusade.</span> Иллидан не устоит, теперь вы готовы!</p>
+                            <div class="card__info d-flex justify-content-between align-items-center">
+                                <p class="price-burning-crusade ">250$</p>
+                                <a href="#" class="btn btn-primary">Подробнее</a>  
+                            </div>
+                        </div>
+                    </div>  
+                </div>  
+                <div class="tab-pane fade" id="pills-sunwell-plateau" role="tabpanel" aria-labelledby="pills-sunwell-plateau-tab">
+                    <div class="card card-burning-crusade" style="width: 18rem;">
+                        <img src="../img/servises/equipment/armours/sunwell-plateau/plate/Onslaught-Sunwell-Battlegear.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-warning card-title-burning-crusade">Броня Натиска</h3>
+                            <p class="card-text">Четвертый комплект брони для воина из рейда 70-го уровня Плато Солнечного Колодца дополнения <span class="text-burning-crusade ">The Burning Crusade.</span> Покажите всю мощь Кил'джедену!</p>
+                            <div class="card__info d-flex justify-content-between align-items-center">
+                                <p class="price-burning-crusade ">280$</p>
+                                <a href="#" class="btn btn-primary">Подробнее</a>  
+                            </div>
+                        </div>
+                    </div>  
+                </div> 
+                <div class="tab-pane fade" id="pills-tier-seven" role="tabpanel" aria-labelledby="pills-tier-seven-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card card-lich-king" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier7/warrior/Heroes'-Dreadnaught-Battlegear-10.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning card-title-lich-king">Героическая Броня Неустрашимости</h3>
+                                <p class="card-text">Первый комплект брони для воина из рейда 80-го уровня Наксрамас на 10 игроков дополнения <span class="text-lich-king"> Wrath of The Lich King.</span></p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="price-lich-king">300$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="card card-lich-king" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier7/warrior/Valorous-Dreadnaught-Battlegear-25.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning card-title-lich-king">Доблестная Броня Неустрашимости</h3>
+                                <p class="card-text">Первый комплект брони для воина из рейда 80-го уровня Наксрамас на 25 игроков дополнения <span class="text-lich-king"> Wrath of The Lich King.</span></p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="price-lich-king">320$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                    </div> 
+                </div>  
+                <div class="tab-pane fade" id="pills-tier-eight" role="tabpanel" aria-labelledby="pills-tier-eight-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card card-lich-king" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier8/warrior/Valorous-Siegebreaker-Battlegear-10.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning card-title-lich-king">Доблестная Осадная Броня</h3>
+                                <p class="card-text">Второй комплект брони для воина из рейда 80-го уровня Осада Ульдуара на 10 игроков дополнения <span class="text-lich-king">Wrath of The Lich King.</span></p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="price-lich-king">350$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="card card-lich-king" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier8/warrior/Conqueror's-Siegebreaker-Battlegear-25.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning card-title-lich-king">Осадная Броня Завоевателя</h3>
+                                <p class="card-text">Второй комплект брони для воина из рейда 80-го уровня Осада Ульдуара на 25 игроков дополнения <span class="text-lich-king">Wrath of The Lich King.</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="price-lich-king">380$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                    </div> 
+                </div>  
+                <div class="tab-pane fade" id="pills-tier-nine" role="tabpanel" aria-labelledby="pills-tier-nine-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card card-lich-king" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier9/warrior/Liadrin's-Plate-10.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning card-title-lich-king">Б10</h3>
+                                <p class="card-text">Самый первый комплект брони для воина-танка.</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="price-lich-king">400$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="card card-lich-king" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier9/warrior/Hellscream's-Battlegear-25.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning card-title-lich-king">25</h3>
+                                <p class="card-text">Самый первый комплект брони для воина-танка.</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="price-lich-king">420$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                    </div> 
+                </div>  
+                <div class="tab-pane fade" id="pills-tier-ten" role="tabpanel" aria-labelledby="pills-tier-ten-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card card-lich-king" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier10/warrior/Ymirjar-Lord's-Battlegear-10Normal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning card-title-lich-king">Броня Повелителя Имирьяров</h3>
+                                <p class="card-text">Четвертый комплект брони для воина из рейда 80-го уровня Цитадель Ледяной Короны на 10 игроков обычного уровня сложности дополнения <span class="text-lich-king">Wrath of The Lich King.</span> Эту Броню носит сам Верховный Воевода Саурфанг!Смерть Королю Личу!</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="price-lich-king">450$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="card card-lich-king" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier10/warrior/Sanctified-Ymirjar-Lord's Battlegear-25Normal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning card-title-lich-king">Освященная Броня Повелителя Имирьяров</h3>
+                                <p class="card-text">Четвертый комплект брони для воина из рейда 80-го уровня Цитадель Ледяной Короны на 25 игроков обычного уровня сложности дополнения <span class="text-lich-king">Wrath of The Lich King.</span> Эту Броню носит сам Верховный Воевода Саурфанг!Смерть Королю Личу!</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="price-lich-king">500$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card card-lich-king" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier10/warrior/Sanctified-Ymirjar-Lord's-Battlegear-25HM.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning card-title-lich-king">Освященная Броня Повелителя Имирьяров</h3>
+                                <p class="card-text">Четвертый комплект брони для воина из рейда 80-го уровня Цитадель Ледяной Короны на 25 игроков героического уровня сложности дополнения <span class="text-lich-king">Wrath of The Lich King.</span> Эту Броню носит сам Верховный Воевода Саурфанг!Смерть Королю Личу!</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="price-lich-king">700$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                    </div> 
+                </div>  
+                <div class="tab-pane fade" id="pills-tier-eleven" role="tabpanel" aria-labelledby="pills-tier-eleven-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card card-cataclysm" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier11/warrior/Earthen-Battleplate-Normal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning card-title-cataclysm">Боевой Доспех Земли</h3>
+                                <p class="card-text">Первый комплект брони для воина из рейдов 85-го уровня обычного уровня сложности дополнения <span class="text-cataclysm">Cataclysm.</span> Доспехи в стиле Подземья!</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="price-cataclysm">800$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card card-cataclysm" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier11/warrior/Earthen-Battleplate-HM.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning card-title-cataclysm">Боевой Доспех Земли</h3>
+                                <p class="card-text">Первый комплект брони для воина из рейдов 85-го уровня героического уровня сложности дополнения <span class="text-cataclysm">Cataclysm.</span> Доспехи в стиле Подземья!</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="price-cataclysm">900$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>  
+                    </div> 
+                </div> 
+                <div class="tab-pane fade" id="pills-tier-twelve" role="tabpanel" aria-labelledby="pills-tier-twelve-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card card-cataclysm" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier12/warrior/Molten-Giant-Battleplate-Normal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning card-title-cataclysm">Боевой Доспех Огненного Великана</h3>
+                                <p class="card-text">Второй комплект брони для воина из рейда Огненные Просторы 85-го уровня обычного уровня сложности дополнения <span class="text-cataclysm">Cataclysm.</span> Рагнарос рекомендует!</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="price-cataclysm">1000$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card card-cataclysm" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier12/warrior/Molten-Giant-Battleplate-HM.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning card-title-cataclysm">Боевой Доспех Огненного Великана</h3>
+                                <p class="card-text">Второй комплект брони для воина из рейда Огненные Просторы 85-го уровня героического уровня сложности дополнения <span class="text-cataclysm">Cataclysm.</span> Рагнарос рекомендует!</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="price-cataclysm">1200$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>  
+                    </div> 
+                </div> 
+                <div class="tab-pane fade" id="pills-tier-thirteen" role="tabpanel" aria-labelledby="pills-tier-
+                thirteen-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card card-cataclysm" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier13/warrior/Colossal-Dragonplate-Battlegear-LFR.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning card-title-cataclysm">Броня Из Чешуи Гигантского Дракона</h3>
+                                <p class="card-text">Третий комплект брони для воина из рейда Душа Дракона 85-го уровня режима поиска рейдов дополнения <span class="text-cataclysm">Cataclysm.</span> Броня Из Чешуи самого Смертокрыла!</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="price-cataclysm">1500$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card card-cataclysm" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier13/warrior/Colossal-Dragonplate-Battlegear-Normal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning card-title-cataclysm">Броня Из Чешуи Гигантского Дракона</h3>
+                                <p class="card-text">Третий комплект брони для воина из рейда Душа Дракона 85-го уровня обычного уровня сложности дополнения <span class="text-cataclysm">Cataclysm.</span> Броня Из Чешуи самого Смертокрыла!</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="price-cataclysm">1800$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-cataclysm" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier13/warrior/Colossal-Dragonplate-Battlegear-HM.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title text-warning card-title-cataclysm">Броня Из Чешуи Гигантского Дракона</h3>
+                                <p class="card-text">Третий комплект брони для воина из рейда Душа Дракона 85-го уровня героического уровня сложности дополнения <span class="text-cataclysm">Cataclysm.</span> Броня Из Чешуи самого Смертокрыла!</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="price-cataclysm">2000$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>   
+                    </div> 
+                </div> 
+                <div class="tab-pane fade" id="pills-tier-fourteen" role="tabpanel" aria-labelledby="pills-tier-fourteen-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier14/warrior/Battleplate-of-Resounding-Rings-LFR.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Боевые Латы Из Резонирующих Колец</h3>
+                                <p class="card-text">Первый комплект брони для воина из рейдов 90-го уровня режима поиска рейдов дополнения Mists of Pandaria.</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">2100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier14/warrior/Battleplate-of-Resounding-Rings-Normal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Боевые Латы Из Резонирующих Колец</h3>
+                                <p class="card-text">Первый комплект брони для воина из рейдов 90-го уровня обычного уровня сложности дополнения Mists of Pandaria.</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">2300$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier14/warrior/Battleplate-of-Resounding-Rings-HM.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Боевые Латы Из Резонирующих Колец</h3>
+                                <p class="card-text">Первый комплект брони для воина из рейдов 90-го уровня героического уровня сложности дополнения Mists of Pandaria.</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">2500$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>   
+                    </div> 
+                </div> 
+                <div class="tab-pane fade" id="pills-tier-fifteen" role="tabpanel" aria-labelledby="pills-tier-fifteen-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier15/warrior/Battleplate-of-the-Last-Mogu-LFR.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Боевой Доспех Последнего Могу</h3>
+                                <p class="card-text">лфр</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier15/warrior/Battleplate-of-the-Last-Mogu-Normal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Боевой Доспех Последнего Могу</h3>
+                                <p class="card-text">н</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier15/warrior/Battleplate-of-the-Last-Mogu-HM.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Боевой Доспех Последнего Могу</h3>
+                                <p class="card-text">г</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>   
+                    </div> 
+                </div> 
+                <div class="tab-pane fade" id="pills-tier-sixteen" role="tabpanel" aria-labelledby="pills-tier-sixteen-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier16/warrior/Battleplate-of-the-Prehistoric-Marauder-LFR.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Боевой Доспех Доисторического Разорителя</h3>
+                                <p class="card-text">лфр</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier16/warrior/Battleplate-of-the-Prehistoric-Marauder-HM.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Боевой Доспех Доисторического Разорителя</h3>
+                                <p class="card-text">г</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier16/warrior/Battleplate-of-the-Prehistoric-Marauder-Mythic.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Боевой Доспех Доисторического Разорителя</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>   
+                    </div> 
+                </div> 
+                <div class="tab-pane fade" id="pills-tier-seventeen" role="tabpanel" aria-labelledby="pills-tier-seventeen-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier17/warrior/Blackhand’s-Battlegear-Normal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Броня Чернорука</h3>
+                                <p class="card-text">н</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier17/warrior/Blackhand’s-Battlegear-HM.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Броня Чернорука</h3>
+                                <p class="card-text">г</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier17/warrior/Blackhand’s-Battlegear-Mythic.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Броня Чернорука</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>   
+                    </div> 
+                </div> 
+                <div class="tab-pane fade" id="pills-tier-eighteen" role="tabpanel" aria-labelledby="pills-tier-eighteen-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier18/warrior/Battlegear-of-Iron-Wrath-Normal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Броня Железной Ярости</h3>
+                                <p class="card-text">н</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier18/warrior/Battlegear-of-Iron-Wrath-HM.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Броня Железной Ярости</h3>
+                                <p class="card-text">г</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier18/warrior/Battlegear-of-Iron-Wrath-Mythic.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Броня Железной Ярости</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>   
+                    </div> 
+                </div> 
+                <div class="tab-pane fade" id="pills-tier-nineteen" role="tabpanel" aria-labelledby="pills-tier-nineteen-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier19/warrior/Warplate-of-the-Obsidian-Aspect-LFR.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Боевые Латы Обсидианового Аспекта</h3>
+                                <p class="card-text">лфр</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier19/warrior/Warplate-of-the-Obsidian-Aspect-Normal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Боевые Латы Обсидианового Аспекта</h3>
+                                <p class="card-text">н</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier19/warrior/Warplate-of-the-Obsidian-Aspect-HM.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Боевые Латы Обсидианового Аспекта</h3>
+                                <p class="card-text">г</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier19/warrior/Warplate-of-the-Obsidian-Aspect-Mythic.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Боевые Латы Обсидианового Аспекта</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>   
+                    </div> 
+                </div> 
+                <div class="tab-pane fade" id="pills-tier-twenty" role="tabpanel" aria-labelledby="pills-tier-twenty-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier20/warrior/Titanic-Onslaught-Armor-LFR.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">лфр</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier20/warrior/Titanic-Onslaught-Armor-Normal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">н</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier20/warrior/Titanic-Onslaught-Armor-HM.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">г</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier20/warrior/Titanic-Onslaught-Armor-Mythic.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>   
+                    </div> 
+                </div> 
+                <div class="tab-pane fade" id="pills-tier-twenty-one" role="tabpanel" aria-labelledby="pills-tier-twenty-one-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier21/warrior/Juggernaut-Battlegear-LFR.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">лфр</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier21/warrior/Juggernaut-Battlegear-Normal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">н</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier21/warrior/Juggernaut-Battlegear-HM.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">г</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/tier21/warrior/Juggernaut-Battlegear-Mythic.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>   
+                    </div> 
+                </div> 
+                <div class="tab-pane fade" id="pills-uldir" role="tabpanel" aria-labelledby="pills-tier-uldir-tab">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/servises/equipment/armours/uldir/plate/Uldir.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">?</h3>
+                            <p class="card-text">лфр</p>
+                            <div class="card__info d-flex justify-content-between align-items-center">
+                                <p class="card-price text-danger">100$</p>
+                                <a href="#" class="btn btn-primary">Подробнее</a>  
+                            </div>
+                        </div>
+                    </div>  
+                </div> 
+                <div class="tab-pane fade" id="pills-trial-of-valor" role="tabpanel" aria-labelledby="pills-trial-of-valor-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/trial-of-valor/plate/Funerary-Plate-of the-Chosen-Dead-LFR.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">лфр</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/trial-of-valor/plate/Funerary-Plate-of the-Chosen-Dead-Normal.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">н</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/trial-of-valor/plate/Funerary-Plate-of the-Chosen-Dead-HM.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">г</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/trial-of-valor/plate/Funerary-Plate-of the-Chosen-Dead-Mythic.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>   
+                    </div> 
+                </div> 
+                <div class="tab-pane fade" id="pills-dazaralor" role="tabpanel" aria-labelledby="pills-dazaralor-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/dazar'alor/plate/Dazar'alor-LFR.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">лфр</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/dazar'alor/plate/Dazar'alor-Normal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">н</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/dazar'alor/plate/Dazar'alor-HM.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">г</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/dazar'alor/plate/Dazar'alor-Mythic.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>   
+                    </div> 
+                </div> 
+                <div class="tab-pane fade" id="pills-eternal-palace" role="tabpanel" aria-labelledby="pills-eternal-palace-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/eternal-palace/plate/Eternal-Palace-LFR.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">лфр</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/eternal-palace/plate/Eternal-Palace-Normal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">н</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/eternal-palace/plate/Eternal-Palace-HM.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">г</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/eternal-palace/plate/Eternal-Palace-Mythic.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>   
+                    </div> 
+                </div> 
+                <div class="tab-pane fade" id="pills-nyalotha" role="tabpanel" aria-labelledby="pills-eternal-nyalotha-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/ny'alotha/plate/Ny'alotha-LFR.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">лфр</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/ny'alotha/plate/Ny'alotha-Normal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">н</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/ny'alotha/plate/Ny'alotha-HM.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">г</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/ny'alotha/plate/Ny'alotha-Mythic.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>   
+                    </div> 
+                </div> 
+                <div class="tab-pane fade" id="pills-castle-nathria" role="tabpanel" aria-labelledby="pills-castle-nathria-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/castle-nathria/plate/Castle-Nathria-LFR.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">лфр</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/castle-nathria/plate/Castle-Nathria-Normal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">н</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/castle-nathria/plate/Castle-Nathria-HM.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">г</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/castle-nathria/plate/Castle-Nathria-Mythic.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>   
+                    </div> 
+                </div> 
+                <div class="tab-pane fade" id="pills-sanctum-of-domination" role="tabpanel" aria-labelledby="pills-sanctum-of-domination-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/sanctum-of-domination/plate/Sanctum-of-Domination-LFR.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">лфр</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/sanctum-of-domination/plate/Sanctum-of-Domination-Normal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">н</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/sanctum-of-domination/plate/Sanctum-of-Domination-HM.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">г</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/sanctum-of-domination/plate/Sanctum-of-Domination-Mythic.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>   
+                    </div> 
+                </div> 
+                <div class="tab-pane fade" id="pills-challenge-mod-set" role="tabpanel" aria-labelledby="pills-challenge-mod-set-tab">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/servises/equipment/armours/challenge-mod-set/warrior/golden-king-plate/Golden-King-Plate.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">?</h3>
+                            <p class="card-text">лфр</p>
+                            <div class="card__info d-flex justify-content-between align-items-center">
+                                <p class="card-price text-danger">100$</p>
+                                <a href="#" class="btn btn-primary">Подробнее</a>  
+                            </div>
+                        </div>
+                    </div>    
+                </div> 
+                <div class="tab-pane fade" id="pills-allie-races-set" role="tabpanel" aria-labelledby="pills-allie-races-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/allie-races-set/plate/Bronzebeard-(Dwarf)-Heritage-Armor.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">лфр</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/allie-races-set/plate/Dark-Iron-Heritage-Armor.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">н</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/allie-races-set/plate/Lightforged-Draenei-Heritage-Armor.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">г</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/allie-races-set/plate/Mag'har-Orc Heritage-Armor.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/allie-races-set/plate/Zandalari-Troll-Heritage-Armor.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>   
+                    </div> 
+                </div>
+                <div class="tab-pane fade" id="pills-quests" role="tabpanel" aria-labelledby="pills-quests-tab">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../img/servises/equipment/armours/quests/plate/World-Defiler's-Plate.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">?</h3>
+                            <p class="card-text">анторус</p>
+                            <div class="card__info d-flex justify-content-between align-items-center">
+                                <p class="card-price text-danger">100$</p>
+                                <a href="#" class="btn btn-primary">Подробнее</a>  
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="tab-pane fade" id="pills-covenant" role="tabpanel" aria-labelledby="pills-covenant-tab">
+                    <div class="card-box d-flex flex-wrap">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/covenant/plate/kyrian/Harmonious-Kyrian-Covenant-Renown.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">лфр</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/covenant/plate/kyrian/Reverent-Kyrian-Covenant-Path-of-Ascension.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">н</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/covenant/plate/kyrian/Discordant-Kyrian-Covenant-Path-of-Ascension.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">г</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/covenant/plate/kyrian/Kyrian-Covenant-Campaign.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/covenant/plate/necrolords/Duty-Bound-Necrolord-Covenant.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/covenant/plate/necrolords/Bladesworn-Necrolord-Covenant-Campaign.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/covenant/plate/necrolords/Stitched-Necrolord-Covenant-Abomination-Stitching.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/covenant/plate/necrolords/Prime-Necrolord-Covenant-Renown.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/covenant/plate/night-fae/Winterborn-Set -Night-Fae-Covenant-Court-of-Night.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/covenant/plate/night-fae/Conservator's-Set-Night-Fae Covenant-Queen's-Conservatory.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/covenant/plate/night-fae/Queensguar -Night Fae-Covenant-Campaign.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/covenant/plate/night-fae/Night-Courtie-Night-Fae Covenant-Renown.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/covenant/plate/ventyr/Burnished-Venthyr-Covenant Travel-Network.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/covenant/plate/ventyr/Court-Venthyr Covenant-Ember-Court.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/covenant/plate/ventyr/Crimson-Venthyr-Covenant-Renown.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/servises/equipment/armours/covenant/plate/ventyr/Ebony-Venthyr-Covenant-Campaign.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">?</h3>
+                                <p class="card-text">м</p>
+                                <div class="card__info d-flex justify-content-between align-items-center">
+                                    <p class="card-price text-danger">100$</p>
+                                    <a href="#" class="btn btn-primary">Подробнее</a>  
+                                </div>
+                            </div>
+                        </div>  
+                    </div> 
+                </div>  
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+</body>
+</html>

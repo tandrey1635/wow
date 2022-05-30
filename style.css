@@ -1,0 +1,5314 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+a {
+  display: block;
+  text-decoration: none !important;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #564fff;
+}
+
+.navbar-expand-lg {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.navbar-collapse {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -ms-flex-preferred-size: 80% !important;
+      flex-basis: 80% !important;
+  margin: 0 auto;
+}
+
+.dropdown-menu {
+  border-radius: 10% !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7932ff), to(#564fff));
+  background: linear-gradient(180deg, #7932ff, #564fff);
+}
+
+.dropdown-item {
+  border-radius: 10px;
+  font-weight: 700 !important;
+  color: #d110eb !important;
+}
+
+.dropdown-item:hover {
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+  background: #ffc107 !important;
+  color: #d110eb !important;
+}
+
+/** Логотип **/
+.navbar-brand {
+  width: 350px;
+}
+
+@media (max-width: 1170px) {
+  .navbar-brand {
+    width: 20%;
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    width: 50%;
+  }
+}
+
+.navbar-brand img {
+  width: 100%;
+}
+
+/** Меню навигации **/
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    width: 60%;
+  }
+}
+
+/** Поиск в шапке **/
+.form-control {
+  width: 500px !important;
+}
+
+/** Валюта **/
+.navbar-nav .nav-link {
+  color: #564fff !important;
+}
+
+.navbar-nav .nav-link:hover {
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+/** Кнопка Входа и Регистрации в шапке **/
+.nav__btn {
+  margin: 10px;
+  border-radius: 5px !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7932ff), to(#564fff));
+  background: linear-gradient(180deg, #7932ff, #564fff);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
+}
+
+@media (max-width: 320px) {
+  .nav__btn {
+    font-size: 14px;
+  }
+}
+
+.nav__btn:hover {
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.enter {
+  background: rgba(142, 148, 247, 0.2);
+  color: #564fff;
+  font-weight: 700;
+}
+
+/** Бургер иконка **/
+.navbar-toggler {
+  display: none;
+  background: #564fff !important;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    display: block;
+  }
+}
+
+.navbar-toggler-icon {
+  display: block !important;
+  background: #0f0a1f !important;
+  height: 0.2em !important;
+  margin: 5px;
+}
+
+.nav-link {
+  text-align: center;
+  margin: 10px;
+  border-radius: 20px !important;
+}
+
+@media (max-width: 400px) {
+  .nav-link {
+    font-size: 12px;
+  }
+}
+
+.nav-link:hover {
+  background: #ffc107 !important;
+  color: #d110eb !important;
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.nav-link.active {
+  color: #04ffdd !important;
+  background: crimson !important;
+}
+
+.nav-link-raids-armour, .nav-link-weapons, .nav-link-mounts, .nav-link-gold, .nav-link-professions, .nav-link-pvp, .nav-link-dungeons, .nav-link-raids, .nav-link-lvl-up, .nav-link-achievments {
+  font-weight: 700;
+  border-radius: 10px;
+  color: #fff !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7932ff), to(#564fff)) !important;
+  background: linear-gradient(180deg, #7932ff, #564fff) !important;
+}
+
+body {
+  background: #0f0a1f !important;
+  height: 100%;
+}
+
+.container {
+  max-width: 1180px !important;
+}
+
+.header__top {
+  min-height: 300px;
+  background: url("img/logo/logo.png") no-repeat center;
+  background-size: contain;
+}
+
+@media (max-width: 400px) {
+  .header__top {
+    min-height: 200px;
+  }
+}
+
+.navbar-collapse {
+  -webkit-box-flex: 0 !important;
+      -ms-flex-positive: 0 !important;
+          flex-grow: 0 !important;
+  max-width: 100%;
+}
+
+.promo {
+  padding: 50px 0;
+  min-height: 500px;
+}
+
+.promo__info {
+  width: 45%;
+}
+
+@media (max-width: 991.98px) {
+  .promo__info {
+    width: 70%;
+  }
+}
+
+.promo__raitings {
+  width: 60%;
+  background: url(img/logo/index-bg.png) no-repeat;
+  min-height: 500px;
+  background-size: 100%;
+  background-position: center;
+}
+
+@media (max-width: 400px) {
+  .promo__raitings {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .promo__raitings {
+    width: 75%;
+  }
+}
+
+@media (max-width: 576px) {
+  .promo__raitings {
+    width: 85%;
+  }
+}
+
+.promo__header {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+@media (max-width: 1170px) {
+  .promo__header {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .promo__header {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 500px) {
+  .promo__header {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .promo__header {
+    font-size: 15px;
+  }
+}
+
+.promo__text {
+  font-weight: 700;
+  font-size: 22px;
+  color: #9fa3e5;
+}
+
+@media (max-width: 500px) {
+  .promo__text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .promo__text {
+    font-size: 13px;
+  }
+}
+
+.promo .promo-btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#7932ff), to(#564fff));
+  background: linear-gradient(180deg, #7932ff, #564fff);
+  padding: 10px 35px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 1100px) {
+  .promo .promo-btn {
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .promo .promo-btn {
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 369px) {
+  .promo .promo-btn {
+    font-size: 14px;
+  }
+}
+
+.promo .promo-btn:hover {
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+  color: #fff;
+}
+
+.promo .promo-btn_color {
+  background: rgba(142, 148, 247, 0.2);
+}
+
+.promo .promo-btn_color:hover {
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.services {
+  /** Dropdown меню **/
+  /** Фон цена, заголовок, кнопка у карточек классов **/
+  /** Фон цена, заголовок, кнопка у карточек оружия **/
+  /** Фон цена, заголовок, кнопка у карточек маунтов **/
+  /** Фон цена, заголовок, кнопка у карточек профессий **/
+  /** Фон цена, заголовок, кнопка у карточек золота **/
+  /** Фон цена, заголовок, кнопка у карточек PvP **/
+  /** Фон цена, заголовок, кнопка у карточек эпохальные подземелья **/
+  /** Фон цена, заголовок, кнопка у карточек рейды **/
+  /** Фон цена, заголовок, кнопка у карточек прокачки персонажей **/
+  /** Фон цена, заголовок, кнопка у карточек достижений **/
+}
+
+.services .nav-item {
+  position: relative;
+}
+
+.services .nav-raids-armour, .services .nav-mounts, .services .nav-weapons, .services .nav-professions, .services .nav-gold, .services .nav-pvp, .services .nav-dungeons, .services .nav-raids, .services .nav-lvl-up, .services .nav-achievments {
+  position: absolute;
+  display: none;
+  z-index: 10;
+  padding: 5px 0;
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-raids-armour {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-dungeons {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-lvl-up {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+@media (max-width: 629px) {
+  .services .nav-item-lvl-up {
+    -webkit-box-ordinal-group: 12;
+        -ms-flex-order: 11;
+            order: 11;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-mounts {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-weapons {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-professions {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+}
+
+@media (max-width: 629px) {
+  .services .nav-item-professions {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-gold {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-pvp {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-raids {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-achievments {
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+  }
+}
+
+.services .nav-link {
+  width: 250px;
+}
+
+@media (max-width: 840px) {
+  .services .nav-link {
+    width: 180px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 690px) {
+  .services .nav-link {
+    width: 180px;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-link {
+    width: 150px;
+  }
+}
+
+@media (max-width: 369px) {
+  .services .nav-link {
+    width: 125px;
+    font-size: 12px;
+  }
+}
+
+.services .nav-item-raids-armour:hover .nav-raids-armour, .services .nav-item-professions:hover .nav-professions {
+  width: 540px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #000;
+  border-radius: 20px;
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-raids-armour:hover .nav-raids-armour, .services .nav-item-professions:hover .nav-professions {
+    width: 400px;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-raids-armour:hover .nav-raids-armour, .services .nav-item-professions:hover .nav-professions {
+    width: 340px;
+  }
+}
+
+@media (max-width: 369px) {
+  .services .nav-item-raids-armour:hover .nav-raids-armour, .services .nav-item-professions:hover .nav-professions {
+    width: 290px;
+  }
+}
+
+.services .nav-item-weapons:hover .nav-weapons, .services .nav-item-mounts:hover .nav-mounts, .services .nav-item-gold:hover .nav-gold, .services .nav-item-pvp:hover .nav-pvp, .services .nav-item-dungeons:hover .nav-dungeons, .services .nav-item-raids:hover .nav-raids, .services .nav-item-lvl-up:hover .nav-lvl-up, .services .nav-item-achievments:hover .nav-achievments {
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #000;
+  border-radius: 20px;
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-weapons:hover .nav-weapons, .services .nav-item-mounts:hover .nav-mounts, .services .nav-item-gold:hover .nav-gold, .services .nav-item-pvp:hover .nav-pvp, .services .nav-item-dungeons:hover .nav-dungeons, .services .nav-item-raids:hover .nav-raids, .services .nav-item-lvl-up:hover .nav-lvl-up, .services .nav-item-achievments:hover .nav-achievments {
+    width: 200px;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-weapons:hover .nav-weapons, .services .nav-item-mounts:hover .nav-mounts, .services .nav-item-gold:hover .nav-gold, .services .nav-item-pvp:hover .nav-pvp, .services .nav-item-dungeons:hover .nav-dungeons, .services .nav-item-raids:hover .nav-raids, .services .nav-item-lvl-up:hover .nav-lvl-up, .services .nav-item-achievments:hover .nav-achievments {
+    width: 170px;
+  }
+}
+
+@media (max-width: 369px) {
+  .services .nav-item-weapons:hover .nav-weapons, .services .nav-item-mounts:hover .nav-mounts, .services .nav-item-gold:hover .nav-gold, .services .nav-item-pvp:hover .nav-pvp, .services .nav-item-dungeons:hover .nav-dungeons, .services .nav-item-raids:hover .nav-raids, .services .nav-item-lvl-up:hover .nav-lvl-up, .services .nav-item-achievments:hover .nav-achievments {
+    width: 145px;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-warrior {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-druid {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-priest {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-mage {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-monk {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-hunter {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-demon-hunter {
+    -webkit-box-ordinal-group: 12;
+        -ms-flex-order: 11;
+            order: 11;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-demon-hunter {
+    -webkit-box-ordinal-group: 13;
+        -ms-flex-order: 12;
+            order: 12;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-paladdin {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-rogue {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-death-knight {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-death-knight {
+    -webkit-box-ordinal-group: 12;
+        -ms-flex-order: 11;
+            order: 11;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-warlock {
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+  }
+}
+
+@media (max-width: 840px) {
+  .services .nav-item-shaman {
+    -webkit-box-ordinal-group: 13;
+        -ms-flex-order: 12;
+            order: 12;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-shaman {
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-alchemy {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-mining {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-engineering {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-leatherworking {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-blacksmithing {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-enchanting {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-inscription {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-tailoring {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-skining {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-herbalism {
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-jewelcrafting {
+    -webkit-box-ordinal-group: 12;
+        -ms-flex-order: 11;
+            order: 11;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-archaeology {
+    -webkit-box-ordinal-group: 16;
+        -ms-flex-order: 15;
+            order: 15;
+  }
+}
+
+@media (max-width: 369px) {
+  .services .nav-item-archaeology {
+    -webkit-box-ordinal-group: 14;
+        -ms-flex-order: 13;
+            order: 13;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-riding {
+    -webkit-box-ordinal-group: 14;
+        -ms-flex-order: 13;
+            order: 13;
+  }
+}
+
+@media (max-width: 369px) {
+  .services .nav-item-riding {
+    -webkit-box-ordinal-group: 16;
+        -ms-flex-order: 15;
+            order: 15;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-cooking {
+    -webkit-box-ordinal-group: 15;
+        -ms-flex-order: 14;
+            order: 14;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-first-aid {
+    -webkit-box-ordinal-group: 13;
+        -ms-flex-order: 12;
+            order: 12;
+  }
+}
+
+@media (max-width: 429px) {
+  .services .nav-item-fishing {
+    -webkit-box-ordinal-group: 17;
+        -ms-flex-order: 16;
+            order: 16;
+  }
+}
+
+@media (max-width: 1100px) {
+  .services .card {
+    width: 25rem !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .services .card {
+    width: 30rem !important;
+  }
+}
+
+@media (max-width: 379px) {
+  .services .card-title {
+    font-size: 34px !important;
+  }
+}
+
+@media (max-width: 369px) {
+  .services .card-title {
+    font-size: 22px !important;
+  }
+}
+
+@media (max-width: 369px) {
+  .services .card-text {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 369px) {
+  .services .price {
+    font-size: 18px !important;
+  }
+}
+
+.services .card-link {
+  display: inline-block;
+}
+
+.services .card-footer {
+  margin-bottom: 1rem;
+  border: none;
+  background: transparent;
+}
+
+.services .card-warrior {
+  background: #854c27;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-warrior .warrior {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-warrior .warrior:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-warrior:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-warrior {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #9f5812;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-warrior:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-warrior {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #9f5812;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-warrior:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-warrior {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #9f5812;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-warrior:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-warrior {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #9f5812;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #9f5812 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-warrior:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-druid {
+  background: #ED760E;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-druid:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-druid .druid {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -o-object-position: center 15px;
+     object-position: center 15px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.services .card-druid .druid:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-druid {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #e1650e;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-druid:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-druid {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #e1650e;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-druid:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-druid {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #e1650e;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-druid:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-druid {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #e1650e;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #e1650e !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-druid:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-priest {
+  background: #fff;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-priest .priest {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-priest .priest:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-priest:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-priest {
+  color: #fff;
+  font-weight: 900;
+  font-size: 36px;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-priest:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.services .card-text-priest {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-priest:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.services .price-priest {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #fff;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-priest:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.services .btn-priest {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  background: #fff !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .btn-priest:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+}
+
+.services .card-mage {
+  background: deepskyblue;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-mage .mage {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center 15px;
+     object-position: center 15px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-mage .mage:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-mage:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-mage {
+  color: #38b6ff;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-mage:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-mage {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #38b6ff;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-mage:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-mage {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #38b6ff;
+  cursor: progress;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .price-mage:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-mage {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #38b6ff;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #38b6ff !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-mage:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-monk {
+  background: #04f17a;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-monk .monk {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-monk .monk:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-monk:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-monk {
+  color: #0ad16d;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-monk:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-monk {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #0ad16d;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-monk:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-monk {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #0ad16d;
+  cursor: progress;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .price-monk:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-monk {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #0ad16d;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #0ad16d !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-monk:hover {
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-hunter {
+  background: #86c566e8;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-hunter .hunter {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-hunter .hunter:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-hunter:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-hunter {
+  color: #76bf51e8;
+  font-weight: 900;
+  font-size: 36px;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-hunter:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-hunter {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #76bf51e8;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-hunter:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-hunter {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #76bf51e8;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-hunter:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-hunter {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #76bf51e8;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #76bf51e8 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+}
+
+.services .btn-hunter:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-demon-hunter {
+  background: #6f00cc;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-demon-hunter .demon-hunter {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-demon-hunter .demon-hunter:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-demon-hunter:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-demon-hunter {
+  color: #8B00FF;
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-demon-hunter:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-demon-hunter {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #8B00FF;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-demon-hunter:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-demon-hunter {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #8B00FF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-demon-hunter:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-demon-hunter {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #8B00FF;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #8B00FF !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-demon-hunter:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-paladin {
+  background: #F75394;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-paladin .paladin {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: -30px -80px;
+     object-position: -30px -80px;
+}
+
+@media (max-width: 991.98px) {
+  .services .card-paladin .paladin {
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+
+.services .card-paladin .paladin:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-paladin:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-paladin {
+  color: #e70987;
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-paladin:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-paladin {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #e70987;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-paladin:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+}
+
+.services .price-paladin {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #e70987;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-paladin:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-paladin {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #e70987;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #e70987 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-paladin:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-rogue {
+  background: #ddcb17;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-rogue .rogue {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-rogue .rogue:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-rogue:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-rogue {
+  color: #f5e002;
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-rogue:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-rogue {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #f5e002;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-rogue:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-rogue {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #f5e002;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-rogue:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-rogue {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #f5e002;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #f5e002 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-rogue:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-death-knight {
+  background: #bf1e3c;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-death-knight .death-knight {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-death-knight .death-knight:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-death-knight:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-death-knight {
+  color: #b71332;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-death-knight:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-death-knight {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #b71332;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-death-knight:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-death-knight {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #b71332;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-death-knight:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-death-knight {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #b71332;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #b71332 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-death-knight:hover {
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-warlock {
+  background: #481677;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-warlock .warlock {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-warlock .warlock:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-warlock:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-warlock {
+  color: #6f0dbf;
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-warlock:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.services .card-text-warlock {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #6f0dbf;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-warlock:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.services .price-warlock {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #6f0dbf;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-warlock:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.services .btn-warlock {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #6f0dbf;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #6f0dbf !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-warlock:hover {
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-shaman {
+  background: #0047AB;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-shaman .shaman {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-shaman .shaman:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-shaman:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-shaman {
+  color: #2042cf;
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-shaman:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+}
+
+.services .card-text-shaman {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #2042cf;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-shaman:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+}
+
+.services .price-shaman {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #2042cf;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-shaman:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+}
+
+.services .btn-shaman {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #2042cf;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #2042cf !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-shaman:hover {
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-one-handed-weapons, .services .card-two-handed-weapons, .services .card-range-weapons, .services .card-shields-weapons, .services .card-other-weapons {
+  background: #854c27;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-one-handed-weapons .one-handed-weapons, .services .card-one-handed-weapons .two-handed-weapons, .services .card-one-handed-weapons .range-weapons, .services .card-one-handed-weapons .shields-weapons, .services .card-one-handed-weapons .other-weapons, .services .card-two-handed-weapons .one-handed-weapons, .services .card-two-handed-weapons .two-handed-weapons, .services .card-two-handed-weapons .range-weapons, .services .card-two-handed-weapons .shields-weapons, .services .card-two-handed-weapons .other-weapons, .services .card-range-weapons .one-handed-weapons, .services .card-range-weapons .two-handed-weapons, .services .card-range-weapons .range-weapons, .services .card-range-weapons .shields-weapons, .services .card-range-weapons .other-weapons, .services .card-shields-weapons .one-handed-weapons, .services .card-shields-weapons .two-handed-weapons, .services .card-shields-weapons .range-weapons, .services .card-shields-weapons .shields-weapons, .services .card-shields-weapons .other-weapons, .services .card-other-weapons .one-handed-weapons, .services .card-other-weapons .two-handed-weapons, .services .card-other-weapons .range-weapons, .services .card-other-weapons .shields-weapons, .services .card-other-weapons .other-weapons {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-one-handed-weapons .one-handed-weapons:hover, .services .card-one-handed-weapons .two-handed-weapons:hover, .services .card-one-handed-weapons .range-weapons:hover, .services .card-one-handed-weapons .shields-weapons:hover, .services .card-one-handed-weapons .other-weapons:hover, .services .card-two-handed-weapons .one-handed-weapons:hover, .services .card-two-handed-weapons .two-handed-weapons:hover, .services .card-two-handed-weapons .range-weapons:hover, .services .card-two-handed-weapons .shields-weapons:hover, .services .card-two-handed-weapons .other-weapons:hover, .services .card-range-weapons .one-handed-weapons:hover, .services .card-range-weapons .two-handed-weapons:hover, .services .card-range-weapons .range-weapons:hover, .services .card-range-weapons .shields-weapons:hover, .services .card-range-weapons .other-weapons:hover, .services .card-shields-weapons .one-handed-weapons:hover, .services .card-shields-weapons .two-handed-weapons:hover, .services .card-shields-weapons .range-weapons:hover, .services .card-shields-weapons .shields-weapons:hover, .services .card-shields-weapons .other-weapons:hover, .services .card-other-weapons .one-handed-weapons:hover, .services .card-other-weapons .two-handed-weapons:hover, .services .card-other-weapons .range-weapons:hover, .services .card-other-weapons .shields-weapons:hover, .services .card-other-weapons .other-weapons:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-one-handed-weapons:hover, .services .card-two-handed-weapons:hover, .services .card-range-weapons:hover, .services .card-shields-weapons:hover, .services .card-other-weapons:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-one-handed-weapons, .services .card-title-two-handed-weapons, .services .card-title-range-weapons, .services .card-title-shields-weapons, .services .card-title-other-weapons {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #9f5812;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-one-handed-weapons:hover, .services .card-title-two-handed-weapons:hover, .services .card-title-range-weapons:hover, .services .card-title-shields-weapons:hover, .services .card-title-other-weapons:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-title-one-handed-weapons {
+  color: lime;
+}
+
+.services .card-title-two-handed-weapons {
+  color: crimson;
+}
+
+.services .card-title-range-weapons {
+  color: #007bff;
+}
+
+.services .card-title-shields-weapons {
+  color: #ffc107;
+}
+
+.services .card-title-other-weapons {
+  color: orangered;
+}
+
+.services .card-text-one-handed-weapons, .services .card-text-two-handed-weapons, .services .card-text-range-weapons, .services .card-text-shields-weapons, .services .card-text-other-weapons {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #9f5812;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-one-handed-weapons:hover, .services .card-text-two-handed-weapons:hover, .services .card-text-range-weapons:hover, .services .card-text-shields-weapons:hover, .services .card-text-other-weapons:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-one-handed-weapons {
+  color: lime;
+}
+
+.services .card-text-two-handed-weapons {
+  color: crimson;
+}
+
+.services .card-text-range-weapons {
+  color: #007bff;
+}
+
+.services .card-text-shields-weapons {
+  color: #ffc107;
+}
+
+.services .card-text-other-weapons {
+  color: orangered;
+}
+
+.services .price-one-handed-weapons, .services .price-two-handed-weapons, .services .price-range-weapons, .services .price-shields-weapons, .services .price-other-weapons {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #9f5812;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-one-handed-weapons:hover, .services .price-two-handed-weapons:hover, .services .price-range-weapons:hover, .services .price-shields-weapons:hover, .services .price-other-weapons:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-one-handed-weapons {
+  color: lime;
+}
+
+.services .price-two-handed-weapons {
+  color: crimson;
+}
+
+.services .price-range-weapons {
+  color: #007bff;
+}
+
+.services .price-shields-weapons {
+  color: #ffc107;
+}
+
+.services .price-other-weapons {
+  color: orangered;
+}
+
+.services .btn-one-handed-weapons, .services .btn-two-handed-weapons, .services .btn-range-weapons, .services .btn-shields-weapons, .services .btn-other-weapons {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #9f5812;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #9f5812 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-one-handed-weapons:hover, .services .btn-two-handed-weapons:hover, .services .btn-range-weapons:hover, .services .btn-shields-weapons:hover, .services .btn-other-weapons:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .btn-one-handed-weapons {
+  background: lime !important;
+  color: lime;
+}
+
+.services .btn-two-handed-weapons {
+  background: crimson !important;
+  color: crimson;
+}
+
+.services .btn-range-weapons {
+  background: #007bff !important;
+  color: #007bff;
+}
+
+.services .btn-shields-weapons {
+  background: #ffc107 !important;
+  color: #ffc107;
+}
+
+.services .btn-other-weapons {
+  background: orangered !important;
+  color: orangered;
+}
+
+.services .card-water-mounts {
+  background: cyan;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-water-mounts .water {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-water-mounts .water:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-water-mounts:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-water-mounts {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #00f3f3;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-water-mounts:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+}
+
+.services .card-text-water-mounts {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #00f3f3;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-water-mounts:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+}
+
+.services .price-water-mounts {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #00f3f3;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-water-mounts:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+}
+
+.services .btn-water-mounts {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #00f3f3;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #00f3f3 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-water-mounts:hover {
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-eath-mounts {
+  background: #854c27;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-eath-mounts .eath {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-eath-mounts .eath:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-eath-mounts:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-eath-mounts {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #9f5812;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-eath-mounts:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-eath-mounts {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #9f5812;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-eath-mounts:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-eath-mounts {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #9f5812;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-eath-mounts:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-eath-mounts {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #9f5812;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #9f5812 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-eath-mounts:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-fly-mounts {
+  background: #2e86e5;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-fly-mounts .fly {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-fly-mounts .fly:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-fly-mounts:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-fly-mounts {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #017afd;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-fly-mounts:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.services .card-text-fly-mounts {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #017afd;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-fly-mounts:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.services .price-fly-mounts {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #017afd;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-fly-mounts:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.services .btn-fly-mounts {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #017afd;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #017afd !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-fly-mounts:hover {
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-alchemy, .services .card-mining, .services .card-engineering, .services .card-leatherworking, .services .card-blacksmithing, .services .card-enchanting, .services .card-inscription, .services .card-tailoring, .services .card-skinning, .services .card-herbalism, .services .card-jewelcrafting, .services .card-archaeology, .services .card-riding, .services .card-cooking, .services .card-first-aid, .services .card-fishing {
+  background: #854c27;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-alchemy .alchemy, .services .card-alchemy .mining, .services .card-alchemy .engineering, .services .card-alchemy .leatherworking, .services .card-alchemy .blacksmithing, .services .card-alchemy .enchanting, .services .card-alchemy .inscription, .services .card-alchemy .tailoring, .services .card-alchemy .skinning, .services .card-alchemy .herbalism, .services .card-alchemy .jewelcrafting, .services .card-alchemy .archaeology, .services .card-alchemy .riding, .services .card-alchemy .cooking, .services .card-alchemy .first-aid, .services .card-alchemy .fishing, .services .card-mining .alchemy, .services .card-mining .mining, .services .card-mining .engineering, .services .card-mining .leatherworking, .services .card-mining .blacksmithing, .services .card-mining .enchanting, .services .card-mining .inscription, .services .card-mining .tailoring, .services .card-mining .skinning, .services .card-mining .herbalism, .services .card-mining .jewelcrafting, .services .card-mining .archaeology, .services .card-mining .riding, .services .card-mining .cooking, .services .card-mining .first-aid, .services .card-mining .fishing, .services .card-engineering .alchemy, .services .card-engineering .mining, .services .card-engineering .engineering, .services .card-engineering .leatherworking, .services .card-engineering .blacksmithing, .services .card-engineering .enchanting, .services .card-engineering .inscription, .services .card-engineering .tailoring, .services .card-engineering .skinning, .services .card-engineering .herbalism, .services .card-engineering .jewelcrafting, .services .card-engineering .archaeology, .services .card-engineering .riding, .services .card-engineering .cooking, .services .card-engineering .first-aid, .services .card-engineering .fishing, .services .card-leatherworking .alchemy, .services .card-leatherworking .mining, .services .card-leatherworking .engineering, .services .card-leatherworking .leatherworking, .services .card-leatherworking .blacksmithing, .services .card-leatherworking .enchanting, .services .card-leatherworking .inscription, .services .card-leatherworking .tailoring, .services .card-leatherworking .skinning, .services .card-leatherworking .herbalism, .services .card-leatherworking .jewelcrafting, .services .card-leatherworking .archaeology, .services .card-leatherworking .riding, .services .card-leatherworking .cooking, .services .card-leatherworking .first-aid, .services .card-leatherworking .fishing, .services .card-blacksmithing .alchemy, .services .card-blacksmithing .mining, .services .card-blacksmithing .engineering, .services .card-blacksmithing .leatherworking, .services .card-blacksmithing .blacksmithing, .services .card-blacksmithing .enchanting, .services .card-blacksmithing .inscription, .services .card-blacksmithing .tailoring, .services .card-blacksmithing .skinning, .services .card-blacksmithing .herbalism, .services .card-blacksmithing .jewelcrafting, .services .card-blacksmithing .archaeology, .services .card-blacksmithing .riding, .services .card-blacksmithing .cooking, .services .card-blacksmithing .first-aid, .services .card-blacksmithing .fishing, .services .card-enchanting .alchemy, .services .card-enchanting .mining, .services .card-enchanting .engineering, .services .card-enchanting .leatherworking, .services .card-enchanting .blacksmithing, .services .card-enchanting .enchanting, .services .card-enchanting .inscription, .services .card-enchanting .tailoring, .services .card-enchanting .skinning, .services .card-enchanting .herbalism, .services .card-enchanting .jewelcrafting, .services .card-enchanting .archaeology, .services .card-enchanting .riding, .services .card-enchanting .cooking, .services .card-enchanting .first-aid, .services .card-enchanting .fishing, .services .card-inscription .alchemy, .services .card-inscription .mining, .services .card-inscription .engineering, .services .card-inscription .leatherworking, .services .card-inscription .blacksmithing, .services .card-inscription .enchanting, .services .card-inscription .inscription, .services .card-inscription .tailoring, .services .card-inscription .skinning, .services .card-inscription .herbalism, .services .card-inscription .jewelcrafting, .services .card-inscription .archaeology, .services .card-inscription .riding, .services .card-inscription .cooking, .services .card-inscription .first-aid, .services .card-inscription .fishing, .services .card-tailoring .alchemy, .services .card-tailoring .mining, .services .card-tailoring .engineering, .services .card-tailoring .leatherworking, .services .card-tailoring .blacksmithing, .services .card-tailoring .enchanting, .services .card-tailoring .inscription, .services .card-tailoring .tailoring, .services .card-tailoring .skinning, .services .card-tailoring .herbalism, .services .card-tailoring .jewelcrafting, .services .card-tailoring .archaeology, .services .card-tailoring .riding, .services .card-tailoring .cooking, .services .card-tailoring .first-aid, .services .card-tailoring .fishing, .services .card-skinning .alchemy, .services .card-skinning .mining, .services .card-skinning .engineering, .services .card-skinning .leatherworking, .services .card-skinning .blacksmithing, .services .card-skinning .enchanting, .services .card-skinning .inscription, .services .card-skinning .tailoring, .services .card-skinning .skinning, .services .card-skinning .herbalism, .services .card-skinning .jewelcrafting, .services .card-skinning .archaeology, .services .card-skinning .riding, .services .card-skinning .cooking, .services .card-skinning .first-aid, .services .card-skinning .fishing, .services .card-herbalism .alchemy, .services .card-herbalism .mining, .services .card-herbalism .engineering, .services .card-herbalism .leatherworking, .services .card-herbalism .blacksmithing, .services .card-herbalism .enchanting, .services .card-herbalism .inscription, .services .card-herbalism .tailoring, .services .card-herbalism .skinning, .services .card-herbalism .herbalism, .services .card-herbalism .jewelcrafting, .services .card-herbalism .archaeology, .services .card-herbalism .riding, .services .card-herbalism .cooking, .services .card-herbalism .first-aid, .services .card-herbalism .fishing, .services .card-jewelcrafting .alchemy, .services .card-jewelcrafting .mining, .services .card-jewelcrafting .engineering, .services .card-jewelcrafting .leatherworking, .services .card-jewelcrafting .blacksmithing, .services .card-jewelcrafting .enchanting, .services .card-jewelcrafting .inscription, .services .card-jewelcrafting .tailoring, .services .card-jewelcrafting .skinning, .services .card-jewelcrafting .herbalism, .services .card-jewelcrafting .jewelcrafting, .services .card-jewelcrafting .archaeology, .services .card-jewelcrafting .riding, .services .card-jewelcrafting .cooking, .services .card-jewelcrafting .first-aid, .services .card-jewelcrafting .fishing, .services .card-archaeology .alchemy, .services .card-archaeology .mining, .services .card-archaeology .engineering, .services .card-archaeology .leatherworking, .services .card-archaeology .blacksmithing, .services .card-archaeology .enchanting, .services .card-archaeology .inscription, .services .card-archaeology .tailoring, .services .card-archaeology .skinning, .services .card-archaeology .herbalism, .services .card-archaeology .jewelcrafting, .services .card-archaeology .archaeology, .services .card-archaeology .riding, .services .card-archaeology .cooking, .services .card-archaeology .first-aid, .services .card-archaeology .fishing, .services .card-riding .alchemy, .services .card-riding .mining, .services .card-riding .engineering, .services .card-riding .leatherworking, .services .card-riding .blacksmithing, .services .card-riding .enchanting, .services .card-riding .inscription, .services .card-riding .tailoring, .services .card-riding .skinning, .services .card-riding .herbalism, .services .card-riding .jewelcrafting, .services .card-riding .archaeology, .services .card-riding .riding, .services .card-riding .cooking, .services .card-riding .first-aid, .services .card-riding .fishing, .services .card-cooking .alchemy, .services .card-cooking .mining, .services .card-cooking .engineering, .services .card-cooking .leatherworking, .services .card-cooking .blacksmithing, .services .card-cooking .enchanting, .services .card-cooking .inscription, .services .card-cooking .tailoring, .services .card-cooking .skinning, .services .card-cooking .herbalism, .services .card-cooking .jewelcrafting, .services .card-cooking .archaeology, .services .card-cooking .riding, .services .card-cooking .cooking, .services .card-cooking .first-aid, .services .card-cooking .fishing, .services .card-first-aid .alchemy, .services .card-first-aid .mining, .services .card-first-aid .engineering, .services .card-first-aid .leatherworking, .services .card-first-aid .blacksmithing, .services .card-first-aid .enchanting, .services .card-first-aid .inscription, .services .card-first-aid .tailoring, .services .card-first-aid .skinning, .services .card-first-aid .herbalism, .services .card-first-aid .jewelcrafting, .services .card-first-aid .archaeology, .services .card-first-aid .riding, .services .card-first-aid .cooking, .services .card-first-aid .first-aid, .services .card-first-aid .fishing, .services .card-fishing .alchemy, .services .card-fishing .mining, .services .card-fishing .engineering, .services .card-fishing .leatherworking, .services .card-fishing .blacksmithing, .services .card-fishing .enchanting, .services .card-fishing .inscription, .services .card-fishing .tailoring, .services .card-fishing .skinning, .services .card-fishing .herbalism, .services .card-fishing .jewelcrafting, .services .card-fishing .archaeology, .services .card-fishing .riding, .services .card-fishing .cooking, .services .card-fishing .first-aid, .services .card-fishing .fishing {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-alchemy .alchemy:hover, .services .card-alchemy .mining:hover, .services .card-alchemy .engineering:hover, .services .card-alchemy .leatherworking:hover, .services .card-alchemy .blacksmithing:hover, .services .card-alchemy .enchanting:hover, .services .card-alchemy .inscription:hover, .services .card-alchemy .tailoring:hover, .services .card-alchemy .skinning:hover, .services .card-alchemy .herbalism:hover, .services .card-alchemy .jewelcrafting:hover, .services .card-alchemy .archaeology:hover, .services .card-alchemy .riding:hover, .services .card-alchemy .cooking:hover, .services .card-alchemy .first-aid:hover, .services .card-alchemy .fishing:hover, .services .card-mining .alchemy:hover, .services .card-mining .mining:hover, .services .card-mining .engineering:hover, .services .card-mining .leatherworking:hover, .services .card-mining .blacksmithing:hover, .services .card-mining .enchanting:hover, .services .card-mining .inscription:hover, .services .card-mining .tailoring:hover, .services .card-mining .skinning:hover, .services .card-mining .herbalism:hover, .services .card-mining .jewelcrafting:hover, .services .card-mining .archaeology:hover, .services .card-mining .riding:hover, .services .card-mining .cooking:hover, .services .card-mining .first-aid:hover, .services .card-mining .fishing:hover, .services .card-engineering .alchemy:hover, .services .card-engineering .mining:hover, .services .card-engineering .engineering:hover, .services .card-engineering .leatherworking:hover, .services .card-engineering .blacksmithing:hover, .services .card-engineering .enchanting:hover, .services .card-engineering .inscription:hover, .services .card-engineering .tailoring:hover, .services .card-engineering .skinning:hover, .services .card-engineering .herbalism:hover, .services .card-engineering .jewelcrafting:hover, .services .card-engineering .archaeology:hover, .services .card-engineering .riding:hover, .services .card-engineering .cooking:hover, .services .card-engineering .first-aid:hover, .services .card-engineering .fishing:hover, .services .card-leatherworking .alchemy:hover, .services .card-leatherworking .mining:hover, .services .card-leatherworking .engineering:hover, .services .card-leatherworking .leatherworking:hover, .services .card-leatherworking .blacksmithing:hover, .services .card-leatherworking .enchanting:hover, .services .card-leatherworking .inscription:hover, .services .card-leatherworking .tailoring:hover, .services .card-leatherworking .skinning:hover, .services .card-leatherworking .herbalism:hover, .services .card-leatherworking .jewelcrafting:hover, .services .card-leatherworking .archaeology:hover, .services .card-leatherworking .riding:hover, .services .card-leatherworking .cooking:hover, .services .card-leatherworking .first-aid:hover, .services .card-leatherworking .fishing:hover, .services .card-blacksmithing .alchemy:hover, .services .card-blacksmithing .mining:hover, .services .card-blacksmithing .engineering:hover, .services .card-blacksmithing .leatherworking:hover, .services .card-blacksmithing .blacksmithing:hover, .services .card-blacksmithing .enchanting:hover, .services .card-blacksmithing .inscription:hover, .services .card-blacksmithing .tailoring:hover, .services .card-blacksmithing .skinning:hover, .services .card-blacksmithing .herbalism:hover, .services .card-blacksmithing .jewelcrafting:hover, .services .card-blacksmithing .archaeology:hover, .services .card-blacksmithing .riding:hover, .services .card-blacksmithing .cooking:hover, .services .card-blacksmithing .first-aid:hover, .services .card-blacksmithing .fishing:hover, .services .card-enchanting .alchemy:hover, .services .card-enchanting .mining:hover, .services .card-enchanting .engineering:hover, .services .card-enchanting .leatherworking:hover, .services .card-enchanting .blacksmithing:hover, .services .card-enchanting .enchanting:hover, .services .card-enchanting .inscription:hover, .services .card-enchanting .tailoring:hover, .services .card-enchanting .skinning:hover, .services .card-enchanting .herbalism:hover, .services .card-enchanting .jewelcrafting:hover, .services .card-enchanting .archaeology:hover, .services .card-enchanting .riding:hover, .services .card-enchanting .cooking:hover, .services .card-enchanting .first-aid:hover, .services .card-enchanting .fishing:hover, .services .card-inscription .alchemy:hover, .services .card-inscription .mining:hover, .services .card-inscription .engineering:hover, .services .card-inscription .leatherworking:hover, .services .card-inscription .blacksmithing:hover, .services .card-inscription .enchanting:hover, .services .card-inscription .inscription:hover, .services .card-inscription .tailoring:hover, .services .card-inscription .skinning:hover, .services .card-inscription .herbalism:hover, .services .card-inscription .jewelcrafting:hover, .services .card-inscription .archaeology:hover, .services .card-inscription .riding:hover, .services .card-inscription .cooking:hover, .services .card-inscription .first-aid:hover, .services .card-inscription .fishing:hover, .services .card-tailoring .alchemy:hover, .services .card-tailoring .mining:hover, .services .card-tailoring .engineering:hover, .services .card-tailoring .leatherworking:hover, .services .card-tailoring .blacksmithing:hover, .services .card-tailoring .enchanting:hover, .services .card-tailoring .inscription:hover, .services .card-tailoring .tailoring:hover, .services .card-tailoring .skinning:hover, .services .card-tailoring .herbalism:hover, .services .card-tailoring .jewelcrafting:hover, .services .card-tailoring .archaeology:hover, .services .card-tailoring .riding:hover, .services .card-tailoring .cooking:hover, .services .card-tailoring .first-aid:hover, .services .card-tailoring .fishing:hover, .services .card-skinning .alchemy:hover, .services .card-skinning .mining:hover, .services .card-skinning .engineering:hover, .services .card-skinning .leatherworking:hover, .services .card-skinning .blacksmithing:hover, .services .card-skinning .enchanting:hover, .services .card-skinning .inscription:hover, .services .card-skinning .tailoring:hover, .services .card-skinning .skinning:hover, .services .card-skinning .herbalism:hover, .services .card-skinning .jewelcrafting:hover, .services .card-skinning .archaeology:hover, .services .card-skinning .riding:hover, .services .card-skinning .cooking:hover, .services .card-skinning .first-aid:hover, .services .card-skinning .fishing:hover, .services .card-herbalism .alchemy:hover, .services .card-herbalism .mining:hover, .services .card-herbalism .engineering:hover, .services .card-herbalism .leatherworking:hover, .services .card-herbalism .blacksmithing:hover, .services .card-herbalism .enchanting:hover, .services .card-herbalism .inscription:hover, .services .card-herbalism .tailoring:hover, .services .card-herbalism .skinning:hover, .services .card-herbalism .herbalism:hover, .services .card-herbalism .jewelcrafting:hover, .services .card-herbalism .archaeology:hover, .services .card-herbalism .riding:hover, .services .card-herbalism .cooking:hover, .services .card-herbalism .first-aid:hover, .services .card-herbalism .fishing:hover, .services .card-jewelcrafting .alchemy:hover, .services .card-jewelcrafting .mining:hover, .services .card-jewelcrafting .engineering:hover, .services .card-jewelcrafting .leatherworking:hover, .services .card-jewelcrafting .blacksmithing:hover, .services .card-jewelcrafting .enchanting:hover, .services .card-jewelcrafting .inscription:hover, .services .card-jewelcrafting .tailoring:hover, .services .card-jewelcrafting .skinning:hover, .services .card-jewelcrafting .herbalism:hover, .services .card-jewelcrafting .jewelcrafting:hover, .services .card-jewelcrafting .archaeology:hover, .services .card-jewelcrafting .riding:hover, .services .card-jewelcrafting .cooking:hover, .services .card-jewelcrafting .first-aid:hover, .services .card-jewelcrafting .fishing:hover, .services .card-archaeology .alchemy:hover, .services .card-archaeology .mining:hover, .services .card-archaeology .engineering:hover, .services .card-archaeology .leatherworking:hover, .services .card-archaeology .blacksmithing:hover, .services .card-archaeology .enchanting:hover, .services .card-archaeology .inscription:hover, .services .card-archaeology .tailoring:hover, .services .card-archaeology .skinning:hover, .services .card-archaeology .herbalism:hover, .services .card-archaeology .jewelcrafting:hover, .services .card-archaeology .archaeology:hover, .services .card-archaeology .riding:hover, .services .card-archaeology .cooking:hover, .services .card-archaeology .first-aid:hover, .services .card-archaeology .fishing:hover, .services .card-riding .alchemy:hover, .services .card-riding .mining:hover, .services .card-riding .engineering:hover, .services .card-riding .leatherworking:hover, .services .card-riding .blacksmithing:hover, .services .card-riding .enchanting:hover, .services .card-riding .inscription:hover, .services .card-riding .tailoring:hover, .services .card-riding .skinning:hover, .services .card-riding .herbalism:hover, .services .card-riding .jewelcrafting:hover, .services .card-riding .archaeology:hover, .services .card-riding .riding:hover, .services .card-riding .cooking:hover, .services .card-riding .first-aid:hover, .services .card-riding .fishing:hover, .services .card-cooking .alchemy:hover, .services .card-cooking .mining:hover, .services .card-cooking .engineering:hover, .services .card-cooking .leatherworking:hover, .services .card-cooking .blacksmithing:hover, .services .card-cooking .enchanting:hover, .services .card-cooking .inscription:hover, .services .card-cooking .tailoring:hover, .services .card-cooking .skinning:hover, .services .card-cooking .herbalism:hover, .services .card-cooking .jewelcrafting:hover, .services .card-cooking .archaeology:hover, .services .card-cooking .riding:hover, .services .card-cooking .cooking:hover, .services .card-cooking .first-aid:hover, .services .card-cooking .fishing:hover, .services .card-first-aid .alchemy:hover, .services .card-first-aid .mining:hover, .services .card-first-aid .engineering:hover, .services .card-first-aid .leatherworking:hover, .services .card-first-aid .blacksmithing:hover, .services .card-first-aid .enchanting:hover, .services .card-first-aid .inscription:hover, .services .card-first-aid .tailoring:hover, .services .card-first-aid .skinning:hover, .services .card-first-aid .herbalism:hover, .services .card-first-aid .jewelcrafting:hover, .services .card-first-aid .archaeology:hover, .services .card-first-aid .riding:hover, .services .card-first-aid .cooking:hover, .services .card-first-aid .first-aid:hover, .services .card-first-aid .fishing:hover, .services .card-fishing .alchemy:hover, .services .card-fishing .mining:hover, .services .card-fishing .engineering:hover, .services .card-fishing .leatherworking:hover, .services .card-fishing .blacksmithing:hover, .services .card-fishing .enchanting:hover, .services .card-fishing .inscription:hover, .services .card-fishing .tailoring:hover, .services .card-fishing .skinning:hover, .services .card-fishing .herbalism:hover, .services .card-fishing .jewelcrafting:hover, .services .card-fishing .archaeology:hover, .services .card-fishing .riding:hover, .services .card-fishing .cooking:hover, .services .card-fishing .first-aid:hover, .services .card-fishing .fishing:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-alchemy:hover, .services .card-mining:hover, .services .card-engineering:hover, .services .card-leatherworking:hover, .services .card-blacksmithing:hover, .services .card-enchanting:hover, .services .card-inscription:hover, .services .card-tailoring:hover, .services .card-skinning:hover, .services .card-herbalism:hover, .services .card-jewelcrafting:hover, .services .card-archaeology:hover, .services .card-riding:hover, .services .card-cooking:hover, .services .card-first-aid:hover, .services .card-fishing:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-alchemy .mining, .services .card-alchemy .leatherworking, .services .card-alchemy .blacksmithing, .services .card-alchemy .enchanting, .services .card-alchemy .inscription, .services .card-alchemy .tailoring, .services .card-alchemy .skinning, .services .card-alchemy .archaeology, .services .card-alchemy .cooking, .services .card-alchemy .first-aid, .services .card-mining .mining, .services .card-mining .leatherworking, .services .card-mining .blacksmithing, .services .card-mining .enchanting, .services .card-mining .inscription, .services .card-mining .tailoring, .services .card-mining .skinning, .services .card-mining .archaeology, .services .card-mining .cooking, .services .card-mining .first-aid, .services .card-engineering .mining, .services .card-engineering .leatherworking, .services .card-engineering .blacksmithing, .services .card-engineering .enchanting, .services .card-engineering .inscription, .services .card-engineering .tailoring, .services .card-engineering .skinning, .services .card-engineering .archaeology, .services .card-engineering .cooking, .services .card-engineering .first-aid, .services .card-leatherworking .mining, .services .card-leatherworking .leatherworking, .services .card-leatherworking .blacksmithing, .services .card-leatherworking .enchanting, .services .card-leatherworking .inscription, .services .card-leatherworking .tailoring, .services .card-leatherworking .skinning, .services .card-leatherworking .archaeology, .services .card-leatherworking .cooking, .services .card-leatherworking .first-aid, .services .card-blacksmithing .mining, .services .card-blacksmithing .leatherworking, .services .card-blacksmithing .blacksmithing, .services .card-blacksmithing .enchanting, .services .card-blacksmithing .inscription, .services .card-blacksmithing .tailoring, .services .card-blacksmithing .skinning, .services .card-blacksmithing .archaeology, .services .card-blacksmithing .cooking, .services .card-blacksmithing .first-aid, .services .card-enchanting .mining, .services .card-enchanting .leatherworking, .services .card-enchanting .blacksmithing, .services .card-enchanting .enchanting, .services .card-enchanting .inscription, .services .card-enchanting .tailoring, .services .card-enchanting .skinning, .services .card-enchanting .archaeology, .services .card-enchanting .cooking, .services .card-enchanting .first-aid, .services .card-inscription .mining, .services .card-inscription .leatherworking, .services .card-inscription .blacksmithing, .services .card-inscription .enchanting, .services .card-inscription .inscription, .services .card-inscription .tailoring, .services .card-inscription .skinning, .services .card-inscription .archaeology, .services .card-inscription .cooking, .services .card-inscription .first-aid, .services .card-tailoring .mining, .services .card-tailoring .leatherworking, .services .card-tailoring .blacksmithing, .services .card-tailoring .enchanting, .services .card-tailoring .inscription, .services .card-tailoring .tailoring, .services .card-tailoring .skinning, .services .card-tailoring .archaeology, .services .card-tailoring .cooking, .services .card-tailoring .first-aid, .services .card-skinning .mining, .services .card-skinning .leatherworking, .services .card-skinning .blacksmithing, .services .card-skinning .enchanting, .services .card-skinning .inscription, .services .card-skinning .tailoring, .services .card-skinning .skinning, .services .card-skinning .archaeology, .services .card-skinning .cooking, .services .card-skinning .first-aid, .services .card-herbalism .mining, .services .card-herbalism .leatherworking, .services .card-herbalism .blacksmithing, .services .card-herbalism .enchanting, .services .card-herbalism .inscription, .services .card-herbalism .tailoring, .services .card-herbalism .skinning, .services .card-herbalism .archaeology, .services .card-herbalism .cooking, .services .card-herbalism .first-aid, .services .card-jewelcrafting .mining, .services .card-jewelcrafting .leatherworking, .services .card-jewelcrafting .blacksmithing, .services .card-jewelcrafting .enchanting, .services .card-jewelcrafting .inscription, .services .card-jewelcrafting .tailoring, .services .card-jewelcrafting .skinning, .services .card-jewelcrafting .archaeology, .services .card-jewelcrafting .cooking, .services .card-jewelcrafting .first-aid, .services .card-archaeology .mining, .services .card-archaeology .leatherworking, .services .card-archaeology .blacksmithing, .services .card-archaeology .enchanting, .services .card-archaeology .inscription, .services .card-archaeology .tailoring, .services .card-archaeology .skinning, .services .card-archaeology .archaeology, .services .card-archaeology .cooking, .services .card-archaeology .first-aid, .services .card-riding .mining, .services .card-riding .leatherworking, .services .card-riding .blacksmithing, .services .card-riding .enchanting, .services .card-riding .inscription, .services .card-riding .tailoring, .services .card-riding .skinning, .services .card-riding .archaeology, .services .card-riding .cooking, .services .card-riding .first-aid, .services .card-cooking .mining, .services .card-cooking .leatherworking, .services .card-cooking .blacksmithing, .services .card-cooking .enchanting, .services .card-cooking .inscription, .services .card-cooking .tailoring, .services .card-cooking .skinning, .services .card-cooking .archaeology, .services .card-cooking .cooking, .services .card-cooking .first-aid, .services .card-first-aid .mining, .services .card-first-aid .leatherworking, .services .card-first-aid .blacksmithing, .services .card-first-aid .enchanting, .services .card-first-aid .inscription, .services .card-first-aid .tailoring, .services .card-first-aid .skinning, .services .card-first-aid .archaeology, .services .card-first-aid .cooking, .services .card-first-aid .first-aid, .services .card-fishing .mining, .services .card-fishing .leatherworking, .services .card-fishing .blacksmithing, .services .card-fishing .enchanting, .services .card-fishing .inscription, .services .card-fishing .tailoring, .services .card-fishing .skinning, .services .card-fishing .archaeology, .services .card-fishing .cooking, .services .card-fishing .first-aid {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.services .card-alchemy .mining:hover, .services .card-alchemy .leatherworking:hover, .services .card-alchemy .blacksmithing:hover, .services .card-alchemy .enchanting:hover, .services .card-alchemy .inscription:hover, .services .card-alchemy .tailoring:hover, .services .card-alchemy .skinning:hover, .services .card-alchemy .archaeology:hover, .services .card-alchemy .cooking:hover, .services .card-alchemy .first-aid:hover, .services .card-mining .mining:hover, .services .card-mining .leatherworking:hover, .services .card-mining .blacksmithing:hover, .services .card-mining .enchanting:hover, .services .card-mining .inscription:hover, .services .card-mining .tailoring:hover, .services .card-mining .skinning:hover, .services .card-mining .archaeology:hover, .services .card-mining .cooking:hover, .services .card-mining .first-aid:hover, .services .card-engineering .mining:hover, .services .card-engineering .leatherworking:hover, .services .card-engineering .blacksmithing:hover, .services .card-engineering .enchanting:hover, .services .card-engineering .inscription:hover, .services .card-engineering .tailoring:hover, .services .card-engineering .skinning:hover, .services .card-engineering .archaeology:hover, .services .card-engineering .cooking:hover, .services .card-engineering .first-aid:hover, .services .card-leatherworking .mining:hover, .services .card-leatherworking .leatherworking:hover, .services .card-leatherworking .blacksmithing:hover, .services .card-leatherworking .enchanting:hover, .services .card-leatherworking .inscription:hover, .services .card-leatherworking .tailoring:hover, .services .card-leatherworking .skinning:hover, .services .card-leatherworking .archaeology:hover, .services .card-leatherworking .cooking:hover, .services .card-leatherworking .first-aid:hover, .services .card-blacksmithing .mining:hover, .services .card-blacksmithing .leatherworking:hover, .services .card-blacksmithing .blacksmithing:hover, .services .card-blacksmithing .enchanting:hover, .services .card-blacksmithing .inscription:hover, .services .card-blacksmithing .tailoring:hover, .services .card-blacksmithing .skinning:hover, .services .card-blacksmithing .archaeology:hover, .services .card-blacksmithing .cooking:hover, .services .card-blacksmithing .first-aid:hover, .services .card-enchanting .mining:hover, .services .card-enchanting .leatherworking:hover, .services .card-enchanting .blacksmithing:hover, .services .card-enchanting .enchanting:hover, .services .card-enchanting .inscription:hover, .services .card-enchanting .tailoring:hover, .services .card-enchanting .skinning:hover, .services .card-enchanting .archaeology:hover, .services .card-enchanting .cooking:hover, .services .card-enchanting .first-aid:hover, .services .card-inscription .mining:hover, .services .card-inscription .leatherworking:hover, .services .card-inscription .blacksmithing:hover, .services .card-inscription .enchanting:hover, .services .card-inscription .inscription:hover, .services .card-inscription .tailoring:hover, .services .card-inscription .skinning:hover, .services .card-inscription .archaeology:hover, .services .card-inscription .cooking:hover, .services .card-inscription .first-aid:hover, .services .card-tailoring .mining:hover, .services .card-tailoring .leatherworking:hover, .services .card-tailoring .blacksmithing:hover, .services .card-tailoring .enchanting:hover, .services .card-tailoring .inscription:hover, .services .card-tailoring .tailoring:hover, .services .card-tailoring .skinning:hover, .services .card-tailoring .archaeology:hover, .services .card-tailoring .cooking:hover, .services .card-tailoring .first-aid:hover, .services .card-skinning .mining:hover, .services .card-skinning .leatherworking:hover, .services .card-skinning .blacksmithing:hover, .services .card-skinning .enchanting:hover, .services .card-skinning .inscription:hover, .services .card-skinning .tailoring:hover, .services .card-skinning .skinning:hover, .services .card-skinning .archaeology:hover, .services .card-skinning .cooking:hover, .services .card-skinning .first-aid:hover, .services .card-herbalism .mining:hover, .services .card-herbalism .leatherworking:hover, .services .card-herbalism .blacksmithing:hover, .services .card-herbalism .enchanting:hover, .services .card-herbalism .inscription:hover, .services .card-herbalism .tailoring:hover, .services .card-herbalism .skinning:hover, .services .card-herbalism .archaeology:hover, .services .card-herbalism .cooking:hover, .services .card-herbalism .first-aid:hover, .services .card-jewelcrafting .mining:hover, .services .card-jewelcrafting .leatherworking:hover, .services .card-jewelcrafting .blacksmithing:hover, .services .card-jewelcrafting .enchanting:hover, .services .card-jewelcrafting .inscription:hover, .services .card-jewelcrafting .tailoring:hover, .services .card-jewelcrafting .skinning:hover, .services .card-jewelcrafting .archaeology:hover, .services .card-jewelcrafting .cooking:hover, .services .card-jewelcrafting .first-aid:hover, .services .card-archaeology .mining:hover, .services .card-archaeology .leatherworking:hover, .services .card-archaeology .blacksmithing:hover, .services .card-archaeology .enchanting:hover, .services .card-archaeology .inscription:hover, .services .card-archaeology .tailoring:hover, .services .card-archaeology .skinning:hover, .services .card-archaeology .archaeology:hover, .services .card-archaeology .cooking:hover, .services .card-archaeology .first-aid:hover, .services .card-riding .mining:hover, .services .card-riding .leatherworking:hover, .services .card-riding .blacksmithing:hover, .services .card-riding .enchanting:hover, .services .card-riding .inscription:hover, .services .card-riding .tailoring:hover, .services .card-riding .skinning:hover, .services .card-riding .archaeology:hover, .services .card-riding .cooking:hover, .services .card-riding .first-aid:hover, .services .card-cooking .mining:hover, .services .card-cooking .leatherworking:hover, .services .card-cooking .blacksmithing:hover, .services .card-cooking .enchanting:hover, .services .card-cooking .inscription:hover, .services .card-cooking .tailoring:hover, .services .card-cooking .skinning:hover, .services .card-cooking .archaeology:hover, .services .card-cooking .cooking:hover, .services .card-cooking .first-aid:hover, .services .card-first-aid .mining:hover, .services .card-first-aid .leatherworking:hover, .services .card-first-aid .blacksmithing:hover, .services .card-first-aid .enchanting:hover, .services .card-first-aid .inscription:hover, .services .card-first-aid .tailoring:hover, .services .card-first-aid .skinning:hover, .services .card-first-aid .archaeology:hover, .services .card-first-aid .cooking:hover, .services .card-first-aid .first-aid:hover, .services .card-fishing .mining:hover, .services .card-fishing .leatherworking:hover, .services .card-fishing .blacksmithing:hover, .services .card-fishing .enchanting:hover, .services .card-fishing .inscription:hover, .services .card-fishing .tailoring:hover, .services .card-fishing .skinning:hover, .services .card-fishing .archaeology:hover, .services .card-fishing .cooking:hover, .services .card-fishing .first-aid:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.services .card-alchemy .inscription, .services .card-mining .inscription, .services .card-engineering .inscription, .services .card-leatherworking .inscription, .services .card-blacksmithing .inscription, .services .card-enchanting .inscription, .services .card-inscription .inscription, .services .card-tailoring .inscription, .services .card-skinning .inscription, .services .card-herbalism .inscription, .services .card-jewelcrafting .inscription, .services .card-archaeology .inscription, .services .card-riding .inscription, .services .card-cooking .inscription, .services .card-first-aid .inscription, .services .card-fishing .inscription {
+  -o-object-position: 15px;
+     object-position: 15px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.services .card-alchemy .inscription:hover, .services .card-mining .inscription:hover, .services .card-engineering .inscription:hover, .services .card-leatherworking .inscription:hover, .services .card-blacksmithing .inscription:hover, .services .card-enchanting .inscription:hover, .services .card-inscription .inscription:hover, .services .card-tailoring .inscription:hover, .services .card-skinning .inscription:hover, .services .card-herbalism .inscription:hover, .services .card-jewelcrafting .inscription:hover, .services .card-archaeology .inscription:hover, .services .card-riding .inscription:hover, .services .card-cooking .inscription:hover, .services .card-first-aid .inscription:hover, .services .card-fishing .inscription:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.services .card-alchemy .tailoring, .services .card-mining .tailoring, .services .card-engineering .tailoring, .services .card-leatherworking .tailoring, .services .card-blacksmithing .tailoring, .services .card-enchanting .tailoring, .services .card-inscription .tailoring, .services .card-tailoring .tailoring, .services .card-skinning .tailoring, .services .card-herbalism .tailoring, .services .card-jewelcrafting .tailoring, .services .card-archaeology .tailoring, .services .card-riding .tailoring, .services .card-cooking .tailoring, .services .card-first-aid .tailoring, .services .card-fishing .tailoring {
+  -o-object-position: -20px;
+     object-position: -20px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.services .card-alchemy .tailoring:hover, .services .card-mining .tailoring:hover, .services .card-engineering .tailoring:hover, .services .card-leatherworking .tailoring:hover, .services .card-blacksmithing .tailoring:hover, .services .card-enchanting .tailoring:hover, .services .card-inscription .tailoring:hover, .services .card-tailoring .tailoring:hover, .services .card-skinning .tailoring:hover, .services .card-herbalism .tailoring:hover, .services .card-jewelcrafting .tailoring:hover, .services .card-archaeology .tailoring:hover, .services .card-riding .tailoring:hover, .services .card-cooking .tailoring:hover, .services .card-first-aid .tailoring:hover, .services .card-fishing .tailoring:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.services .card-alchemy .fishing, .services .card-mining .fishing, .services .card-engineering .fishing, .services .card-leatherworking .fishing, .services .card-blacksmithing .fishing, .services .card-enchanting .fishing, .services .card-inscription .fishing, .services .card-tailoring .fishing, .services .card-skinning .fishing, .services .card-herbalism .fishing, .services .card-jewelcrafting .fishing, .services .card-archaeology .fishing, .services .card-riding .fishing, .services .card-cooking .fishing, .services .card-first-aid .fishing, .services .card-fishing .fishing {
+  -o-object-position: -30px;
+     object-position: -30px;
+}
+
+.services .card-title-alchemy, .services .card-title-mining, .services .card-title-engineering, .services .card-title-leatherworking, .services .card-title-blacksmithing, .services .card-title-enchanting, .services .card-title-inscription, .services .card-title-tailoring, .services .card-title-skinning, .services .card-title-herbalism, .services .card-title-jewelcrafting, .services .card-title-archaeology, .services .card-title-riding, .services .card-title-cooking, .services .card-title-first-aid, .services .card-title-fishing {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #9f5812;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-alchemy:hover, .services .card-title-mining:hover, .services .card-title-engineering:hover, .services .card-title-leatherworking:hover, .services .card-title-blacksmithing:hover, .services .card-title-enchanting:hover, .services .card-title-inscription:hover, .services .card-title-tailoring:hover, .services .card-title-skinning:hover, .services .card-title-herbalism:hover, .services .card-title-jewelcrafting:hover, .services .card-title-archaeology:hover, .services .card-title-riding:hover, .services .card-title-cooking:hover, .services .card-title-first-aid:hover, .services .card-title-fishing:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-alchemy, .services .card-text-mining, .services .card-text-engineering, .services .card-text-leatherworking, .services .card-text-blacksmithing, .services .card-text-enchanting, .services .card-text-inscription, .services .card-text-tailoring, .services .card-text-skinning, .services .card-text-herbalism, .services .card-text-jewelcrafting, .services .card-text-archaeology, .services .card-text-riding, .services .card-text-cooking, .services .card-text-first-aid, .services .card-text-fishing {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 16px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #9f5812;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-alchemy:hover, .services .card-text-mining:hover, .services .card-text-engineering:hover, .services .card-text-leatherworking:hover, .services .card-text-blacksmithing:hover, .services .card-text-enchanting:hover, .services .card-text-inscription:hover, .services .card-text-tailoring:hover, .services .card-text-skinning:hover, .services .card-text-herbalism:hover, .services .card-text-jewelcrafting:hover, .services .card-text-archaeology:hover, .services .card-text-riding:hover, .services .card-text-cooking:hover, .services .card-text-first-aid:hover, .services .card-text-fishing:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-alchemy, .services .price-mining, .services .price-engineering, .services .price-leatherworking, .services .price-blacksmithing, .services .price-enchanting, .services .price-inscription, .services .price-tailoring, .services .price-skinning, .services .price-herbalism, .services .price-jewelcrafting, .services .price-archaeology, .services .price-riding, .services .price-cooking, .services .price-first-aid, .services .price-fishing {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #9f5812;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-alchemy:hover, .services .price-mining:hover, .services .price-engineering:hover, .services .price-leatherworking:hover, .services .price-blacksmithing:hover, .services .price-enchanting:hover, .services .price-inscription:hover, .services .price-tailoring:hover, .services .price-skinning:hover, .services .price-herbalism:hover, .services .price-jewelcrafting:hover, .services .price-archaeology:hover, .services .price-riding:hover, .services .price-cooking:hover, .services .price-first-aid:hover, .services .price-fishing:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-alchemy, .services .btn-mining, .services .btn-engineering, .services .btn-leatherworking, .services .btn-blacksmithing, .services .btn-enchanting, .services .btn-inscription, .services .btn-tailoring, .services .btn-skinning, .services .btn-herbalism, .services .btn-jewelcrafting, .services .btn-archaeology, .services .btn-riding, .services .btn-cooking, .services .btn-first-aid, .services .btn-fishing {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #9f5812;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #9f5812 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-alchemy:hover, .services .btn-mining:hover, .services .btn-engineering:hover, .services .btn-leatherworking:hover, .services .btn-blacksmithing:hover, .services .btn-enchanting:hover, .services .btn-inscription:hover, .services .btn-tailoring:hover, .services .btn-skinning:hover, .services .btn-herbalism:hover, .services .btn-jewelcrafting:hover, .services .btn-archaeology:hover, .services .btn-riding:hover, .services .btn-cooking:hover, .services .btn-first-aid:hover, .services .btn-fishing:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .gold {
+  margin-left: 5px;
+  width: 52px;
+  height: 52px;
+}
+
+@media (max-width: 369px) {
+  .services .gold {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.services .dollar {
+  margin-left: 5px;
+  width: 52px;
+  height: 52px;
+}
+
+@media (max-width: 369px) {
+  .services .dollar {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.services .card-gold-horde {
+  background: #b90c1c;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-gold-horde .horde {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-gold-horde .horde:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-gold-horde:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-gold-horde {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #db0619;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-gold-horde:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-gold-horde {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #db0619;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-gold-horde:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-gold-horde {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #db0619;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-gold-horde:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-gold-horde {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #db0619;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #db0619 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-gold-horde:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-gold-alliance {
+  background: #037afb;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-gold-alliance .alliance {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-gold-alliance .alliance:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-gold-alliance:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-gold-alliance {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #1686ff;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-gold-alliance:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-gold-alliance {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #1686ff;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-gold-alliance:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-gold-alliance {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #1686ff;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-gold-alliance:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-gold-alliance {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #1686ff;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #1686ff !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-gold-alliance:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-honor {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #854c27), color-stop(75%, white), to(#854c27));
+  background: linear-gradient(180deg, #854c27 30%, white 75%, #854c27);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-honor .honor {
+  -webkit-filter: drop-shadow(5px 5px 20px red);
+          filter: drop-shadow(5px 5px 20px red);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-honor .honor:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-honor:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-honor {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #9f5812;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-honor:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-honor {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #9f5812;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-honor:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-honor {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #9f5812;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-honor:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-honor {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #9f5812;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #9f5812 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-honor:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-arena {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #0b0979), color-stop(75%, #fff), to(#0b0979));
+  background: linear-gradient(180deg, #0b0979 30%, #fff 75%, #0b0979);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-arena .arena, .services .card-arena .arena-link {
+  margin: 0 auto;
+  -webkit-filter: drop-shadow(5px 5px 20px red);
+          filter: drop-shadow(5px 5px 20px red);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.services .card-arena .arena:hover, .services .card-arena .arena-link:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-arena:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-arena {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #4866ec;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-arena:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-arena {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #4866ec;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-arena:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-arena {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #4866ec;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-arena:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-arena {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #4866ec;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #4866ec !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-arena:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-rbg {
+  background: linear-gradient(351deg, #854c27 20%, #0b0979 50%, #f90000 90%, #e17810);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-rbg .rbg {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-filter: drop-shadow(5px 5px 20px red);
+          filter: drop-shadow(5px 5px 20px red);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-rbg .rbg:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-rbg:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-rbg {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #e17810;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-rbg:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-rbg {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #e17810;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-rbg:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-rbg {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #e17810;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-rbg:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-rbg {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #e17810;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #a95705 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-rbg:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-mythic-10, .services .card-mythic-15 {
+  background: #0A0A0A;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-mythic-10 .mythic-10, .services .card-mythic-10 .mythic-15, .services .card-mythic-15 .mythic-10, .services .card-mythic-15 .mythic-15 {
+  border-radius: 50%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+.services .card-mythic-10 .mythic-10:hover, .services .card-mythic-10 .mythic-15:hover, .services .card-mythic-15 .mythic-10:hover, .services .card-mythic-15 .mythic-15:hover {
+  border-radius: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+.services .card-mythic-10:hover, .services .card-mythic-15:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-mythic-10, .services .card-title-mythic-15 {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px crimson;
+  font-size: 32px;
+  color: #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-mythic-10:hover, .services .card-title-mythic-15:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-mythic-10, .services .card-text-mythic-15 {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #000;
+  text-shadow: 2px 2px 2px crimson;
+}
+
+.services .card-text-mythic-10:hover, .services .card-text-mythic-15:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-mythic-10, .services .price-mythic-15 {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px crimson;
+  color: #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-mythic-10:hover, .services .price-mythic-15:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-mythic-10, .services .btn-mythic-15 {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+  text-shadow: 2px 2px 2px crimson;
+  font-weight: 700;
+  background: #000 !important;
+  border: 1px solid crimson;
+  -webkit-box-shadow: 5px 5px 10px crimson;
+          box-shadow: 5px 5px 10px crimson;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-mythic-10:hover, .services .btn-mythic-15:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-raids-classic, .services .card-raids-warlord-of-draenor {
+  background: #854c27;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-raids-classic .classic, .services .card-raids-classic .warlord-of-draenor, .services .card-raids-warlord-of-draenor .classic, .services .card-raids-warlord-of-draenor .warlord-of-draenor {
+  border-radius: 50%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+.services .card-raids-classic .classic:hover, .services .card-raids-classic .warlord-of-draenor:hover, .services .card-raids-warlord-of-draenor .classic:hover, .services .card-raids-warlord-of-draenor .warlord-of-draenor:hover {
+  border-radius: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+.services .card-raids-classic:hover, .services .card-raids-warlord-of-draenor:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-raids-classic, .services .card-title-raids-warlord-of-draenor {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #ffc107;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-raids-classic:hover, .services .card-title-raids-warlord-of-draenor:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-raids-classic, .services .card-text-raids-warlord-of-draenor {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #9f5812;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-raids-classic:hover, .services .card-text-raids-warlord-of-draenor:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-raids-classic .text-color-classic, .services .card-text-raids-classic .text-color-warlord-of-draenor, .services .card-text-raids-warlord-of-draenor .text-color-classic, .services .card-text-raids-warlord-of-draenor .text-color-warlord-of-draenor {
+  color: #ffc107;
+}
+
+.services .price-raids-classic, .services .price-raids-warlord-of-draenor {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #ffc107;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-raids-classic:hover, .services .price-raids-warlord-of-draenor:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-raids-classic, .services .btn-raids-warlord-of-draenor {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffc107;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #ffc107 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-raids-classic:hover, .services .btn-raids-warlord-of-draenor:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-raids-burning-crusade, .services .card-raids-legion {
+  background: #136427;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-raids-burning-crusade .burning-crusade, .services .card-raids-burning-crusade .legion, .services .card-raids-legion .burning-crusade, .services .card-raids-legion .legion {
+  border-radius: 50%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+.services .card-raids-burning-crusade .burning-crusade:hover, .services .card-raids-burning-crusade .legion:hover, .services .card-raids-legion .burning-crusade:hover, .services .card-raids-legion .legion:hover {
+  border-radius: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+.services .card-raids-burning-crusade:hover, .services .card-raids-legion:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-raids-burning-crusade, .services .card-title-raids-legion {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #7bed09;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-raids-burning-crusade:hover, .services .card-title-raids-legion:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-raids-burning-crusade, .services .card-text-raids-legion {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #187e31;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-raids-burning-crusade:hover, .services .card-text-raids-legion:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-raids-burning-crusade .text-color-burning-crusade, .services .card-text-raids-burning-crusade .text-color-legion, .services .card-text-raids-legion .text-color-burning-crusade, .services .card-text-raids-legion .text-color-legion {
+  color: #7bed09;
+}
+
+.services .price-raids-burning-crusade, .services .price-raids-legion {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #7bed09;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-raids-burning-crusade:hover, .services .price-raids-legion:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-raids-burning-crusade, .services .btn-raids-legion {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #7bed09;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #7bed09 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-raids-burning-crusade:hover, .services .btn-raids-legion:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-raids-wrath-of-the-lich-king {
+  background: #007FFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-raids-wrath-of-the-lich-king .wrath-of-the-lich-king {
+  border-radius: 50%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+.services .card-raids-wrath-of-the-lich-king .wrath-of-the-lich-king:hover {
+  border-radius: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+.services .card-raids-wrath-of-the-lich-king:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-raids-wrath-of-the-lich-king {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #00BFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-raids-wrath-of-the-lich-king:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-raids-wrath-of-the-lich-king {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #3094f9;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-raids-wrath-of-the-lich-king:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-raids-wrath-of-the-lich-king .text-color-wrath-of-the-lich-king {
+  color: #00BFFF;
+}
+
+.services .price-raids-wrath-of-the-lich-king {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #00BFFF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-raids-wrath-of-the-lich-king:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-raids-wrath-of-the-lich-king {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #00BFFF;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #00BFFF !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-raids-wrath-of-the-lich-king:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-raids-cataclysm {
+  background: #D53E07;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-raids-cataclysm .cataclysm {
+  border-radius: 50%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+.services .card-raids-cataclysm .cataclysm:hover {
+  border-radius: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+.services .card-raids-cataclysm:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-raids-cataclysm {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: orangered;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-raids-cataclysm:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-raids-cataclysm {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #ff6900;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-raids-cataclysm:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-raids-cataclysm .text-color-cataclysm {
+  color: #FF4D00;
+}
+
+.services .price-raids-cataclysm {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #FF4D00;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-raids-cataclysm:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-raids-cataclysm {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #FF4D00;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #FF4D00 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-raids-cataclysm:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-raids-mists-of-pandaria {
+  background: #04f17a;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-raids-mists-of-pandaria .mists-of-pandaria {
+  border-radius: 50%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+.services .card-raids-mists-of-pandaria .mists-of-pandaria:hover {
+  border-radius: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+.services .card-raids-mists-of-pandaria:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-raids-mists-of-pandaria {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #0ad16d;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-raids-mists-of-pandaria:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-raids-mists-of-pandaria {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #11a75c;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-raids-mists-of-pandaria:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-raids-mists-of-pandaria .text-color-mists-of-pandaria {
+  color: #0ad16d;
+}
+
+.services .price-raids-mists-of-pandaria {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #0ad16d;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-raids-mists-of-pandaria:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-raids-mists-of-pandaria {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #0ad16d;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #0ad16d !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-raids-mists-of-pandaria:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-raids-bfa {
+  background: #481677;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-raids-bfa .bfa {
+  border-radius: 50%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+.services .card-raids-bfa .bfa:hover {
+  border-radius: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+.services .card-raids-bfa:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-raids-bfa {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #8B00FF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-raids-bfa:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-raids-bfa {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #6d1bbb;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-raids-bfa:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-raids-bfa .text-color-bfa {
+  color: #8B00FF;
+}
+
+.services .price-raids-bfa {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #8B00FF;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-raids-bfa:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-raids-bfa {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #8B00FF;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #8B00FF !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-raids-bfa:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-raids-shadowlands {
+  background: #6d939c;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-raids-shadowlands .shadowlands {
+  border-radius: 50%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+.services .card-raids-shadowlands .shadowlands:hover {
+  border-radius: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+.services .card-raids-shadowlands:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-raids-shadowlands {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #92c5d1;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-raids-shadowlands:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-raids-shadowlands {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #9cb7bd;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-raids-shadowlands:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-raids-shadowlands .text-color-shadowlands {
+  color: #92c5d1;
+}
+
+.services .price-raids-shadowlands {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #92c5d1;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-raids-shadowlands:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-raids-shadowlands {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #92c5d1;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #92c5d1 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-raids-shadowlands:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-lvl-up, .services .card-lvl-up-full {
+  background: #ffc107;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-lvl-up .lvl-up, .services .card-lvl-up .lvl-up-full, .services .card-lvl-up-full .lvl-up, .services .card-lvl-up-full .lvl-up-full {
+  border-radius: 50%;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-lvl-up .lvl-up:hover, .services .card-lvl-up .lvl-up-full:hover, .services .card-lvl-up-full .lvl-up:hover, .services .card-lvl-up-full .lvl-up-full:hover {
+  border-radius: 0;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-lvl-up:hover, .services .card-lvl-up-full:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-lvl-up, .services .card-title-lvl-up-full {
+  color: #8b00ff;
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-lvl-up:hover, .services .card-title-lvl-up-full:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+}
+
+.services .card-text-lvl-up, .services .card-text-lvl-up-full {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #8b00ff;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-lvl-up:hover, .services .card-text-lvl-up-full:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+}
+
+.services .price-lvl-up, .services .price-lvl-up-full {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #8b00ff;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-lvl-up:hover, .services .price-lvl-up-full:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+}
+
+.services .btn-lvl-up, .services .btn-lvl-up-full {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #8b00ff;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #8b00ff !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-lvl-up:hover, .services .btn-lvl-up-full:hover {
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-achievments-quests {
+  background: #854c27;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-achievments-quests:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-achievments-quests {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #28a745;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-achievments-quests:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-achievments-quests {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #28a745;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-achievments-quests:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-achievments-quests {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #28a745;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-achievments-quests:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-achievments-quests {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #28a745;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #28a745 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-achievments-quests:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-achievments-max-equipments {
+  background: crimson;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-achievments-max-equipments:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-achievments-max-equipments {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #38b6ff;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-achievments-max-equipments:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-achievments-max-equipments {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #38b6ff;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-achievments-max-equipments:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-achievments-max-equipments {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #38b6ff;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-achievments-max-equipments:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-achievments-max-equipments {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #38b6ff;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #38b6ff !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-achievments-max-equipments:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-achievments-max-mounts {
+  background: #59bf25;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-achievments-max-mounts:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-achievments-max-mounts {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #ffc107;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-achievments-max-mounts:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-achievments-max-mounts {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #ffc107;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-achievments-max-mounts:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-achievments-max-mounts {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #ffc107;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-achievments-max-mounts:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-achievments-max-mounts {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffc107;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #ffc107 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-achievments-max-mounts:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-achievments-raids-explorer {
+  background: #8b00ff;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-achievments-raids-explorer:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-achievments-raids-explorer {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: #ff0018;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-achievments-raids-explorer:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-achievments-raids-explorer {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #ff0018;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-achievments-raids-explorer:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-achievments-raids-explorer {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: #ff0018;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-achievments-raids-explorer:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-achievments-raids-explorer {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ff0018;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: #ff0018 !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-achievments-raids-explorer:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .card-achievments-great-feats {
+  background: #007bff;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-achievments-great-feats:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.services .card-title-achievments-great-feats {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 36px;
+  color: gold;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .card-title-achievments-great-feats:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .card-text-achievments-great-feats {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: gold;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.services .card-text-achievments-great-feats:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .price-achievments-great-feats {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #000;
+  color: gold;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: progress;
+}
+
+.services .price-achievments-great-feats:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+.services .btn-achievments-great-feats {
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: gold;
+  text-shadow: 2px 2px 2px #000;
+  font-weight: 700;
+  background: gold !important;
+  border: 1px solid #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.services .btn-achievments-great-feats:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 1170px) {
+  .registrations__step {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+
+.registrations__header {
+  color: #fff;
+  font-weight: 900;
+  font-size: 32px;
+}
+
+@media (max-width: 400px) {
+  .registrations__header {
+    font-size: 26px;
+  }
+}
+
+.registrations__title, .registrations .why__we__list {
+  text-align: center;
+  width: 185px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+.registrations__title {
+  margin-bottom: 20px;
+}
+
+.registrations__text, .registrations .why__we, .registrations .why__we__title, .registrations .about__text {
+  font-size: 14px;
+  color: #9fa3e5;
+  font-weight: 400;
+}
+
+.registrations__list {
+  position: relative;
+}
+
+@media (max-width: 1170px) {
+  .registrations__list {
+    margin-top: 20px;
+  }
+}
+
+.registrations__img, .registrations .why__we__img {
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.registrations .br {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  display: inline-block;
+  height: 80px;
+  position: absolute;
+  top: -15px;
+  border-right: 5px dashed #7932ff !important;
+}
+
+@media (max-width: 1170px) {
+  .registrations .br {
+    border: none !important;
+  }
+}
+
+.registrations__text {
+  text-align: center;
+}
+
+.registrations .why__we__info {
+  background: #1f2249;
+}
+
+.registrations .about__text {
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+}
+
+.footer {
+  background: #111635;
+  min-height: 350px;
+}
+
+.footer-dropdown {
+  display: inline-block;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__logo {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  width: 200px;
+}
+
+.footer__btn {
+  background: #564fff;
+  color: yellow;
+  border: none;
+  outline: none;
+  padding: 10px 35px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.footer__text {
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: #564fff;
+}
+
+/** Модальное окно регистрации**/
+.form-control-modal {
+  width: 100% !important;
+}
+
+.form-check {
+  padding-left: 0 !important;
+}
+
+.form-check-label {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+@media (max-width: 369px) {
+  .form-check-label {
+    font-size: 10px;
+  }
+}
+
+.form-check-label-enter {
+  font-size: 16px;
+}
+
+@media (max-width: 369px) {
+  .form-check-label-enter {
+    font-size: 12px;
+  }
+}
+
+.form-check-input {
+  position: static !important;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 10px;
+}
+
+.form-check-input-enter {
+  margin-top: 0.4rem !important;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .modal-content {
+    max-width: 500px;
+    margin: 1.75rem auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .modal-content {
+    padding: 5px;
+  }
+}
+
+.modal-header, .modal-footer {
+  border: none !important;
+}
+
+@media (max-width: 369px) {
+  .close {
+    padding: 0 !important;
+  }
+}
+
+.modal-title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1.2 !important;
+  letter-spacing: -3px;
+}
+
+@media (max-width: 575.98px) {
+  .modal-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 369px) {
+  .modal-title {
+    font-size: 18px;
+  }
+}
+
+.modal-text {
+  color: #564fff;
+}
+
+@media (max-width: 369px) {
+  .modal-text {
+    font-size: 12px;
+  }
+}
+
+.modal-text-enter {
+  cursor: pointer;
+}
+
+.modal-user-ok, .modal-user-forget-password {
+  color: #564fff;
+  cursor: pointer;
+  font-weight: 700;
+  display: inline-block;
+}
+
+@media (max-width: 369px) {
+  .modal-user-ok, .modal-user-forget-password {
+    font-size: 10px;
+  }
+}
+
+.modal-user-ok:hover, .modal-user-forget-password:hover {
+  color: #564fff;
+}
+
+.modal-user-forget-password {
+  margin-top: 0.5rem;
+}
+
+.modal-btn, .btn-save, .btn-close {
+  width: 100% !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7932ff), to(#564fff));
+  background: linear-gradient(180deg, #7932ff, #564fff);
+  padding: 10px 35px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 369px) {
+  .modal-btn, .btn-save, .btn-close {
+    font-size: 12px;
+  }
+}
+
+.modal-btn:hover, .btn-save:hover, .btn-close:hover {
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.modal-btn-registration, .btn-save-registration, .btn-close-registration {
+  background: #fff;
+  color: #564fff;
+  border: 1px solid #564fff;
+}
+
+.btn-save, .btn-close {
+  width: 100px !important;
+  font-size: 12px;
+  padding: 10px;
+  background: #28a745;
+  color: #fff;
+}
+
+@media (max-width: 369px) {
+  .btn-save, .btn-close {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
+
+.btn-close {
+  background: #dc3545;
+}
+
+.card {
+  width: 23rem !important;
+  /** произвольный текст-classic Дополнение classic **/
+  /** произвольный текст-burning-crusade Дополнение The Burning Crusade **/
+  /** произвольный текст-lich-king Дополнение Wrath of The Lich King **/
+  /** произвольный текст-cataclysm Дополнение Cataclysm **/
+}
+
+.card-box-main {
+  background: url(img/logo/bg/warrior-bg/garrosh-hellscrim.png) no-repeat, url(img/logo/bg/warrior-bg/warian-rynn.png) no-repeat, url(img/logo/bg/warrior-bg/warrior-bg.jpg) no-repeat;
+  background-size: 60%, 60%, 100%;
+  background-position: right -50px center, left -55px center, center;
+  height: 1000px;
+}
+
+.card-box {
+  gap: 1rem;
+}
+
+.card img {
+  height: 450px;
+}
+
+.card .btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#7932ff), to(#564fff));
+  background: linear-gradient(180deg, #7932ff, #564fff);
+}
+
+.card .btn:hover {
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.card-classic {
+  background: #834D18 !important;
+}
+
+.card-title-classic {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 2px;
+  font-size: 1.5rem !important;
+}
+
+.card .text-classic {
+  font-weight: 900;
+  font-size: 18px;
+  font-style: italic;
+  text-shadow: 2px 2px 2px;
+  color: #ffc107;
+}
+
+.card .price-classic {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 5px 5px 5px #ffc107;
+  color: #ffc107;
+}
+
+.card-burning-crusade {
+  background: #009900 !important;
+}
+
+.card-title-burning-crusade {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 2px;
+  font-size: 1.5rem !important;
+}
+
+.card .price-burning-crusade {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 5px 5px 5px crimson;
+  color: crimson;
+}
+
+.card .text-burning-crusade {
+  font-weight: 900;
+  font-size: 18px;
+  font-style: italic;
+  text-shadow: 2px 2px 2px #fff;
+  color: lime;
+}
+
+.card-lich-king {
+  background: #00a2ff !important;
+}
+
+.card-title-lich-king {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 2px;
+  font-size: 1.5rem !important;
+}
+
+.card .text-lich-king {
+  font-weight: 900;
+  font-size: 18px;
+  font-style: italic;
+  text-shadow: 2px 2px 2px;
+  color: #fff;
+}
+
+.card .price-lich-king {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 5px 5px 5px crimson;
+  color: crimson;
+}
+
+.card-cataclysm {
+  background: #D53E07 !important;
+}
+
+.card-title-cataclysm {
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 2px 2px 2px;
+  font-size: 1.5rem !important;
+}
+
+.card .price-cataclysm {
+  font-weight: 700;
+  font-size: 36px;
+  text-shadow: 5px 5px 5px blue;
+  color: blue;
+}
+
+.card .text-cataclysm {
+  font-weight: 900;
+  font-size: 18px;
+  font-style: italic;
+  text-shadow: 2px 2px 2px;
+  color: #b79400;
+}
+/*# sourceMappingURL=style.css.map */
