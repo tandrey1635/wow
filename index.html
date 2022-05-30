@@ -2,1455 +2,1851 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WowForAll</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WowForAll</title>
 	<link rel="shortcut icon" href="img/icons/favicon.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;600;700;900&family=Podkova:wght@400;600&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;600;700;900&family=Podkova:wght@400;600&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+		integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 
 <body>
 
-<header class="header__top">
-
-</header>
-
-<header class="header pt-5">
-    <div class="container">
-		<div class="burger-btn d-flex justify-content-end">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				<span class="navbar-toggler-icon"></span>
-				<span class="navbar-toggler-icon"></span>
-			</button>
-		</div>
-		
-        <nav class="navbar navbar-expand-lg navbar-light flex-wrap flex-column flex-lg-row">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo/logo.png" alt="logo">
-            </a>
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://worldofwarcraft.com/ru-ru/">Офицальный сайт World of Warcraft</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.noob-club.ru/">Гайды</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://raider.io/">Рейтинг</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href=" https://www.wowprogress.com/">Лучшие игроки</a>
-                </li>
-            </ul>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<form class="form-inline nav-form my-2 my-lg-0">
-                    <input class="form-control col-10 col-lg-12 mx-auto" type="search" placeholder="Поиск" aria-label="Search">
-                </form>
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">&#8381</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Рубли (&#8381)</a>
-                            <a class="dropdown-item" href="#">Доллары ($)</a>
-                            <a class="dropdown-item" href="#">Евро (&#8364)</a>
-                        </div>
-                    </li>
-                </ul>
-				<div class="modal__open d-flex justify-content-center">
-					<button class="nav__btn enter" type="button" data-toggle="modal" data-target="#modal-enter">Войти</button>
-                	<button class="nav__btn" type="button" data-toggle="modal" data-target="#modal">Зарегистрироваться</button>
-				</div>
-            </div>
-        </nav>
-    </div>
-</header>
-
-<section class="promo">
-    <div class="container d-flex justify-content-between align-items-center flex-column flex-lg-row">
-        <div class="promo__info">
-            <div class="promo__descr">
-                <h1 class="promo__header main__header">Получите предметы вашей мечты и наслаждайтесь игрой</h1>
-                <p class="promo__text">На WowForAll можно купить и продать предметы или услуги с выгодой до 80% без посредников. Просто и безопасно.</p>
-            </div>
-            <div class="promo__btn d-flex justify-content-between mt-5 flex-column flex-lg-row">
-                <button class="promo-btn" data-toggle="modal" data-target="#modal">Создать Аккаунт</button>
-                <button href="#how-its-work" class="promo-btn mt-3 mt-lg-0 promo-btn_color">Как Это работает</button>
-            </div>
-        </div>
-        <div class="promo__raitings mt-md-5">
-
-        </div>
-    </div>
-</section>
-
-
-<section class="services">
-    <div class="container">
-        <div class="services__tabs">
-			<!-- Табы все -->
-            <ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
-				<!-- Табы Рейдовая Броня -->
-                <li class="nav-item nav-item-raids-armour" role="presentation">
-                    <a class="nav-link nav-link-raids-armour active" id="pills-raids-armour-tab" data-toggle="pill" href="#pills-raids-armour" role="tab" aria-controls="pills-raids-armour" aria-selected="true">Рейдовые комплекты</a>
-                    <ul class="nav nav-pills nav-raids-armour">
-                        <li class="nav-item nav-item-warrior">
-                            <a class="nav-link nav-link-raids-armour" href="html/raids-armours/warrior.html">Воин</a>
-                        </li>
-                        <li class="nav-item nav-item-druid">
-                            <a class="nav-link nav-link-raids-armour" href="html/raids-armours/druid.html">Друид</a>
-                        </li>
-                        <li class="nav-item nav-item-priest">
-                            <a class="nav-link nav-link-raids-armour" href="html/raids-armours/priest.html">Жрец</a>
-                        </li>
-                        <li class="nav-item nav-item-mage">
-                            <a class="nav-link nav-link-raids-armour" href="html/raids-armours/mage.html">Маг</a>
-                        </li>
-                        <li class="nav-item nav-item-monk">
-                            <a class="nav-link nav-link-raids-armour" href="html/raids-armours/monk.html">Монах</a>
-                        </li>
-                        <li class="nav-item nav-item-hunter">
-                            <a class="nav-link nav-link-raids-armour" href="html/raids-armours/hunter.html">Охотник</a>
-                        </li>
-                        <li class="nav-item nav-item-demon-hunter">
-                            <a class="nav-link nav-link-raids-armour" href="html/raids-armours/demonhunter.html">Охотник на демонов</a>
-                        </li>    
-                        <li class="nav-item nav-item-paladdin">
-                            <a class="nav-link nav-link-raids-armour" href="html/raids-armours/paladin.html">Паладин</a>
-                        </li>
-                        <li class="nav-item nav-item-rogue">
-                            <a class="nav-link nav-link-raids-armour" href="html/raids-armours/rogue.html">Разбойник</a>
-                        </li>
-                        <li class="nav-item nav-item-death-knight">
-                            <a class="nav-link nav-link-raids-armour" href="html/raids-armours/deathknight.html">Рыцарь смерти</a>
-                        </li>
-                        <li class="nav-item nav-item-warlock">
-                            <a class="nav-link nav-link-raids-armour" href="html/raids-armours/warlock.html">Чернокнижник</a>
-                        </li>
-                        <li class="nav-item nav-item-shaman">
-                            <a class="nav-link nav-link-raids-armour" href="html/raids-armours/shaman.html">Шаман</a>
-                        </li>
-                    </ul>
-                </li>
-				<!-- Табы Оружие -->
-				<li class="nav-item nav-item-weapons" role="presentation">
-                    <a class="nav-link nav-link-weapons" id="pills-weapons-tab" data-toggle="pill" href="#pills-weapons" role="tab" aria-controls="pills-weapons" aria-selected="false">Оружие</a>  
-					<ul class="nav nav-pills nav-weapons">
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-weapons" href="html/weapons/one-handed-weapons.html">Одноручное</a>
-                        </li>
-                        <li class="nav-item">
-							<a class="nav-link nav-link-weapons" href="html/weapons/two-handed-weapons.html">Двуручное</a>
-                        </li>
-						<li class="nav-item">
-							<a class="nav-link nav-link-weapons" href="html/weapons/range-weapons.html">Дальний бой</a>
-                        </li>
-						<li class="nav-item">
-							<a class="nav-link nav-link-weapons" href="html/weapons/shields.html">Щиты</a>
-                        </li>
-						<li class="nav-item">
-							<a class="nav-link nav-link-weapons" href="html/weapons/other.html">Уникальное</a>
-                        </li>
-                    </ul> 
-                </li>
-
-				<!-- Табы Маунты -->
-                <li class="nav-item nav-item-mounts" role="presentation">
-                    <a class="nav-link nav-link-mounts" id="pills-mounts-tab" data-toggle="pill" href="#pills-mounts" role="tab" aria-controls="pills-mounts" aria-selected="false">Маунты</a>
-                    <ul class="nav nav-pills nav-mounts">
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-mounts" href="html/mounts/water/water.html">Водные</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-mounts" href="html/mounts/earth/earth.html">Наземные</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-mounts" href="html/mounts/fly/fly.html">Летающие</a>
-                        </li>
-                    </ul>
-                </li>
-
-				<!-- Табы Золото -->
-                <li class="nav-item nav-item-gold" role="presentation">
-                    <a class="nav-link nav-link-gold" id="pills-gold-tab" data-toggle="pill" href="#pills-gold" role="tab" aria-controls="pills-gold" aria-selected="false">Золото</a>
-                    <ul class="nav nav-pills nav-gold">
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-gold" href="html/gold/horde.html">Орда</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-gold" href="html/gold/alliance.html">Альянс</a>
-                        </li>
-                    </ul>
-                </li>
-
-				<!-- Табы Профессии -->
-				<li class="nav-item nav-item-professions" role="presentation">
-                    <a class="nav-link nav-link-professions" id="pills-professions-tab" data-toggle="pill" href="#pills-professions" role="tab" aria-controls="pills-professions" aria-selected="false">Профессии</a> 
-					<ul class="nav nav-pills nav-professions">
-                        <li class="nav-item nav-item-alchemy">
-                            <a class="nav-link nav-link-professions" href="html/professions/alchemy.html">Алхимия</a>
-                        </li>
-                        <li class="nav-item nav-item-mining">
-                            <a class="nav-link nav-link-professions" href="html/professions/mining.html">Горное дело</a>
-                        </li>
-                        <li class="nav-item nav-item-engineering">
-                            <a class="nav-link nav-link-professions" href="html/professions/engineering.html">Инженерное дело</a>
-                        </li>
-						<li class="nav-item nav-item-leatherworking">
-                            <a class="nav-link nav-link-professions" href="html/professions/leatherworking.html">Кожевничество</a>
-                        </li>
-						<li class="nav-item nav-item-blacksmithing">
-                            <a class="nav-link nav-link-professions" href="html/professions/blacksmithing.html">Кузнечное дело</a>
-                        </li>
-						<li class="nav-item nav-item-enchanting">
-                            <a class="nav-link nav-link-professions" href="html/professions/enchanting.html">Наложение чар</a>
-                        </li>
-						<li class="nav-item nav-item-inscription">
-                            <a class="nav-link nav-link-professions" href="html/professions/inscription.html">Начертание</a>
-                        </li>
-						<li class="nav-item nav-item-tailoring">
-                            <a class="nav-link nav-link-professions" href="html/professions/tailoring.html">Портняжное дело</a>
-                        </li>
-						<li class="nav-item nav-item-skining">
-                            <a class="nav-link nav-link-professions" href="html/professions/skinning.html">Снятие шкур</a>
-                        </li>
-						<li class="nav-item nav-item-herbalism">
-                            <a class="nav-link nav-link-professions" href="html/professions/herbalism.html">Травничество</a>
-                        </li>
-						<li class="nav-item nav-item-jewelcrafting">
-                            <a class="nav-link nav-link-professions" href="html/professions/jewelcrafting.html">Ювелирное дело</a>
-                        </li>
-						<li class="nav-item nav-item-archaeology">
-                            <a class="nav-link nav-link-professions" href="html/professions/archaeology.html">Археология</a>
-                        </li>
-						<li class="nav-item nav-item-riding">
-                            <a class="nav-link nav-link-professions" href="html/professions/riding.html">Верховая езда</a>
-                        </li>
-						<li class="nav-item nav-item-cooking">
-                            <a class="nav-link nav-link-professions" href="html/professions/cooking.html">Кулинария</a>
-                        </li>
-						<li class="nav-item nav-item-first-aid">
-                            <a class="nav-link nav-link-professions" href="html/professions/first-aid.html">Первая помощь</a>
-                        </li>
-						<li class="nav-item nav-item-fishing">
-                            <a class="nav-link nav-link-professions" href="html/professions/fishing.html">Рыбная ловля</a>
-                        </li>
-                    </ul> 
-                </li>
-
-				<!-- Табы pvp -->
-                <li class="nav-item nav-item-pvp" role="presentation">
-                    <a class="nav-link nav-link-pvp" id="pills-pvp-tab" data-toggle="pill" href="#pills-pvp" role="tab" aria-controls="pills-contact" aria-selected="false">PvP</a>
-					<ul class="nav nav-pills nav-pvp">
-                        <li class="nav-item" >
-                            <a class="nav-link nav-link-pvp" href="html/pvp/honor.html">Честь</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-pvp" href="html/pvp/arena.html">Арена</a>
-                        </li>
-						<li class="nav-item">
-                            <a class="nav-link nav-link-pvp" href="html/pvp/rbg.html">РБГ</a>
-                        </li>
-                    </ul>
-                </li>
-
-				<!-- Табы Эпохальные Подземелья -->
-                <li class="nav-item nav-item-dungeons" role="presentation">
-                    <a class="nav-link nav-link-dungeons" id="pills-dungeons-tab" data-toggle="pill" href="#pills-dungeons" role="tab" aria-controls="pills-dungeons" aria-selected="false">Эпохальные подземелья</a>
-                    <ul class="nav nav-pills nav-dungeons">
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-dungeons" href="html/dungeons/m+10.html">Mифик +10</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-dungeons" href="html/dungeons/m+15.html">Mифик +15</a>
-                        </li>
-                    </ul>
-                </li>
-
-				<!-- Табы Рейды -->
-				<li class="nav-item nav-item-raids" role="presentation">
-                    <a class="nav-link nav-link-raids" id="pills-raids-tab" data-toggle="pill" href="#pills-raids" role="tab" aria-controls="pills-raids" aria-selected="false">Рейды</a>
-					<ul class="nav nav-pills nav-raids">
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-raids" href="html/raids/classic.html">Classic</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-raids" href="html/raids/burning-crusade.html">The Burning Crusade</a>
-                        </li>
-						<li class="nav-item">
-                            <a class="nav-link nav-link-raids" href="html/raids/wrath-of-the-lich-king.html">Wraith of the Lich King</a>
-                        </li>
-						<li class="nav-item">
-                            <a class="nav-link nav-link-raids" href="html/raids/cataclysm.html">Cataclysm</a>
-                        </li>
-						<li class="nav-item">
-                            <a class="nav-link nav-link-raids" href="html/raids/mists-of-pandaria.html">Mists of Pandaria</a>
-                        </li>
-						<li class="nav-item">
-                            <a class="nav-link nav-link-raids" href="html/raids/warlord-of-draenor.html">Warlords of Draenor</a>
-                        </li>
-						<li class="nav-item">
-                            <a class="nav-link nav-link-raids" href="html/raids/legion.html">Legion</a>
-                        </li>
-						<li class="nav-item">
-                            <a class="nav-link nav-link-raids" href="html/raids/bfa.html">Battle for Azeroth</a>
-                        </li>
-						<li class="nav-item">
-                            <a class="nav-link nav-link-raids" href="html/raids/shadowlands.html">Shadowlands</a>
-                        </li>
-                    </ul>
-                </li>
-
-				<!-- Табы Прокачка Уровней -->
-                <li class="nav-item nav-item-lvl-up" role="presentation">
-                    <a class="nav-link nav-link-lvl-up" id="pills-lvl-up-tab" data-toggle="pill" href="#pills-lvl-up" role="tab" aria-controls="pills-contact" aria-selected="false">Прокачка Персонажей</a>
-					<ul class="nav nav-pills nav-lvl-up">
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-lvl-up" href="html/lvl-up/lvl-up-full.html">1-60 уровень</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-lvl-up" href="html/lvl-up/lvl-up.html">50-60 уровень</a>
-                        </li>
-                    </ul>
-                </li>
-
-				<!-- Табы Достижения -->
-                <li class="nav-item nav-item-achievments" role="presentation">
-                    <a class="nav-link nav-link-achievments" id="pills-achievments-tab" data-toggle="pill" href="#pills-achievments" role="tab" aria-controls="pills-achievments" aria-selected="false">Достижения</a>
-					<ul class="nav nav-pills nav-achievments">
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-achievments" href="html/achievments/quests.html">Задания</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-achievments" href="html/achievments/equipment-max-lvl.html">Экипировка 100 уровня</a>
-                        </li>
-						<li class="nav-item">
-                            <a class="nav-link nav-link-achievments" href="html/achievments/max-mounts.html">1000 Маунтов</a>
-                        </li>
-						<li class="nav-item">
-                            <a class="nav-link nav-link-achievments" href="html/achievments/raids-explorer.html">Исследователь Рейдов</a>
-                        </li>
-						<li class="nav-item">
-                            <a class="nav-link nav-link-achievments" href="html/achievments/great-feats.html">Великие Подвиги</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-			<!-- таб контент все -->
-            <div class="tab-content" id="pills-tabContent">
-				<!-- таб контент рейдовой брони -->
-        		<div class="tab-pane fade show active" id="pills-raids-armour" role="tabpanel" aria-labelledby="pills-raids-armour-tab">
-          			<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
-            			<div class="card card-warrior" style="width: 18rem;">
-              				<a href="html/raids-armours/warrior.html"><img src="img/logo/bg/classess/warrior-bg/garrosh-hellscrim.png" class="card-img-top warrior" alt="warrior-armour"></a>
-              				<div class="card-body">
-                				<a class="card-link warrior-link" href="html/raids-armours/warrior.html">
-                  					<h3 class="card-title card-title-warrior">Воин</h3>
-                				</a>
-                				<p class="card-text card-text-warrior">Рейдовые Комплекты Брони на Воина</p>
-              				</div>
-              				<div class="card-footer d-flex justify-content-between align-items-center">
-                				<p class="price price-warrior">от 80<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids-armours/warrior.html" class="btn-warrior">Подробнее</a>
-              				</div>
-            			</div>
-
-            			<div class="card card-druid" style="width: 18rem;">
-              				<a href="html/raids-armours/druid.html"><img src="img/logo/bg/classess/druid-bg/malfurion.png" class="card-img-top druid" alt="druid-armour"></a>
-              				<div class="card-body">
-                				<a class="card-link druid-link" href="html/raids-armours/druid.html">
-                  					<h3 class="card-title card-title-druid">Друид</h3>
-                				</a>
-                				<p class="card-text card-text-druid">Рейдовые Комплекты Брони на Друида</p>
-              				</div>
-              				<div class="card-footer d-flex justify-content-between align-items-center">
-                				<p class="price price-druid">от 80<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-                				<a href="html/raids-armours/druid.html" class="btn-druid">Подробнее</a>
-              				</div>
-            			</div>
-
-            			<div class="card card-priest" style="width: 18rem;">
-              				<a href="html/raids-armours/priest.html"><img src="img/logo/bg/classess/priest-bg/velen.png" class="card-img-top priest" alt="priest-armour"></a>
-              				<div class="card-body">
-                				<a class="card-link priest-link" href="html/raids-armours/priest.html"><h3 class="card-title card-title-priest">Жрец</h3></a>
-                				<p class="card-text card-text-priest">Рейдовые Комплекты Брони на Жреца</p>
-              				</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-priest">от 80<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids-armours/priest.html" class="btn-priest">Подробнее</a>
-							</div>  
-            			</div>
-
-            			<div class="card card-mage" style="width: 18rem;">
-              				<a href="html/raids-armours/mage.html"><img src="img/logo/bg/classess/mage-bg/djaina-proudmoure.png" class="card-img-top mage" alt="mage-armour"></a>
-              				<div class="card-body">
-                				<a class="card-link mage-link" href="html/raids-armours/mage.html">
-                  					<h3 class="card-title card-title-mage">Маг</h3>
-                				</a>
-                				<p class="card-text card-text-mage">Рейдовые Комплекты Брони на Мага</p>
-              				</div>
-              				<div class="card-footer d-flex justify-content-between align-items-center">
-                				<p class="price price-mage">от 80<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-                				<a href="html/raids-armours/mage.html" class="btn-mage">Подробнее</a>
-              				</div>
-            			</div>
-						
-            			<div class="card card-monk" style="width: 18rem;">
-              				<a href="html/raids-armours/monk.html"><img src="img/logo/bg/classess/monk-bg/tjan-dju.png" class="card-img-top monk" alt="monk-armour"></a>
-              				<div class="card-body">
-                				<a class="card-link monk-link" href="html/raids-armours/monk.html"><h3 class="card-title card-title-monk">Монах</h3></a>
-                				<p class="card-text card-text-monk">Рейдовые Комплекты Брони на Монаха</p>
-              				</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-monk">от 80<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids-armours/monk.html" class="btn-monk">Подробнее</a>
-							</div>  
-            			</div>
-
-            			<div class="card card-hunter" style="width: 18rem;">
-              				<a href="html/raids-armours/hunter.html"><img src="img/logo/bg/classess/hunter-bg/rexar.png" class="card-img-top hunter" alt="hunter-armour"></a>
-              				<div class="card-body">
-                				<a class="card-link hunter-link" href="html/raids-armours/hunter.html"><h3 class="card-title card-title-hunter">Охотник</h3></a>
-                				<p class="card-text card-text-hunter">Рейдовые Комплекты Брони на Охотника</p>
-              				</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-hunter">от 80<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids-armours/hunter.html" class="btn-hunter">Подробнее</a>
-						  	</div>  
-            			</div>
-
-            			<div class="card card-demon-hunter" style="width: 18rem;">
-              				<a href="html/raids-armours/demonhunter.html"><img src="img/logo/bg/classess/demon-hunter-bg/illidan.png" class="card-img-top demon-hunter" alt="demon-hunter-armour"></a>
-              				<div class="card-body">
-                				<a class="card-link demon-hunter-link" href="html/raids-armours/demonhunter.html"><h3 class="card-title card-title-demon-hunter">Охотник на демонов</h3></a>
-                				<p class="card-text card-text-demon-hunter">Рейдовые Комплекты Брони на Охотника на демонов</p>
-              				</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-demon-hunter">от 80<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids-armours/demonhunter.html" class="btn-demon-hunter">Подробнее</a>
-						  	</div>  
-            			</div>
-
-            			<div class="card card-paladin" style="width: 18rem;">
-              				<a href="html/raids-armours/paladin.html"><img src="img/logo/bg/classess/paladin-bg/tirion-fordring.png" class="card-img-top paladin" alt="paladin-armour"></a>
-              				<div class="card-body">
-                				<a class="card-link paladin-link" href="html/raids-armours/paladin.html"><h3 class="card-title card-title-paladin">Паладин</h3></a>
-                				<p class="card-text card-text-paladin">Рейдовые Комплекты Брони на Паладина</p>
-              				</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-paladin">от 80<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids-armours/paladin.html" class="btn-paladin">Подробнее</a>
-						  	</div>
-            			</div>
-
-            			<div class="card card-rogue" style="width: 18rem;">
-              				<a href="html/raids-armours/rogue.html"><img src="img/logo/bg/classess/rogue-bg/valira-sangvinar.png" class="card-img-top rogue" alt="rogue-armour"></a>
-              				<div class="card-body">
-                				<a class="card-link rogue-link" href="html/raids-armours/rogue.html"><h3 class="card-title card-title-rogue">Разбойник</h3></a>
-                				<p class="card-text card-text-rogue">Рейдовые Комплекты Брони на Разбойника</p>
-              				</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-rogue">от 80<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids-armours/rogue.html" class="btn-rogue">Подробнее</a>
-						  	</div>  
-            			</div>
-
-            			<div class="card card-death-knight" style="width: 18rem;">
-              				<a href="html/raids-armours/deathknight.html"><img src="img/logo/bg/classess/death-knight-bg/lich-king.png" class="card-img-top death-knight" alt="death-knight-armour"></a>
-              				<div class="card-body">
-                				<a class="card-link death-knight-link" href="html/raids-armours/deathknight.html"><h3 class="card-title card-title-death-knight">Рыцарь Смерти</h3></a>
-                				<p class="card-text card-text-death-knight">Рейдовые Комплекты Брони на Рыцаря Смерти</p>
-              				</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-death-knight">от 80<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids-armours/deathknight.html" class="btn-death-knight">Подробнее</a>
-						  	</div>  
-            			</div>
-
-            			<div class="card card-warlock" style="width: 18rem;">
-							<a href="html/raids-armours/warlock.html"><img src="img/logo/bg/classess/warlock-bg/guldan.png" class="card-img-top warlock" alt="warlock-armour"></a>
-							<div class="card-body">
-								<a class="card-link warlock-link" href="html/raids-armours/warlock.html"><h3 class="card-title card-title-warlock">Чернокнижник</h3></a>
-								<p class="card-text card-text-warlock">Рейдовые Комплекты Брони на Чернокнижника</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-warlock">от 80<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids-armours/warlock.html" class="btn-warlock">Подробнее</a>
-							</div>  
-            			</div>
-
-            			<div class="card card-shaman" style="width: 18rem;">
-              				<a href="html/raids-armours/shaman.html"><img src="img/logo/bg/classess/shaman-bg/thrall.png" class="card-img-top shaman" alt="shaman-armour"></a>
-              				<div class="card-body">
-                				<a class="card-link shaman-link" href="html/raids-armours/shaman.html"><h3 class="card-title card-title-shaman">Шаман</h3></a>
-                				<p class="card-text card-text-shaman">Рейдовые Комплекты Брони на Шамана</p>
-              				</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-shaman">от 80<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids-armours/shaman.html" class="btn-shaman">Подробнее</a>
-						  	</div>  
-            			</div>
-          			</div>
-        		</div>
-				<!-- таб контент оружие -->
-				<div class="tab-pane fade" id="pills-weapons" role="tabpanel" aria-labelledby="pills-weapons-tab">
-					<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
-            			<div class="card card-weapons card-one-handed-weapons" style="width: 18rem;">
-              				<a href="html/weapons/one-handed-weapons.html"><img src="img/logo/bg/weapons/one-handed/1h-swords.png" class="card-img-top one-handed-weapons" alt="Одноручное Оружие"></a>
-              				<div class="card-body">
-                				<a class="card-link one-handed-weapons-link" href="html/weapons/one-handed-weapons.html">
-                  					<h3 class="card-title card-title-one-handed-weapons">Одноручное Оружие</h3>
-                				</a>
-                				<p class="card-text card-text-one-handed-weapons">Закажите любое одноручное оружие на выбор.</p>
-              				</div>
-              				<div class="card-footer d-flex justify-content-between align-items-center">
-                				<p class="price price-one-handed-weapons">от 300<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/weapons/one-handed-weapons.html" class="btn-one-handed-weapons">Подробнее</a>
-              				</div>
-            			</div>
-
-						<div class="card card-weapons card-two-handed-weapons" style="width: 18rem;">
-							<a href="html/weapons/two-handed-weapons.html"><img src="img/logo/bg/weapons/two-handed/2h-axes.png" class="card-img-top two-handed-weapons" alt="Двуручное Оружие"></a>
-							<div class="card-body">
-								<a class="card-link two-handed-weapons-link" href="html/weapons/two-handed-weapons.html">
-									<h3 class="card-title card-title-two-handed-weapons">Двуручное Оружие</h3>
-							  	</a>
-								<p class="card-text card-text-two-handed-weapons">Закажите любое двуручное оружие на выбор.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-two-handed-weapons">от 300<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-							  	<a href="html/weapons/two-handed-weapons.html" class="btn-two-handed-weapons">Подробнее</a>
-							</div>
-					  	</div>
-
-						<div class="card card-weapons card-range-weapons" style="width: 18rem;">
-							<a href="html/weapons/range-weapons.html"><img src="img/logo/bg/weapons/range/bow.png" class="card-img-top range-weapons" alt="Дальний Бой"></a>
-							<div class="card-body">
-							  	<a class="card-link range-weapons-link" href="html/weapons/range-weapons.html">
-									<h3 class="card-title card-title-range-weapons">Дальний Бой</h3>
-							  	</a>
-							  <p class="card-text card-text-range-weapons">Закажите любое оружие дальнего боя на выбор.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-range-weapons">от 300<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/weapons/range-weapons.html" class="btn-range-weapons">Подробнее</a>
-							</div>
-					  	</div>
-
-
-						<div class="card card-weapons card-shields-weapons" style="width: 18rem;">
-							<a href="html/weapons/shields.html"><img src="img/logo/bg/weapons/shields/shields.png" class="card-img-top shields-weapons" alt="Щиты"></a>
-							<div class="card-body">
-							  	<a class="card-link shields-weapons-link" href="html/weapons/shields.html">
-									<h3 class="card-title card-title-shields-weapons">Щиты</h3>
-							  	</a>
-							  <p class="card-text card-text-shields-weapons">Закажите любой щит на выбор.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-shields-weapons">от 300<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/weapons/shields.html" class="btn-shields-weapons">Подробнее</a>
-							</div>
-					  	</div>  
-
-
-						<div class="card card-weapons card-other-weapons" style="width: 18rem;">
-							<a href="html/weapons/other.html"><img src="img/logo/bg/weapons/other/legendary.png" class="card-img-top other-weapons" alt="Уникальное"></a>
-							<div class="card-body">
-							  	<a class="card-link other-weapons-link" href="html/weapons/other.html">
-									<h3 class="card-title card-title-other-weapons">Уникальное Оружие</h3>
-							  	</a>
-							  	<p class="card-text card-text-other-weapons">Закажите любое легендарное, артефактное, оружие из испытаний, удочки или плащи которые помогут вам в приключениях.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-							  	<p class="price price-other-weapons">от 500<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-							  	<a href="html/weapons/other.html" class="btn-other-weapons">Подробнее</a>
-							</div>
-					  	</div>  
-
-          			</div>
-				</div>
-				<!-- таб контент маунты -->
-				<div class="tab-pane fade" id="pills-mounts" role="tabpanel" aria-labelledby="pills-mounts-tab">
-					<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
-            			<div class="card card-mounts card-water-mounts" style="width: 18rem;">
-              				<a href="html/mounts/water/water.html"><img src="img/logo/bg/mounts/water-mounts-bg.png" class="card-img-top water" alt="water-mounts"></a>
-              				<div class="card-body">
-                				<a class="card-link water-mounts-link" href="html/mounts/water/water.html">
-                  					<h3 class="card-title card-title-water-mounts">Водные</h3>
-                				</a>
-                				<p class="card-text card-text-water-mounts">Водные маунты, обитатели морей и океанов. Дадут фору любому плавцу.</p>
-              				</div>
-              				<div class="card-footer d-flex justify-content-between align-items-center">
-                				<p class="price price-water-mounts">от 100<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/mounts/water/water.html" class="btn-water-mounts">Подробнее</a>
-              				</div>
-            			</div>
-
-            			<div class="card card-mounts card-eath-mounts" style="width: 18rem;">
-              				<a href="html/mounts/earth/earth.html"><img src="img/logo/bg/mounts/eath-mounts-bg.png" class="card-img-top eath" alt="eath-mounts"></a>
-              				<div class="card-body">
-                				<a class="card-link eath-mounts-link" href="html/mounts/earth/earth.html">
-                  					<h3 class="card-title card-title-eath-mounts">Наземные</h3>
-                				</a>
-                				<p class="card-text card-text-eath-mounts">Наземные маунты, живущие на земле, обитатели пещер. Очень быстро передвигаются.</p>
-              				</div>
-              				<div class="card-footer d-flex justify-content-between align-items-center">
-                				<p class="price price-eath-mounts">от 100<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-                				<a href="html/mounts/earth/earth.html" class="btn-eath-mounts">Подробнее</a>
-              				</div>
-            			</div>
-
-            			<div class="card card-mounts card-fly-mounts" style="width: 18rem;">
-              				<a href="html/mounts/fly/fly.html"><img src="img/logo/bg/mounts/fly-mounts-bg.png" class="card-img-top fly" alt="fly-mounts"></a>
-              				<div class="card-body">
-                				<a class="card-link fly-mounts-link" href="html/mounts/fly/fly.html"><h3 class="card-title card-title-fly-mounts">Летающие</h3></a>
-                				<p class="card-text card-text-fly-mounts">Летающие маунты, небо их стихия. Летают со скоростью ветра.</p>
-              				</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-fly-mounts">от 100<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/mounts/fly/fly.html" class="btn-fly-mounts">Подробнее</a>
-							</div>  
-            			</div>
-
-          			</div>
-				</div>
-
-				<!-- таб контент профессии -->
-				<div class="tab-pane fade" id="pills-professions" role="tabpanel" aria-labelledby="pills-professions-tab">
-					<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
-						<div class="card card-alchemy" style="width: 18rem;">
-							<a href="html/professions/alchemy.html"><img src="img/logo/bg/professions/alchemy.png" class="card-img-top alchemy" alt="Алхимия"></a>
-							<div class="card-body">
-								<a class="card-link alchemy-link" href="html/professions/alchemy.html">
-									<h3 class="card-title card-title-alchemy">Алхимия</h3>
-								</a>
-								<p class="card-text card-text-alchemy">Алхимия - с помощью алхимии можно создавать мощные зелья, настои и элексиры.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-alchemy">от 200<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/professions/alchemy.html" class="btn-alchemy">Подробнее</a>
-							</div>
-						</div>
-
-						<div class="card card-mining" style="width: 18rem;">
-							<a href="html/professions/mining.html"><img src="img/logo/bg/professions/mining.png" class="card-img-top mining" alt="Горное дело"></a>
-						<div class="card-body">
-							<a class="card-link mining-link" href="html/professions/mining.html">
-								<h3 class="card-title card-title-mining">Горное дело</h3>
-							</a>
-							<p class="card-text card-text-mining">Горное дело позволяет добывать руду во множестве мест по всему миру.</p>
-						</div>
-						<div class="card-footer d-flex justify-content-between align-items-center">
-							<p class="price price-mining">от 200<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-							<a href="html/professions/mining.html" class="btn-mining">Подробнее</a>
-						</div>
-						</div>
-
-						<div class="card card-engineering" style="width: 18rem;">
-							<a href="html/professions/engineering.html"><img src="img/logo/bg/professions/engineering.png" class="card-img-top engineering" alt="Инженерное дело"></a>
-							<div class="card-body">
-								<a class="card-link engineering-link" href="html/professions/engineering.html">
-									<h3 class="card-title card-title-engineering">Инженерное дело</h3>
-								</a>
-								<p class="card-text card-text-engineering">Инженеры превращают различные материалы (детали и металлы) в интересные и полезные гаджеты, необычные предметы (средства передвижения и питомцы) и даже в эпические шлемы и очки, оружия дальнего боя и прицелы к ним.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-engineering">от 200<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/professions/engineering.html" class="btn-engineering">Подробнее</a>
-							</div>
-						</div>
-
-						<div class="card card-leatherworking" style="width: 18rem;">
-							<a href="html/professions/leatherworking.html"><img src="img/logo/bg/professions/leatherworking.png" class="card-img-top leatherworking" alt="Кожевничество"></a>
-							<div class="card-body">
-								<a class="card-link leatherworking-link" href="html/professions/leatherworking.html">
-									<h3 class="card-title card-title-leatherworking">Кожевничество</h3>
-								</a>
-								<p class="card-text card-text-leatherworking">Кожевничество - ремесленная профессия, которая использует шкуры и кожу, полученные путем снятия кожи, для изготовления доспехов и барабанов.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-leatherworking">от 200<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/professions/leatherworking.html" class="btn-leatherworking">Подробнее</a>
-							</div>
-						</div>
-						
-						<div class="card card-blacksmithing" style="width: 18rem;">
-							<a href="html/professions/blacksmithing.html"><img src="img/logo/bg/professions/blacksmithing.png" class="card-img-top blacksmithing" alt="Кузнечное дело"></a>
-							<div class="card-body">
-								<a class="card-link blacksmithing-link" href="html/professions/blacksmithing.html">
-									<h3 class="card-title card-title-blacksmithing">Кузнечное дело</h3>
-								</a>
-								<p class="card-text card-text-blacksmithing">Кузнечное дело - ремесленная профессия, для нее требуются материалы, произведенные с помощью другой профессии, обычно горнодобывающей. Кузнецы превращают различные реагенты (в основном металлы) в пластинчатые доспехи, оружие и некоторые другие полезные предметы.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-blacksmithing">от 200<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/professions/blacksmithing.html" class="btn-blacksmithing">Подробнее</a>
-							</div>
-						</div>
-
-						<div class="card card-enchanting" style="width: 18rem;">
-							<a href="html/professions/enchanting.html"><img src="img/logo/bg/professions/enchanting.png" class="card-img-top enchanting" alt="Наложение чар"></a>
-							<div class="card-body">
-								<a class="card-link enchanting-link" href="html/professions/enchanting.html">
-									<h3 class="card-title card-title-enchanting">Наложение чар</h3>
-								</a>
-								<p class="card-text card-text-enchanting">При помощи Наложения чар получают материалы для зачаровывания путем распыления брони необычного или лучшего качества и превращают их в постоянные улучшения для собственной брони или брони союзников.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-enchanting">от 200<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/professions/enchanting.html" class="btn-enchanting">Подробнее</a>
-							</div>
-						</div>
-						
-						<div class="card card-inscription" style="width: 18rem;">
-							<a href="html/professions/inscription.html"><img src="img/logo/bg/professions/inscription.png" class="card-img-top inscription" alt="Начертание"></a>
-							<div class="card-body">
-								<a class="card-link inscription-link" href="html/professions/inscription.html">
-									<h3 class="card-title card-title-inscription">Начертание</h3>
-								</a>
-								<p class="card-text card-text-inscription">Начертание позволяет создавать символы, свитки, карты и прочее. Начертатели могут использовать способность Измельчение, чтобы измельчить травы (собранные с помощью Травничества) в смесь, используемую для создания чернил. Эти чернила, как обычные так и необычные, могут быть использованы для зачарования пергаментов.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-inscription">от 200<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/professions/inscription.html" class="btn-inscription">Подробнее</a>
-							</div>
-						</div>
-
-						<div class="card card-tailoring" style="width: 18rem;">
-							<a href="html/professions/tailoring.html"><img src="img/logo/bg/professions/tailoring.png" class="card-img-top tailoring" alt="Портняжное дело"></a>
-							<div class="card-body">
-								<a class="card-link tailoring-link" href="html/professions/tailoring.html">
-									<h3 class="card-title card-title-tailoring">Портняжное дело</h3>
-								</a>
-								<p class="card-text card-text-tailoring">Портняжное дело - ремесленная профессия, позволяющая использовать различные ткани и другие реагенты для создания брони, сумок, чародейских нитей и даже ковров-самолетов.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-tailoring">от 200<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/professions/tailoring.html" class="btn-tailoring">Подробнее</a>
-							</div>
-						</div>
-
-						<div class="card card-skinning" style="width: 18rem;">
-							<a href="html/professions/skinning.html"><img src="img/logo/bg/professions/skinning.png" class="card-img-top skinning" alt="Снятие шкур"></a>
-							<div class="card-body">
-								<a class="card-link skinning-link" href="html/professions/skinning.html">
-									<h3 class="card-title card-title-skinning">Снятие шкур</h3>
-								</a>
-								<p class="card-text card-text-skinning">Снятие шкур - собирательная профессия, позволяющая срезать кожу, чешуйки и шкуры с убитых животных и драконов, и панцири с нерубов и силитидов.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-skinning">от 200<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/professions/skinning.html" class="btn-skinning">Подробнее</a>
-							</div>
-						</div>
-
-						<div class="card card-herbalism" style="width: 18rem;">
-							<a href="html/professions/herbalism.html"><img src="img/logo/bg/professions/herbalism.png" class="card-img-top herbalism" alt="Травничество"></a>
-							<div class="card-body">
-								<a class="card-link herbalism-link" href="html/professions/herbalism.html">
-									<h3 class="card-title card-title-herbalism">Травничество</h3>
-								</a>
-								<p class="card-text card-text-herbalism">Травничество – собирательная профессия, целью которой является сбор материалов (в основном трав, а также некоторых элементов стихий), необходимых для других профессий.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-herbalism">от 200<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/professions/herbalism.html" class="btn-herbalism">Подробнее</a>
-							</div>
-						</div>
-
-						<div class="card card-jewelcrafting" style="width: 18rem;">
-							<a href="html/professions/jewelcrafting.html"><img src="img/logo/bg/professions/jewelcrafting.png" class="card-img-top jewelcrafting" alt="Ювелирное дело"></a>
-							<div class="card-body">
-								<a class="card-link jewelcrafting-link" href="html/professions/jewelcrafting.html">
-									<h3 class="card-title card-title-jewelcrafting">Ювелирное дело</h3>
-								</a>
-								<p class="card-text card-text-jewelcrafting">Ювелирное дело - ремесленная профессия с помощью которой можно создавать различные драгоценные камни, повышающие различные характеристики. Эти камни могут быть вставлены в экипировку.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-jewelcrafting">от 200<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/professions/jewelcrafting.html" class="btn-jewelcrafting">Подробнее</a>
-							</div>
-						</div>
-
-						<div class="card card-archaeology" style="width: 18rem;">
-							<a href="html/professions/archaeology.html"><img src="img/logo/bg/professions/archaeology.png" class="card-img-top archaeology" alt="Археология"></a>
-							<div class="card-body">
-								<a class="card-link archaeology-link" href="html/professions/archaeology.html">
-									<h3 class="card-title card-title-archaeology">Археология</h3>
-								</a>
-								<p class="card-text card-text-archaeology">Археология - это вторичная профессия предлагающая множество интересного контента и позволяет увидеть, что же скрывают в себе глубины Азерота буквально. Археологи должны путешествовать по всему миру в поисках фрагментов древних артефактов, многие из которых содержат интереснейшие частицы истории мира.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-archaeology">от 200<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/professions/archaeology.html" class="btn-archaeology">Подробнее</a>
-							</div>
-						</div>
-
-						<div class="card card-riding" style="width: 18rem;">
-							<a href="html/professions/riding.html"><img src="img/logo/bg/professions/riding.png" class="card-img-top riding" alt="Верховая езда"></a>
-							<div class="card-body">
-								<a class="card-link riding-link" href="html/professions/riding.html">
-									<h3 class="card-title card-title-riding">Верховая езда</h3>
-								</a>
-								<p class="card-text card-text-riding">Верховая езда — это пассивный навык, который позволяет игрокам использовать верховых животных для передвижения по всему миру. Чем выше ваш навык верховой езды, тем быстрее ваши верховые животные могут передвигаться по миру.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-riding">от 200<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/professions/riding.html" class="btn-riding">Подробнее</a>
-							</div>
-						</div>
-
-						<div class="card card-cooking" style="width: 18rem;">
-							<a href="html/professions/cooking.html"><img src="img/logo/bg/professions/cooking.png" class="card-img-top cooking" alt="Кулинария"></a>
-							<div class="card-body">
-								<a class="card-link cooking-link" href="html/professions/cooking.html">
-									<h3 class="card-title card-title-cooking">Кулинария</h3>
-								</a>
-								<p class="card-text card-text-cooking">Кулинария - это вторичная профессия, с помощью которой можно комбинировать различные ингредиенты, такие как рыба или мясо, превращая их во вкусную еду и напитки, восстанавливающие здоровье или ману, а так же, дающие полезные боевые баффы.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-cooking">от 200<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/professions/cooking.html" class="btn-cooking">Подробнее</a>
-							</div>
-						</div>
-
-						<div class="card card-first-aid" style="width: 18rem;">
-							<a href="html/professions/first-aid.html"><img src="img/logo/bg/professions/first-aid.png" class="card-img-top first-aid" alt="Первая помощь"></a>
-							<div class="card-body">
-								<a class="card-link first-aid-link" href="html/professions/first-aid.html">
-									<h3 class="card-title card-title-first-aid">Первая помощь</h3>
-								</a>
-								<p class="card-text card-text-cooking">Первая помощь — это вторичная профессия. Превращение ткани в бинты. Она очень полезна классам, у которых нет собственного лечащего заклинаний(хила).</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-first-aid">от 200<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/professions/first-aid.html" class="btn-first-aid">Подробнее</a>
-							</div>
-						</div>
-
-						<div class="card card-fishing" style="width: 18rem;">
-							<a href="html/professions/fishing.html"><img src="img/logo/bg/professions/fishing.png" class="card-img-top fishing" alt="Рыбная ловля"></a>
-							<div class="card-body">
-								<a class="card-link fishing-link" href="html/professions/fishing.html">
-									<h3 class="card-title card-title-fishing">Рыбная ловля</h3>
-								</a>
-								<p class="card-text card-text-fishing">Рыбная ловля - это вторичная собирательная профессия, которая позволяет игрокам рыбачить в различных водоёмах по всему миру.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-fishing">от 200<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/professions/fishing.html" class="btn-fishing">Подробнее</a>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<!-- таб контент голд -->
-				<div class="tab-pane fade" id="pills-gold" role="tabpanel" aria-labelledby="pills-gold-tab">
-					<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
-            			<div class="card card-gold-horde" style="width: 18rem;">
-              				<a href="html/gold/horde.html"><img src="img/logo/bg/gold/horde-bg.png" class="card-img-top horde" alt="gold-horde"></a>
-              				<div class="card-body">
-                				<a class="card-link gold-horde-link" href="html/gold/horde.html">
-                  					<h3 class="card-title card-title-gold-horde">Орда</h3>
-                				</a>
-                				<p class="card-text card-text-gold-horde">Золото для игроков Орды. Любой сервер. За Орду!</p>
-              				</div>
-              				<div class="card-footer d-flex justify-content-between align-items-center">
-                				<p class="price price-gold-horde">от 1000<img class="gold" src="img/logo/bg/gold/gold.png" alt="gold"></p>
-								<a href="html/gold/horde.html" class="btn-gold-horde">Подробнее</a>
-              				</div>
-            			</div>
-
-            			<div class="card card-gold-alliance" style="width: 18rem;">
-              				<a href="html/gold/alliance.html"><img src="img/logo/bg/gold/alliance-bg.png" class="card-img-top alliance" alt="gold-alliance"></a>
-              				<div class="card-body">
-                				<a class="card-link gold-alliance-link" href="html/gold/alliance.html">
-                  					<h3 class="card-title card-title-gold-alliance">Альянс</h3>
-                				</a>
-                				<p class="card-text card-text-gold-alliance">Золото для игроков Альянса. Любой сервер. За Альянс!</p>
-              				</div>
-              				<div class="card-footer d-flex justify-content-between align-items-center">
-                				<p class="price price-gold-alliance">от 1000<img class="gold" src="img/logo/bg/gold/gold.png" alt="gold"></p>
-                				<a href="html/gold/alliance.html" class="btn-gold-alliance">Подробнее</a>
-              				</div>
-            			</div>
-          			</div>
-				</div>
-
-				<!-- таб контент pvp -->
-				<div class="tab-pane fade" id="pills-pvp" role="tabpanel" aria-labelledby="pills-pvp-tab">
-					<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
-            			<div class="card card-honor" style="width: 18rem;">
-              				<a href="html/pvp/honor.html"><img src="img/logo/bg/pvp/mark-of-honor-bg.png" class="card-img-top honor" alt="honor"></a>
-              				<div class="card-body">
-                				<a class="card-link" href="html/pvp/honor.html">
-                  					<h3 class="card-title card-title-honor">Честь</h3>
-                				</a>
-                				<p class="card-text card-text-honor">Очки чести необходимые для покупки PvP экипировки.</p>
-              				</div>
-              				<div class="card-footer d-flex justify-content-between align-items-center">
-                				<p class="price price-honor">от 100<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/pvp/honor.html" class="btn-honor">Подробнее</a>
-              				</div>
-            			</div>
-
-            			<div class="card card-arena" style="width: 18rem;">
-							<a class="arena-link" href="html/pvp/arena.html"><img src="img/logo/bg/pvp/arena-bg.png" class="card-img-top arena" alt="arena"></a>
-							<div class="card-body">
-							  <a class="card-link" href="html/pvp/arena.html">
-									<h3 class="card-title card-title-arena">Арена</h3>
-							  </a>
-							  <p class="card-text card-text-arena">Очки Арены необходимые для покупки мощной и самой лучшей PvP экипировки.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-							  <p class="price price-arena">от 100<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-							  <a href="html/pvp/arena.html" class="btn-arena">Подробнее</a>
-							</div>
-					  	</div>
-
-						<div class="card card-rbg" style="width: 18rem;">
-							<a href="html/pvp/rbg.html"><img src="img/logo/bg/pvp/rbg-bg.png" class="card-img-top rbg" alt="rbg"></a>
-							<div class="card-body">
-							  <a class="card-link" href="html/pvp/rbg.html">
-									<h3 class="card-title card-title-rbg">Рейтинговые Поля Боя</h3>
-							  </a>
-							  <p class="card-text card-text-rbg">Рейтинговые Поля Боя - рейтинговые бои для покупки уникальной PvP экипировки и званий таких как Гладиатор.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-							  <p class="price price-rbg">от 100<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-							  <a href="html/pvp/rbg.html" class="btn-rbg">Подробнее</a>
-							</div>
-					  	</div>
-          			</div>
-				</div>
-
-				<!-- таб контент эпохальные подземелья -->
-				<div class="tab-pane fade" id="pills-dungeons" role="tabpanel" aria-labelledby="pills-dungeons-tab">
-					<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
-            			<div class="card card-mythic-10" style="width: 18rem;">
-              				<a href="html/dungeons/m+10.html"><img src="img/logo/bg/dungeons/mythic-10.jpg" class="card-img-top mythic-10" alt="mythic-10"></a>
-              				<div class="card-body">
-                				<a class="card-link mythic10-link" href="html/dungeons/m+10.html">
-                  					<h3 class="card-title card-title-mythic-10">Эпохальные Подземелья М +10</h3>
-                				</a>
-                				<p class="card-text card-text-mythic-10">Любые Эпохальные Подземелья М +10 в таймер</p>
-              				</div>
-              				<div class="card-footer d-flex justify-content-between align-items-center">
-                				<p class="price price-mythic-10">от 500<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/dungeons/m+10.html" class="btn-mythic-10">Подробнее</a>
-              				</div>
-            			</div>
-
-            			<div class="card card-mythic-15" style="width: 18rem;">
-              				<a href="html/dungeons/m+15.html"><img src="img/logo/bg/dungeons/mythic-15.jpg" class="card-img-top mythic-15" alt="mythic-15"></a>
-              				<div class="card-body">
-                				<a class="card-link mythic-15-link" href="html/dungeons/m+15.html">
-                  					<h3 class="card-title card-title-mythic-15">Эпохальные Подземелья М +15</h3>
-                				</a>
-                				<p class="card-text card-text-mythic-15">Любые Эпохальные Подземелья М +15 в таймер</p>
-              				</div>
-              				<div class="card-footer d-flex justify-content-between align-items-center">
-                				<p class="price price-mythic-15">от 1000<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-                				<a href="html/dungeons/m+15.html" class="btn-mythic-15">Подробнее</a>
-              				</div>
-            			</div>
-          			</div>
-				</div>
-
-				<!-- таб контент рейды -->
-				<div class="tab-pane fade" id="pills-raids" role="tabpanel" aria-labelledby="pills-raids-tab">
-					<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
-						<div class="card card-raids-classic" style="width: 18rem;">
-							<a href="html/raids/classic.html"><img src="img/logo/bg/raids/classic/temple-of-ahn_qiraj.jpg" class="card-img-top classic" alt="Classic"></a>
-							<div class="card-body">
-								<a class="card-link raids-classic-link" href="html/raids/classic.html"><h3 class="card-title card-title-raids-classic">Classic</h3></a>
-								<p class="card-text card-text-raids-classic">Закажите гарантированное прохождение любого рейда из дополнения <span class="text-color-classic">Classic.</span></p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-raids-classic">от 50<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids/classic.html" class="btn-raids-classic">Подробнее</a>
-							</div>  
-						</div>  
-
-						<div class="card card-raids-burning-crusade" style="width: 18rem;">
-							<a href="html/raids/burning-crusade.html"><img src="img/logo/bg/raids/burning-crusade/black-temple.jpg" class="card-img-top burning-crusade" alt="The Burning Crusade"></a>
-							<div class="card-body">
-								<a class="card-link raids-classic-link" href="html/raids/burning-crusade.html"><h3 class="card-title card-title-raids-burning-crusade">The Burning Crusade</h3></a>
-								<p class="card-text card-text-raids-burning-crusade">Закажите гарантированное прохождение любого рейда из дополнения <span class="text-color-burning-crusade">The Burning Crusade.</span></p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-raids-burning-crusade">от 100<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids/burning-crusade.html" class="btn-raids-burning-crusade">Подробнее</a>
-							</div>  
-						</div> 
-
-						<div class="card card-raids-wrath-of-the-lich-king" style="width: 18rem;">
-							<a href="html/raids/wrath-of-the-lich-king.html"><img src="img/logo/bg/raids/wrath-of-the-lich-king/icecrown-citadel.jpg" class="card-img-top wrath-of-the-lich-king" alt="Wrath of the Lich King"></a>
-							<div class="card-body">
-								<a class="card-link raids-wrath-of-the-lich-king-link" href="html/raids/wrath-of-the-lich-king.html"><h3 class="card-title card-title-raids-wrath-of-the-lich-king">Wrath of the Lich King</h3></a>
-								<p class="card-text card-text-raids-wrath-of-the-lich-king">Закажите гарантированное прохождение любого рейда из дополнения <span class="text-color-wrath-of-the-lich-king">Wrath of the Lich King.</span></p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-raids-wrath-of-the-lich-king">от 150<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids/wrath-of-the-lich-king.html" class="btn-raids-wrath-of-the-lich-king">Подробнее</a>
-							</div>  
-						</div> 
-
-						<div class="card card-raids-cataclysm" style="width: 18rem;">
-							<a href="html/raids/cataclysm.html"><img src="img/logo/bg/raids/cataclysm/firelands.jpg" class="card-img-top cataclysm" alt="Cataclysm"></a>
-							<div class="card-body">
-								<a class="card-link raids-cataclysm-link" href="html/raids/cataclysm.html"><h3 class="card-title card-title-raids-cataclysm">Cataclysm</h3></a>
-								<p class="card-text card-text-raids-cataclysm">Закажите гарантированное прохождение любого рейда из дополнения <span class="text-color-cataclysm">Cataclysm.</span></p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-raids-cataclysm">от 200<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids/cataclysm.html" class="btn-raids-cataclysm">Подробнее</a>
-							</div>  
-						</div> 
-
-						<div class="card card-raids-mists-of-pandaria" style="width: 18rem;">
-							<a href="html/raids/mists-of-pandaria.html"><img src="img/logo/bg/raids/mists-of-pandaria/throne-of-thunder.jpg" class="card-img-top mists-of-pandaria" alt="Mists of Pandaria"></a>
-							<div class="card-body">
-								<a class="card-link raids-mists-of-pandaria-link" href="html/raids/mists-of-pandaria.html"><h3 class="card-title card-title-raids-mists-of-pandaria">Mists of Pandaria</h3></a>
-								<p class="card-text card-text-raids-mists-of-pandaria">Закажите гарантированное прохождение любого рейда из дополнения <span class="text-color-mists-of-pandaria">Mists of Pandaria.</span></p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-raids-mists-of-pandaria">от 250<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids/mists-of-pandaria.html" class="btn-raids-mists-of-pandaria">Подробнее</a>
-							</div>  
-						</div> 
-
-						<div class="card card-raids-warlord-of-draenor" style="width: 18rem;">
-							<a href="html/raids/warlord-of-draenor.html"><img src="img/logo/bg/raids/warlord-of-draenor/blackrock-foundry.jpg" class="card-img-top warlord-of-draenor" alt="Warlords of Draenor"></a>
-							<div class="card-body">
-								<a class="card-link raids-warlord-of-draenor-link" href="html/raids/warlord-of-draenor.html"><h3 class="card-title card-title-raids-warlord-of-draenor">Warlords of Draenor</h3></a>
-								<p class="card-text card-text-raids-warlord-of-draenor">Закажите гарантированное прохождение любого рейда из дополнения <span class="text-color-warlord-of-draenor">Warlords of Draenor.</span></p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-raids-warlord-of-draenor">от 300<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids/warlord-of-draenor.html" class="btn-raids-warlord-of-draenor">Подробнее</a>
-							</div>  
-						</div> 
-
-						<div class="card card-raids-legion" style="width: 18rem;">
-							<a href="html/raids/legion.html"><img src="img/logo/bg/raids/legion/antorus-the-burning-throne.png" class="card-img-top legion" alt="Legion"></a>
-							<div class="card-body">
-								<a class="card-link raids-legion-link" href="html/raids/legion.html"><h3 class="card-title card-title-raids-legion">Legion</h3></a>
-								<p class="card-text card-text-raids-legion">Закажите гарантированное прохождение любого рейда из дополнения <span class="text-color-legion">Legion.</span></p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-raids-legion">от 350<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids/legion.html" class="btn-raids-legion">Подробнее</a>
-							</div>  
-						</div> 
-
-						<div class="card card-raids-bfa" style="width: 18rem;">
-							<a href="html/raids/bfa.html"><img src="img/logo/bg/raids/bfa/ny'alotha.jpg" class="card-img-top bfa" alt="Battle for Azeroth"></a>
-							<div class="card-body">
-								<a class="card-link raids-bfa-link" href="html/raids/bfa.html"><h3 class="card-title card-title-raids-bfa">Battle for Azeroth</h3></a>
-								<p class="card-text card-text-raids-bfa">Закажите гарантированное прохождение любого рейда из дополнения <span class="text-color-bfa">Battle for Azeroth.</span></p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-raids-bfa">от 400<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids/bfa.html" class="btn-raids-bfa">Подробнее</a>
-							</div>  
-						</div> 
-
-						<div class="card card-raids-shadowlands" style="width: 18rem;">
-							<a href="html/raids/shadowlands.html"><img src="img/logo/bg/raids/shadowlands/sanctum-of-domination.jpg" class="card-img-top shadowlands" alt="Shadowlands"></a>
-							<div class="card-body">
-								<a class="card-link raids-shadowlands-link" href="html/raids/shadowlands.html"><h3 class="card-title card-title-raids-shadowlands">Shadowlands</h3></a>
-								<p class="card-text card-text-raids-shadowlands">Закажите гарантированное прохождение любого рейда из дополнения <span class="text-color-shadowlands">Shadowlands.</span></p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-raids-shadowlands">от 500<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/raids/shadowlands.html" class="btn-raids-shadowlands">Подробнее</a>
-							</div>  
-						</div> 
-
-					</div>
-			  	</div>
-
-				<!-- таб контент прокачка персонажей -->
-				<div class="tab-pane fade" id="pills-lvl-up" role="tabpanel" aria-labelledby="pills-lvl-up-tab">
-					<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
-            			<div class="card card-lvl-up-full" style="width: 18rem;">
-              				<a href="html/lvl-up/lvl-up-full.html"><img src="img/logo/bg/lvl-up/lvl-up.jpg" class="card-img-top lvl-up-full" alt="lvl-up-full"></a>
-              				<div class="card-body">
-                				<a class="card-link lvl-up-full-link" href="html/lvl-up/lvl-up-full.html">
-                  					<h3 class="card-title card-title-lvl-up-full">1-60 Уровень</h3>
-                				</a>
-                				<p class="card-text card-text-lvl-up-full">Прокачка 1-60 в Shadowlands. Экипировка 150 уровня. Отличный набор для начинающего приключенца!</p>
-              				</div>
-              				<div class="card-footer d-flex justify-content-between align-items-center">
-                				<p class="price price-lvl-up-full">от 500<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/lvl-up/lvl-up-full.html" class="btn-lvl-up-full">Подробнее</a>
-              				</div>
-            			</div>
-
-            			<div class="card card-lvl-up" style="width: 18rem;">
-							<a href="html/lvl-up/lvl-up.html"><img src="img/logo/bg/lvl-up/lvl-up-gear.jpg" class="card-img-top lvl-up" alt="lvl-up"></a>
-							<div class="card-body">
-							  <a class="card-link lvl-up-link" href="html/lvl-up/lvl-up.html">
-									<h3 class="card-title card-title-lvl-up">50-60 Уровень</h3>
-							  </a>
-							  <p class="card-text card-text-lvl-up">Прокачка 50-60 в Shadowlands. Экипировка 220 уровня. Отличный набор для экспертного приключенца!</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-							  <p class="price price-lvl-up">от 500<img class="dollar" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-							  <a href="html/lvl-up/lvl-up.html" class="btn-lvl-up">Подробнее</a>
-							</div>
-					  </div>
-          			</div>
-				</div>  
-
-				<!-- таб контент достижения -->
-				<div class="tab-pane fade" id="pills-achievments" role="tabpanel" aria-labelledby="pills-achievments-tab">
-					<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
-            			<div class="card card-achievments-quests" style="width: 18rem;">
-              				<a href="html/achievments/quests.html"><img src="img/logo/bg/achievments/quests.jpg" class="card-img-top quests" alt="quests"></a>
-              				<div class="card-body">
-                				<a class="card-link achievments-quests-link" href="html/achievments/quests.html">
-                  					<h3 class="card-title card-title-achievments-quests">Задания</h3>
-                				</a>
-                				<p class="card-text card-text-achievments-quests">Закажите выполнение всех Заданий.</p>
-              				</div>
-              				<div class="card-footer d-flex justify-content-between align-items-center">
-                				<p class="price price-achievments-quests">от 300<img class="gold" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/achievments/quests.html" class="btn-achievments-quests">Подробнее</a>
-              				</div>
-            			</div>
-          			
-						<div class="card card-achievments-max-equipments" style="width: 18rem;">
-							<a href="html/achievments/equipment-max-lvl.html"><img src="img/logo/bg/achievments/max-equipment.png" class="card-img-top max-equipments" alt="max-equipments"></a>
-							<div class="card-body">
-								<a class="card-link achievments-max-equipments-link" href="html/achievments/equipment-max-lvl.html">
-									<h3 class="card-title card-title-achievments-max-equipments">Экипировка 1000 уровня</h3>
-								</a>
-								<p class="card-text card-text-achievments-max-equipments">Закажите выполнение достижения на сбор экипировки 1000 уровня.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-achievments-max-equipments">от 300<img class="gold" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/achievments/equipment-max-lvl.html" class="btn-achievments-max-equipments">Подробнее</a>
-							</div>
-						</div> 
-
-						<div class="card card-achievments-max-mounts" style="width: 18rem;">
-							<a href="html/achievments/max-mounts.html"><img src="img/logo/bg/achievments/max-mounts.jpg" class="card-img-top max-mounts" alt="max-mounts"></a>
-							<div class="card-body">
-								<a class="card-link achievments-max-mounts-link" href="html/achievments/max-mounts.html">
-									<h3 class="card-title card-title-achievments-max-mounts">1000 маунтов</h3>
-								</a>
-								<p class="card-text card-text-achievments-max-mounts">Закажите сбор 1000 средств передвижения.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-achievments-max-mounts">от 300<img class="gold" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/achievments/max-mounts.html" class="btn-achievments-max-mounts">Подробнее</a>
-							</div>
-						</div> 
-
-						<div class="card card-achievments-raids-explorer" style="width: 18rem;">
-							<a href="html/achievments/raids-explorer.html"><img src="img/logo/bg/achievments/raids-explorer.jpg" class="card-img-top raids-explorer" alt="raids-explorer"></a>
-							<div class="card-body">
-								<a class="card-link achievments-raids-explorer-link" href="html/achievments/raids-explorer.html">
-									<h3 class="card-title card-title-achievments-raids-explorer">Исследователь рейдов</h3>
-								</a>
-								<p class="card-text card-text-achievments-raids-explorer">Закажите сбор всех комплектов рейдовых доспехов.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-achievments-raids-explorer">от 500<img class="gold" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/achievments/raids-explorer.html" class="btn-achievments-raids-explorer">Подробнее</a>
-							</div>
-						</div> 
-
-						<div class="card card-achievments-great-feats" style="width: 18rem;">
-							<a href="html/achievments/great-feats.html"><img src="img/logo/bg/achievments/great-feats.jpg" class="card-img-top great-feats" alt="great-feats"></a>
-							<div class="card-body">
-								<a class="card-link achievments-great-feats-link" href="html/achievments/great-feats.html">
-									<h3 class="card-title card-title-achievments-great-feats">Великие подвиги</h3>
-								</a>
-								<p class="card-text card-text-achievments-great-feats">Закажите выполнение любых Великих подвигов.</p>
-							</div>
-							<div class="card-footer d-flex justify-content-between align-items-center">
-								<p class="price price-achievments-great-feats">от 1000<img class="gold" src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
-								<a href="html/achievments/great-feats.html" class="btn-achievments-great-feats">Подробнее</a>
-							</div>
-						</div> 
-					</div>
-    			</div>
-    		</div>
-  		</div>
-</section>
-
-<section class="registrations py-5">
-  	<div class="container">
-    	<div class="registrations__info" id="how-its-work">
-      		<h2 class="registrations__header text-center">Шаги оформления заказа</h2>
-      		<div class="registrations__box__info">
-        		<div class="registrations__step mt-5 d-flex justify-content-between">
-          			<div class="registrations__list">
-						<img class="registrations__img" src="img/icons/registrations.svg" alt="registrations">
-						<h3 class="registrations__title">1. Регистрация</h3>  
-						<p class="registrations__text">Зарегистрируйтесь бесплатно и получите скидку на первый заказ</p>
-          			</div>
-          			<div class="registrations__list">
-						<img class="registrations__img" src="img/icons/details.svg" alt="details">
-						<span class="br"></span>
-						<h3 class="registrations__title">2. Детали</h3>  
-						<p class="registrations__text">Пообщайтесь с исполнителем до оплаты, чтобы уточнить все детали</p>
-          			</div>
-          			<div class="registrations__list">
-						<img class="registrations__img" src="img/icons/payment.svg" alt="payment">
-						<span class="br"></span>
-						<h3 class="registrations__title">3. Оплата</h3>  
-						<p class="registrations__text">Оформите заказ и оплатите его</p>
-          			</div>
-          			<div class="registrations__list">
-						<img class="registrations__img" src="img/icons/implementation.svg" alt="implementation">
-						<span class="br"></span>
-						<h3 class="registrations__title">4. Выполнениe</h3> 
-						<p class="registrations__text">Дождитесь, пока исполнитель завершит заказ</p>
-          			</div>
-          			<div class="registrations__list">
-						<img class="registrations__img" src="img/icons/confirmation.svg" alt="confirmation">
-						<span class="br"></span>
-						<h3 class="registrations__title">5. Подтверждение</h3> 
-						<p class="registrations__text">Подтвердите выполнение заказа. Исполнитель получит деньги лишь после этого</p>
-          			</div>
-          			<div class="registrations__list"> 
-						<img class="registrations__img" src="img/icons/feedback.svg" alt="feedback">
-						<span class="br"></span>
-						<h3 class="registrations__title">6. Отзыв</h3>
-						<p class="registrations__text">Оставьте отзыв о работе исполнителя, чтобы помочь другим сделать правильный выбор</p>
-          			</div>
-        		</div>
-      		</div>
-    	</div>
-
-    	<div class="why__we__info py-3 px-2 mt-5">
-      		<h2 class="registrations__header text-center">Почему Мы</h2>
-      		<div class="why__we__box__info">
-        		<div class="why__we mt-lg-5 d-flex flex-column flex-lg-row justify-content-between">
-          			<div class="why__we__list mt-5 mt-lg-0">
-						<img class="why__we__img" src="img/icons/ok.svg" alt="ok">
-						<h3 class="why__we__title">Самые низкие цены. Без посредников!</h3> 
-					</div>
-          			<div class="why__we__list mt-5 mt-lg-0">
-						<img class="why__we__img" src="img/icons/communication.svg" alt="communication">
-						<h3 class="why__we__title">Общайтесь с исполнителями напрямую до оформления заказа</h3> 
-					</div>
-          			<div class="why__we__list mt-5 mt-lg-0">
-						<img class="why__we__img" src="img/icons/community.svg" alt="community">
-						<h3 class="why__we__title">Опытная и дружелюбная служба поддержки всегда поможет</h3> 
-					</div>
-          			<div class="why__we__list mt-5 mt-lg-0">
-						<img class="why__we__img" src="img/icons/protection.svg" alt="protection">
-						<h3 class="why__we__title">Мы пускаем только исполнителей, которые используют все меры предосторожности для безопасности вашего аккаунта</h3> 
-					</div>
-          			<div class="why__we__list mt-5 mt-lg-0">
-						<img class="why__we__img" src="img/icons/money.svg" alt="money">
-						<h3 class="why__we__title">100% гарантия возврата средств на случай, если услуга не доставлена</h3> 
-					</div>
-          			<div class="why__we__list mt-5 mt-lg-0">
-						<img class="why__we__img" src="img/icons/law.svg" alt="law">
-						<h3 class="why__we__title">Наша собственная система арбитража поможет решить спорные ситуации</h3> 	  
-					</div>
-				</div>
-      		</div>
-    	</div>
-    	<p class="about__text my-5">Прокачка в WoW помогает игрокам получить все, что оказывается недоступным по разным причинам. Одним игрокам не хватает времени на фарм, другие не играют в гильдиях, но хотят лучший гир. Причин много, а желания одни. Для этого и существует WowForAll — наш подход изменил представление о бустинге WoW. Как торговая площадка мы позволяем продавцам размещать свои услуги на собственных условиях. Это снижает цену — ведь посредников между продавцом и покупателем нет. Как итог: с WowForAll вы экономите свое время по самой честной цене. А если вас не устроили имеющиеся предложения, создайте Аукцион на своих условиях. Пусть наши продавцы сами поборются за него и предложат лучшую цену. Всё что нужно — пройти базовую регистрацию, пополнить баланс удобным способом и выбрать исполнителя. WowForAll выступит гарантом сделки, останется только наслаждаться результатом.</p>
-  	</div>
-</section>
-
-<div class="modal modal-registrations fade" id="modal" tabindex="-1">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h3 class="modal-title">Станьте участником WowForAll</h3>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
+	<header class="header__top">
+
+	</header>
+
+	<header class="header pt-5">
+		<div class="container">
+			<div class="burger-btn d-flex justify-content-end">
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon"></span>
 				</button>
 			</div>
-			<div class="modal-body">
-				<form>
-					<div class="form-group row">
-						<div class="col-sm-12 mx-auto">
-							<input type="email" placeholder="Электронная почта" class="form-control form-control-modal" id="inputEmail1" required>
+
+			<nav class="navbar navbar-expand-lg navbar-light flex-wrap flex-column flex-lg-row">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/logo/logo.png" alt="logo">
+				</a>
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="https://worldofwarcraft.com/ru-ru/">Офицальный сайт World of
+							Warcraft</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.noob-club.ru/">Гайды</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://raider.io/">Рейтинг</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href=" https://www.wowprogress.com/">Лучшие игроки</a>
+					</li>
+				</ul>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<form class="form-inline nav-form my-2 my-lg-0">
+						<input class="form-control col-10 col-lg-12 mx-auto" type="search" placeholder="Поиск"
+							aria-label="Search">
+					</form>
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-expanded="false">&#8381</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Рубли (&#8381)</a>
+								<a class="dropdown-item" href="#">Доллары ($)</a>
+								<a class="dropdown-item" href="#">Евро (&#8364)</a>
+							</div>
+						</li>
+					</ul>
+					<div class="modal__open d-flex justify-content-center">
+						<button class="nav__btn enter" type="button" data-toggle="modal"
+							data-target="#modal-enter">Войти</button>
+						<button class="nav__btn" type="button" data-toggle="modal"
+							data-target="#modal">Зарегистрироваться</button>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<section class="promo">
+		<div class="container d-flex justify-content-between align-items-center flex-column flex-lg-row">
+			<div class="promo__info">
+				<div class="promo__descr">
+					<h1 class="promo__header main__header">Получите предметы вашей мечты и наслаждайтесь игрой</h1>
+					<p class="promo__text">На WowForAll можно купить и продать предметы или услуги с выгодой до 80% без
+						посредников. Просто и безопасно.</p>
+				</div>
+				<div class="promo__btn d-flex justify-content-between mt-5 flex-column flex-lg-row">
+					<button class="promo-btn" data-toggle="modal" data-target="#modal">Создать Аккаунт</button>
+					<button href="#how-its-work" class="promo-btn mt-3 mt-lg-0 promo-btn_color">Как Это
+						работает</button>
+				</div>
+			</div>
+			<div class="promo__raitings mt-md-5">
+
+			</div>
+		</div>
+	</section>
+
+
+	<section class="services">
+		<div class="container">
+			<div class="services__tabs">
+				<!-- Табы все -->
+				<ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
+					<!-- Табы Рейдовая Броня -->
+					<li class="nav-item nav-item-raids-armour" role="presentation">
+						<a class="nav-link nav-link-raids-armour active" id="pills-raids-armour-tab" data-toggle="pill"
+							href="#pills-raids-armour" role="tab" aria-controls="pills-raids-armour"
+							aria-selected="true">Рейдовые комплекты</a>
+						<ul class="nav nav-pills nav-raids-armour">
+							<li class="nav-item nav-item-warrior">
+								<a class="nav-link nav-link-raids-armour"
+									href="html/raids-armours/warrior.html">Воин</a>
+							</li>
+							<li class="nav-item nav-item-druid">
+								<a class="nav-link nav-link-raids-armour" href="html/raids-armours/druid.html">Друид</a>
+							</li>
+							<li class="nav-item nav-item-priest">
+								<a class="nav-link nav-link-raids-armour" href="html/raids-armours/priest.html">Жрец</a>
+							</li>
+							<li class="nav-item nav-item-mage">
+								<a class="nav-link nav-link-raids-armour" href="html/raids-armours/mage.html">Маг</a>
+							</li>
+							<li class="nav-item nav-item-monk">
+								<a class="nav-link nav-link-raids-armour" href="html/raids-armours/monk.html">Монах</a>
+							</li>
+							<li class="nav-item nav-item-hunter">
+								<a class="nav-link nav-link-raids-armour"
+									href="html/raids-armours/hunter.html">Охотник</a>
+							</li>
+							<li class="nav-item nav-item-demon-hunter">
+								<a class="nav-link nav-link-raids-armour"
+									href="html/raids-armours/demonhunter.html">Охотник на демонов</a>
+							</li>
+							<li class="nav-item nav-item-paladdin">
+								<a class="nav-link nav-link-raids-armour"
+									href="html/raids-armours/paladin.html">Паладин</a>
+							</li>
+							<li class="nav-item nav-item-rogue">
+								<a class="nav-link nav-link-raids-armour"
+									href="html/raids-armours/rogue.html">Разбойник</a>
+							</li>
+							<li class="nav-item nav-item-death-knight">
+								<a class="nav-link nav-link-raids-armour"
+									href="html/raids-armours/deathknight.html">Рыцарь смерти</a>
+							</li>
+							<li class="nav-item nav-item-warlock">
+								<a class="nav-link nav-link-raids-armour"
+									href="html/raids-armours/warlock.html">Чернокнижник</a>
+							</li>
+							<li class="nav-item nav-item-shaman">
+								<a class="nav-link nav-link-raids-armour"
+									href="html/raids-armours/shaman.html">Шаман</a>
+							</li>
+						</ul>
+					</li>
+					<!-- Табы Оружие -->
+					<li class="nav-item nav-item-weapons" role="presentation">
+						<a class="nav-link nav-link-weapons" id="pills-weapons-tab" data-toggle="pill"
+							href="#pills-weapons" role="tab" aria-controls="pills-weapons"
+							aria-selected="false">Оружие</a>
+						<ul class="nav nav-pills nav-weapons">
+							<li class="nav-item">
+								<a class="nav-link nav-link-weapons"
+									href="html/weapons/one-handed-weapons.html">Одноручное</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-weapons"
+									href="html/weapons/two-handed-weapons.html">Двуручное</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-weapons" href="html/weapons/range-weapons.html">Дальний
+									бой</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-weapons" href="html/weapons/shields.html">Щиты</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-weapons" href="html/weapons/other.html">Уникальное</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- Табы Маунты -->
+					<li class="nav-item nav-item-mounts" role="presentation">
+						<a class="nav-link nav-link-mounts" id="pills-mounts-tab" data-toggle="pill"
+							href="#pills-mounts" role="tab" aria-controls="pills-mounts"
+							aria-selected="false">Маунты</a>
+						<ul class="nav nav-pills nav-mounts">
+							<li class="nav-item">
+								<a class="nav-link nav-link-mounts" href="html/mounts/water/water.html">Водные</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-mounts" href="html/mounts/earth/earth.html">Наземные</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-mounts" href="html/mounts/fly/fly.html">Летающие</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- Табы Золото -->
+					<li class="nav-item nav-item-gold" role="presentation">
+						<a class="nav-link nav-link-gold" id="pills-gold-tab" data-toggle="pill" href="#pills-gold"
+							role="tab" aria-controls="pills-gold" aria-selected="false">Золото</a>
+						<ul class="nav nav-pills nav-gold">
+							<li class="nav-item">
+								<a class="nav-link nav-link-gold" href="html/gold/horde.html">Орда</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-gold" href="html/gold/alliance.html">Альянс</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- Табы Профессии -->
+					<li class="nav-item nav-item-professions" role="presentation">
+						<a class="nav-link nav-link-professions" id="pills-professions-tab" data-toggle="pill"
+							href="#pills-professions" role="tab" aria-controls="pills-professions"
+							aria-selected="false">Профессии</a>
+						<ul class="nav nav-pills nav-professions">
+							<li class="nav-item nav-item-alchemy">
+								<a class="nav-link nav-link-professions"
+									href="html/professions/alchemy.html">Алхимия</a>
+							</li>
+							<li class="nav-item nav-item-mining">
+								<a class="nav-link nav-link-professions" href="html/professions/mining.html">Горное
+									дело</a>
+							</li>
+							<li class="nav-item nav-item-engineering">
+								<a class="nav-link nav-link-professions"
+									href="html/professions/engineering.html">Инженерное дело</a>
+							</li>
+							<li class="nav-item nav-item-leatherworking">
+								<a class="nav-link nav-link-professions"
+									href="html/professions/leatherworking.html">Кожевничество</a>
+							</li>
+							<li class="nav-item nav-item-blacksmithing">
+								<a class="nav-link nav-link-professions"
+									href="html/professions/blacksmithing.html">Кузнечное дело</a>
+							</li>
+							<li class="nav-item nav-item-enchanting">
+								<a class="nav-link nav-link-professions"
+									href="html/professions/enchanting.html">Наложение чар</a>
+							</li>
+							<li class="nav-item nav-item-inscription">
+								<a class="nav-link nav-link-professions"
+									href="html/professions/inscription.html">Начертание</a>
+							</li>
+							<li class="nav-item nav-item-tailoring">
+								<a class="nav-link nav-link-professions"
+									href="html/professions/tailoring.html">Портняжное дело</a>
+							</li>
+							<li class="nav-item nav-item-skining">
+								<a class="nav-link nav-link-professions" href="html/professions/skinning.html">Снятие
+									шкур</a>
+							</li>
+							<li class="nav-item nav-item-herbalism">
+								<a class="nav-link nav-link-professions"
+									href="html/professions/herbalism.html">Травничество</a>
+							</li>
+							<li class="nav-item nav-item-jewelcrafting">
+								<a class="nav-link nav-link-professions"
+									href="html/professions/jewelcrafting.html">Ювелирное дело</a>
+							</li>
+							<li class="nav-item nav-item-archaeology">
+								<a class="nav-link nav-link-professions"
+									href="html/professions/archaeology.html">Археология</a>
+							</li>
+							<li class="nav-item nav-item-riding">
+								<a class="nav-link nav-link-professions" href="html/professions/riding.html">Верховая
+									езда</a>
+							</li>
+							<li class="nav-item nav-item-cooking">
+								<a class="nav-link nav-link-professions"
+									href="html/professions/cooking.html">Кулинария</a>
+							</li>
+							<li class="nav-item nav-item-first-aid">
+								<a class="nav-link nav-link-professions" href="html/professions/first-aid.html">Первая
+									помощь</a>
+							</li>
+							<li class="nav-item nav-item-fishing">
+								<a class="nav-link nav-link-professions" href="html/professions/fishing.html">Рыбная
+									ловля</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- Табы pvp -->
+					<li class="nav-item nav-item-pvp" role="presentation">
+						<a class="nav-link nav-link-pvp" id="pills-pvp-tab" data-toggle="pill" href="#pills-pvp"
+							role="tab" aria-controls="pills-contact" aria-selected="false">PvP</a>
+						<ul class="nav nav-pills nav-pvp">
+							<li class="nav-item">
+								<a class="nav-link nav-link-pvp" href="html/pvp/honor.html">Честь</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-pvp" href="html/pvp/arena.html">Арена</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-pvp" href="html/pvp/rbg.html">РБГ</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- Табы Эпохальные Подземелья -->
+					<li class="nav-item nav-item-dungeons" role="presentation">
+						<a class="nav-link nav-link-dungeons" id="pills-dungeons-tab" data-toggle="pill"
+							href="#pills-dungeons" role="tab" aria-controls="pills-dungeons"
+							aria-selected="false">Эпохальные подземелья</a>
+						<ul class="nav nav-pills nav-dungeons">
+							<li class="nav-item">
+								<a class="nav-link nav-link-dungeons" href="html/dungeons/m+10.html">Mифик +10</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-dungeons" href="html/dungeons/m+15.html">Mифик +15</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- Табы Рейды -->
+					<li class="nav-item nav-item-raids" role="presentation">
+						<a class="nav-link nav-link-raids" id="pills-raids-tab" data-toggle="pill" href="#pills-raids"
+							role="tab" aria-controls="pills-raids" aria-selected="false">Рейды</a>
+						<ul class="nav nav-pills nav-raids">
+							<li class="nav-item">
+								<a class="nav-link nav-link-raids" href="html/raids/classic.html">Classic</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-raids" href="html/raids/burning-crusade.html">The Burning
+									Crusade</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-raids" href="html/raids/wrath-of-the-lich-king.html">Wraith
+									of the Lich King</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-raids" href="html/raids/cataclysm.html">Cataclysm</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-raids" href="html/raids/mists-of-pandaria.html">Mists of
+									Pandaria</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-raids" href="html/raids/warlord-of-draenor.html">Warlords of
+									Draenor</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-raids" href="html/raids/legion.html">Legion</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-raids" href="html/raids/bfa.html">Battle for Azeroth</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-raids" href="html/raids/shadowlands.html">Shadowlands</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- Табы Прокачка Уровней -->
+					<li class="nav-item nav-item-lvl-up" role="presentation">
+						<a class="nav-link nav-link-lvl-up" id="pills-lvl-up-tab" data-toggle="pill"
+							href="#pills-lvl-up" role="tab" aria-controls="pills-contact" aria-selected="false">Прокачка
+							Персонажей</a>
+						<ul class="nav nav-pills nav-lvl-up">
+							<li class="nav-item">
+								<a class="nav-link nav-link-lvl-up" href="html/lvl-up/lvl-up-full.html">1-60 уровень</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-lvl-up" href="html/lvl-up/lvl-up.html">50-60 уровень</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- Табы Достижения -->
+					<li class="nav-item nav-item-achievments" role="presentation">
+						<a class="nav-link nav-link-achievments" id="pills-achievments-tab" data-toggle="pill"
+							href="#pills-achievments" role="tab" aria-controls="pills-achievments"
+							aria-selected="false">Достижения</a>
+						<ul class="nav nav-pills nav-achievments">
+							<li class="nav-item">
+								<a class="nav-link nav-link-achievments" href="html/achievments/quests.html">Задания</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-achievments"
+									href="html/achievments/equipment-max-lvl.html">Экипировка 100 уровня</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-achievments" href="html/achievments/max-mounts.html">1000
+									Маунтов</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-achievments"
+									href="html/achievments/raids-explorer.html">Исследователь Рейдов</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-link-achievments"
+									href="html/achievments/great-feats.html">Великие Подвиги</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<!-- таб контент все -->
+				<div class="tab-content" id="pills-tabContent">
+					<!-- таб контент рейдовой брони -->
+					<div class="tab-pane fade show active" id="pills-raids-armour" role="tabpanel"
+						aria-labelledby="pills-raids-armour-tab">
+						<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
+							<div class="card card-warrior" style="width: 18rem;">
+								<a href="html/raids-armours/warrior.html"><img
+										src="img/logo/bg/classess/warrior-bg/garrosh-hellscrim.png"
+										class="card-img-top warrior" alt="warrior-armour"></a>
+								<div class="card-body">
+									<a class="card-link warrior-link" href="html/raids-armours/warrior.html">
+										<h3 class="card-title card-title-warrior">Воин</h3>
+									</a>
+									<p class="card-text card-text-warrior">Рейдовые Комплекты Брони на Воина</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-warrior">от 80<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids-armours/warrior.html" class="btn-warrior">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-druid" style="width: 18rem;">
+								<a href="html/raids-armours/druid.html"><img
+										src="img/logo/bg/classess/druid-bg/malfurion.png" class="card-img-top druid"
+										alt="druid-armour"></a>
+								<div class="card-body">
+									<a class="card-link druid-link" href="html/raids-armours/druid.html">
+										<h3 class="card-title card-title-druid">Друид</h3>
+									</a>
+									<p class="card-text card-text-druid">Рейдовые Комплекты Брони на Друида</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-druid">от 80<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids-armours/druid.html" class="btn-druid">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-priest" style="width: 18rem;">
+								<a href="html/raids-armours/priest.html"><img
+										src="img/logo/bg/classess/priest-bg/velen.png" class="card-img-top priest"
+										alt="priest-armour"></a>
+								<div class="card-body">
+									<a class="card-link priest-link" href="html/raids-armours/priest.html">
+										<h3 class="card-title card-title-priest">Жрец</h3>
+									</a>
+									<p class="card-text card-text-priest">Рейдовые Комплекты Брони на Жреца</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-priest">от 80<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids-armours/priest.html" class="btn-priest">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-mage" style="width: 18rem;">
+								<a href="html/raids-armours/mage.html"><img
+										src="img/logo/bg/classess/mage-bg/djaina-proudmoure.png"
+										class="card-img-top mage" alt="mage-armour"></a>
+								<div class="card-body">
+									<a class="card-link mage-link" href="html/raids-armours/mage.html">
+										<h3 class="card-title card-title-mage">Маг</h3>
+									</a>
+									<p class="card-text card-text-mage">Рейдовые Комплекты Брони на Мага</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-mage">от 80<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids-armours/mage.html" class="btn-mage">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-monk" style="width: 18rem;">
+								<a href="html/raids-armours/monk.html"><img
+										src="img/logo/bg/classess/monk-bg/tjan-dju.png" class="card-img-top monk"
+										alt="monk-armour"></a>
+								<div class="card-body">
+									<a class="card-link monk-link" href="html/raids-armours/monk.html">
+										<h3 class="card-title card-title-monk">Монах</h3>
+									</a>
+									<p class="card-text card-text-monk">Рейдовые Комплекты Брони на Монаха</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-monk">от 80<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids-armours/monk.html" class="btn-monk">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-hunter" style="width: 18rem;">
+								<a href="html/raids-armours/hunter.html"><img
+										src="img/logo/bg/classess/hunter-bg/rexar.png" class="card-img-top hunter"
+										alt="hunter-armour"></a>
+								<div class="card-body">
+									<a class="card-link hunter-link" href="html/raids-armours/hunter.html">
+										<h3 class="card-title card-title-hunter">Охотник</h3>
+									</a>
+									<p class="card-text card-text-hunter">Рейдовые Комплекты Брони на Охотника</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-hunter">от 80<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids-armours/hunter.html" class="btn-hunter">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-demon-hunter" style="width: 18rem;">
+								<a href="html/raids-armours/demonhunter.html"><img
+										src="img/logo/bg/classess/demon-hunter-bg/illidan.png"
+										class="card-img-top demon-hunter" alt="demon-hunter-armour"></a>
+								<div class="card-body">
+									<a class="card-link demon-hunter-link" href="html/raids-armours/demonhunter.html">
+										<h3 class="card-title card-title-demon-hunter">Охотник на демонов</h3>
+									</a>
+									<p class="card-text card-text-demon-hunter">Рейдовые Комплекты Брони на Охотника на
+										демонов</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-demon-hunter">от 80<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids-armours/demonhunter.html" class="btn-demon-hunter">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-paladin" style="width: 18rem;">
+								<a href="html/raids-armours/paladin.html"><img
+										src="img/logo/bg/classess/paladin-bg/tirion-fordring.png"
+										class="card-img-top paladin" alt="paladin-armour"></a>
+								<div class="card-body">
+									<a class="card-link paladin-link" href="html/raids-armours/paladin.html">
+										<h3 class="card-title card-title-paladin">Паладин</h3>
+									</a>
+									<p class="card-text card-text-paladin">Рейдовые Комплекты Брони на Паладина</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-paladin">от 80<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids-armours/paladin.html" class="btn-paladin">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-rogue" style="width: 18rem;">
+								<a href="html/raids-armours/rogue.html"><img
+										src="img/logo/bg/classess/rogue-bg/valira-sangvinar.png"
+										class="card-img-top rogue" alt="rogue-armour"></a>
+								<div class="card-body">
+									<a class="card-link rogue-link" href="html/raids-armours/rogue.html">
+										<h3 class="card-title card-title-rogue">Разбойник</h3>
+									</a>
+									<p class="card-text card-text-rogue">Рейдовые Комплекты Брони на Разбойника</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-rogue">от 80<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids-armours/rogue.html" class="btn-rogue">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-death-knight" style="width: 18rem;">
+								<a href="html/raids-armours/deathknight.html"><img
+										src="img/logo/bg/classess/death-knight-bg/lich-king.png"
+										class="card-img-top death-knight" alt="death-knight-armour"></a>
+								<div class="card-body">
+									<a class="card-link death-knight-link" href="html/raids-armours/deathknight.html">
+										<h3 class="card-title card-title-death-knight">Рыцарь Смерти</h3>
+									</a>
+									<p class="card-text card-text-death-knight">Рейдовые Комплекты Брони на Рыцаря
+										Смерти</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-death-knight">от 80<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids-armours/deathknight.html" class="btn-death-knight">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-warlock" style="width: 18rem;">
+								<a href="html/raids-armours/warlock.html"><img
+										src="img/logo/bg/classess/warlock-bg/guldan.png" class="card-img-top warlock"
+										alt="warlock-armour"></a>
+								<div class="card-body">
+									<a class="card-link warlock-link" href="html/raids-armours/warlock.html">
+										<h3 class="card-title card-title-warlock">Чернокнижник</h3>
+									</a>
+									<p class="card-text card-text-warlock">Рейдовые Комплекты Брони на Чернокнижника</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-warlock">от 80<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids-armours/warlock.html" class="btn-warlock">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-shaman" style="width: 18rem;">
+								<a href="html/raids-armours/shaman.html"><img
+										src="img/logo/bg/classess/shaman-bg/thrall.png" class="card-img-top shaman"
+										alt="shaman-armour"></a>
+								<div class="card-body">
+									<a class="card-link shaman-link" href="html/raids-armours/shaman.html">
+										<h3 class="card-title card-title-shaman">Шаман</h3>
+									</a>
+									<p class="card-text card-text-shaman">Рейдовые Комплекты Брони на Шамана</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-shaman">от 80<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids-armours/shaman.html" class="btn-shaman">Подробнее</a>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="form-group row"> 
-						<div class="col-sm-12 mx-auto">
-							<input type="password" placeholder="Пароль" class="form-control form-control-modal" id="inputPassword1" required>
+					<!-- таб контент оружие -->
+					<div class="tab-pane fade" id="pills-weapons" role="tabpanel" aria-labelledby="pills-weapons-tab">
+						<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
+							<div class="card card-weapons card-one-handed-weapons" style="width: 18rem;">
+								<a href="html/weapons/one-handed-weapons.html"><img
+										src="img/logo/bg/weapons/one-handed/1h-swords.png"
+										class="card-img-top one-handed-weapons" alt="Одноручное Оружие"></a>
+								<div class="card-body">
+									<a class="card-link one-handed-weapons-link"
+										href="html/weapons/one-handed-weapons.html">
+										<h3 class="card-title card-title-one-handed-weapons">Одноручное Оружие</h3>
+									</a>
+									<p class="card-text card-text-one-handed-weapons">Закажите любое одноручное оружие
+										на выбор.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-one-handed-weapons">от 300<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/weapons/one-handed-weapons.html"
+										class="btn-one-handed-weapons">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-weapons card-two-handed-weapons" style="width: 18rem;">
+								<a href="html/weapons/two-handed-weapons.html"><img
+										src="img/logo/bg/weapons/two-handed/2h-axes.png"
+										class="card-img-top two-handed-weapons" alt="Двуручное Оружие"></a>
+								<div class="card-body">
+									<a class="card-link two-handed-weapons-link"
+										href="html/weapons/two-handed-weapons.html">
+										<h3 class="card-title card-title-two-handed-weapons">Двуручное Оружие</h3>
+									</a>
+									<p class="card-text card-text-two-handed-weapons">Закажите любое двуручное оружие на
+										выбор.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-two-handed-weapons">от 300<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/weapons/two-handed-weapons.html"
+										class="btn-two-handed-weapons">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-weapons card-range-weapons" style="width: 18rem;">
+								<a href="html/weapons/range-weapons.html"><img src="img/logo/bg/weapons/range/bow.png"
+										class="card-img-top range-weapons" alt="Дальний Бой"></a>
+								<div class="card-body">
+									<a class="card-link range-weapons-link" href="html/weapons/range-weapons.html">
+										<h3 class="card-title card-title-range-weapons">Дальний Бой</h3>
+									</a>
+									<p class="card-text card-text-range-weapons">Закажите любое оружие дальнего боя на
+										выбор.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-range-weapons">от 300<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/weapons/range-weapons.html" class="btn-range-weapons">Подробнее</a>
+								</div>
+							</div>
+
+
+							<div class="card card-weapons card-shields-weapons" style="width: 18rem;">
+								<a href="html/weapons/shields.html"><img src="img/logo/bg/weapons/shields/shields.png"
+										class="card-img-top shields-weapons" alt="Щиты"></a>
+								<div class="card-body">
+									<a class="card-link shields-weapons-link" href="html/weapons/shields.html">
+										<h3 class="card-title card-title-shields-weapons">Щиты</h3>
+									</a>
+									<p class="card-text card-text-shields-weapons">Закажите любой щит на выбор.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-shields-weapons">от 300<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/weapons/shields.html" class="btn-shields-weapons">Подробнее</a>
+								</div>
+							</div>
+
+
+							<div class="card card-weapons card-other-weapons" style="width: 18rem;">
+								<a href="html/weapons/other.html"><img src="img/logo/bg/weapons/other/legendary.png"
+										class="card-img-top other-weapons" alt="Уникальное"></a>
+								<div class="card-body">
+									<a class="card-link other-weapons-link" href="html/weapons/other.html">
+										<h3 class="card-title card-title-other-weapons">Уникальное Оружие</h3>
+									</a>
+									<p class="card-text card-text-other-weapons">Закажите любое легендарное,
+										артефактное, оружие из испытаний, удочки или плащи которые помогут вам в
+										приключениях.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-other-weapons">от 500<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/weapons/other.html" class="btn-other-weapons">Подробнее</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- таб контент маунты -->
+					<div class="tab-pane fade" id="pills-mounts" role="tabpanel" aria-labelledby="pills-mounts-tab">
+						<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
+							<div class="card card-mounts card-water-mounts" style="width: 18rem;">
+								<a href="html/mounts/water/water.html"><img src="img/logo/bg/mounts/water-mounts-bg.png"
+										class="card-img-top water" alt="water-mounts"></a>
+								<div class="card-body">
+									<a class="card-link water-mounts-link" href="html/mounts/water/water.html">
+										<h3 class="card-title card-title-water-mounts">Водные</h3>
+									</a>
+									<p class="card-text card-text-water-mounts">Водные маунты, обитатели морей и
+										океанов. Дадут фору любому плавцу.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-water-mounts">от 100<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/mounts/water/water.html" class="btn-water-mounts">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-mounts card-eath-mounts" style="width: 18rem;">
+								<a href="html/mounts/earth/earth.html"><img src="img/logo/bg/mounts/eath-mounts-bg.png"
+										class="card-img-top eath" alt="eath-mounts"></a>
+								<div class="card-body">
+									<a class="card-link eath-mounts-link" href="html/mounts/earth/earth.html">
+										<h3 class="card-title card-title-eath-mounts">Наземные</h3>
+									</a>
+									<p class="card-text card-text-eath-mounts">Наземные маунты, живущие на земле,
+										обитатели пещер. Очень быстро передвигаются.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-eath-mounts">от 100<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/mounts/earth/earth.html" class="btn-eath-mounts">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-mounts card-fly-mounts" style="width: 18rem;">
+								<a href="html/mounts/fly/fly.html"><img src="img/logo/bg/mounts/fly-mounts-bg.png"
+										class="card-img-top fly" alt="fly-mounts"></a>
+								<div class="card-body">
+									<a class="card-link fly-mounts-link" href="html/mounts/fly/fly.html">
+										<h3 class="card-title card-title-fly-mounts">Летающие</h3>
+									</a>
+									<p class="card-text card-text-fly-mounts">Летающие маунты, небо их стихия. Летают со
+										скоростью ветра.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-fly-mounts">от 100<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/mounts/fly/fly.html" class="btn-fly-mounts">Подробнее</a>
+								</div>
+							</div>
+
 						</div>
 					</div>
 
-					<div class="form-group row">
-						<div class="col-sm-12 mx-auto">
-							<div class="form-check d-flex align-items-center">
-								<input class="form-check-input" type="checkbox" id="gridCheck1">
-								<label class="form-check-label" for="gridCheck1">
-									Я соглашаюсь с <a href="html/user-agreement/user-agreement.html" class="modal-user-ok">Пользовательским соглашением</a> и <a href="html/user-agreement/privacy-policy.html" class="modal-user-ok">Политикой конфиденциальности</a> 
-								</label>
-							</div>	
-							<div class="form-check d-flex align-items-center">
-								<input class="form-check-input" type="checkbox" id="gridCheck2">
-								<label class="form-check-label" for="gridCheck2">
-									Я хочу получать информацию об акциях, скидках и персональных предложениях
-								</label>
-							</div>	
+					<!-- таб контент профессии -->
+					<div class="tab-pane fade" id="pills-professions" role="tabpanel"
+						aria-labelledby="pills-professions-tab">
+						<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
+							<div class="card card-alchemy" style="width: 18rem;">
+								<a href="html/professions/alchemy.html"><img src="img/logo/bg/professions/alchemy.png"
+										class="card-img-top alchemy" alt="Алхимия"></a>
+								<div class="card-body">
+									<a class="card-link alchemy-link" href="html/professions/alchemy.html">
+										<h3 class="card-title card-title-alchemy">Алхимия</h3>
+									</a>
+									<p class="card-text card-text-alchemy">Алхимия - с помощью алхимии можно создавать
+										мощные зелья, настои и элексиры.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-alchemy">от 200<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/professions/alchemy.html" class="btn-alchemy">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-mining" style="width: 18rem;">
+								<a href="html/professions/mining.html"><img src="img/logo/bg/professions/mining.png"
+										class="card-img-top mining" alt="Горное дело"></a>
+								<div class="card-body">
+									<a class="card-link mining-link" href="html/professions/mining.html">
+										<h3 class="card-title card-title-mining">Горное дело</h3>
+									</a>
+									<p class="card-text card-text-mining">Горное дело позволяет добывать руду во
+										множестве мест по всему миру.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-mining">от 200<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/professions/mining.html" class="btn-mining">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-engineering" style="width: 18rem;">
+								<a href="html/professions/engineering.html"><img
+										src="img/logo/bg/professions/engineering.png" class="card-img-top engineering"
+										alt="Инженерное дело"></a>
+								<div class="card-body">
+									<a class="card-link engineering-link" href="html/professions/engineering.html">
+										<h3 class="card-title card-title-engineering">Инженерное дело</h3>
+									</a>
+									<p class="card-text card-text-engineering">Инженеры превращают различные материалы
+										(детали и металлы) в интересные и полезные гаджеты, необычные предметы (средства
+										передвижения и питомцы) и даже в эпические шлемы и очки, оружия дальнего боя и
+										прицелы к ним.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-engineering">от 200<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/professions/engineering.html" class="btn-engineering">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-leatherworking" style="width: 18rem;">
+								<a href="html/professions/leatherworking.html"><img
+										src="img/logo/bg/professions/leatherworking.png"
+										class="card-img-top leatherworking" alt="Кожевничество"></a>
+								<div class="card-body">
+									<a class="card-link leatherworking-link"
+										href="html/professions/leatherworking.html">
+										<h3 class="card-title card-title-leatherworking">Кожевничество</h3>
+									</a>
+									<p class="card-text card-text-leatherworking">Кожевничество - ремесленная профессия,
+										которая использует шкуры и кожу, полученные путем снятия кожи, для изготовления
+										доспехов и барабанов.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-leatherworking">от 200<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/professions/leatherworking.html"
+										class="btn-leatherworking">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-blacksmithing" style="width: 18rem;">
+								<a href="html/professions/blacksmithing.html"><img
+										src="img/logo/bg/professions/blacksmithing.png"
+										class="card-img-top blacksmithing" alt="Кузнечное дело"></a>
+								<div class="card-body">
+									<a class="card-link blacksmithing-link" href="html/professions/blacksmithing.html">
+										<h3 class="card-title card-title-blacksmithing">Кузнечное дело</h3>
+									</a>
+									<p class="card-text card-text-blacksmithing">Кузнечное дело - ремесленная профессия,
+										для нее требуются материалы, произведенные с помощью другой профессии, обычно
+										горнодобывающей. Кузнецы превращают различные реагенты (в основном металлы) в
+										пластинчатые доспехи, оружие и некоторые другие полезные предметы.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-blacksmithing">от 200<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/professions/blacksmithing.html"
+										class="btn-blacksmithing">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-enchanting" style="width: 18rem;">
+								<a href="html/professions/enchanting.html"><img
+										src="img/logo/bg/professions/enchanting.png" class="card-img-top enchanting"
+										alt="Наложение чар"></a>
+								<div class="card-body">
+									<a class="card-link enchanting-link" href="html/professions/enchanting.html">
+										<h3 class="card-title card-title-enchanting">Наложение чар</h3>
+									</a>
+									<p class="card-text card-text-enchanting">При помощи Наложения чар получают
+										материалы для зачаровывания путем распыления брони необычного или лучшего
+										качества и превращают их в постоянные улучшения для собственной брони или брони
+										союзников.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-enchanting">от 200<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/professions/enchanting.html" class="btn-enchanting">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-inscription" style="width: 18rem;">
+								<a href="html/professions/inscription.html"><img
+										src="img/logo/bg/professions/inscription.png" class="card-img-top inscription"
+										alt="Начертание"></a>
+								<div class="card-body">
+									<a class="card-link inscription-link" href="html/professions/inscription.html">
+										<h3 class="card-title card-title-inscription">Начертание</h3>
+									</a>
+									<p class="card-text card-text-inscription">Начертание позволяет создавать символы,
+										свитки, карты и прочее. Начертатели могут использовать способность Измельчение,
+										чтобы измельчить травы (собранные с помощью Травничества) в смесь, используемую
+										для создания чернил. Эти чернила, как обычные так и необычные, могут быть
+										использованы для зачарования пергаментов.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-inscription">от 200<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/professions/inscription.html" class="btn-inscription">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-tailoring" style="width: 18rem;">
+								<a href="html/professions/tailoring.html"><img
+										src="img/logo/bg/professions/tailoring.png" class="card-img-top tailoring"
+										alt="Портняжное дело"></a>
+								<div class="card-body">
+									<a class="card-link tailoring-link" href="html/professions/tailoring.html">
+										<h3 class="card-title card-title-tailoring">Портняжное дело</h3>
+									</a>
+									<p class="card-text card-text-tailoring">Портняжное дело - ремесленная профессия,
+										позволяющая использовать различные ткани и другие реагенты для создания брони,
+										сумок, чародейских нитей и даже ковров-самолетов.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-tailoring">от 200<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/professions/tailoring.html" class="btn-tailoring">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-skinning" style="width: 18rem;">
+								<a href="html/professions/skinning.html"><img src="img/logo/bg/professions/skinning.png"
+										class="card-img-top skinning" alt="Снятие шкур"></a>
+								<div class="card-body">
+									<a class="card-link skinning-link" href="html/professions/skinning.html">
+										<h3 class="card-title card-title-skinning">Снятие шкур</h3>
+									</a>
+									<p class="card-text card-text-skinning">Снятие шкур - собирательная профессия,
+										позволяющая срезать кожу, чешуйки и шкуры с убитых животных и драконов, и
+										панцири с нерубов и силитидов.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-skinning">от 200<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/professions/skinning.html" class="btn-skinning">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-herbalism" style="width: 18rem;">
+								<a href="html/professions/herbalism.html"><img
+										src="img/logo/bg/professions/herbalism.png" class="card-img-top herbalism"
+										alt="Травничество"></a>
+								<div class="card-body">
+									<a class="card-link herbalism-link" href="html/professions/herbalism.html">
+										<h3 class="card-title card-title-herbalism">Травничество</h3>
+									</a>
+									<p class="card-text card-text-herbalism">Травничество – собирательная профессия,
+										целью которой является сбор материалов (в основном трав, а также некоторых
+										элементов стихий), необходимых для других профессий.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-herbalism">от 200<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/professions/herbalism.html" class="btn-herbalism">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-jewelcrafting" style="width: 18rem;">
+								<a href="html/professions/jewelcrafting.html"><img
+										src="img/logo/bg/professions/jewelcrafting.png"
+										class="card-img-top jewelcrafting" alt="Ювелирное дело"></a>
+								<div class="card-body">
+									<a class="card-link jewelcrafting-link" href="html/professions/jewelcrafting.html">
+										<h3 class="card-title card-title-jewelcrafting">Ювелирное дело</h3>
+									</a>
+									<p class="card-text card-text-jewelcrafting">Ювелирное дело - ремесленная профессия
+										с помощью которой можно создавать различные драгоценные камни, повышающие
+										различные характеристики. Эти камни могут быть вставлены в экипировку.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-jewelcrafting">от 200<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/professions/jewelcrafting.html"
+										class="btn-jewelcrafting">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-archaeology" style="width: 18rem;">
+								<a href="html/professions/archaeology.html"><img
+										src="img/logo/bg/professions/archaeology.png" class="card-img-top archaeology"
+										alt="Археология"></a>
+								<div class="card-body">
+									<a class="card-link archaeology-link" href="html/professions/archaeology.html">
+										<h3 class="card-title card-title-archaeology">Археология</h3>
+									</a>
+									<p class="card-text card-text-archaeology">Археология - это вторичная профессия
+										предлагающая множество интересного контента и позволяет увидеть, что же скрывают
+										в себе глубины Азерота буквально. Археологи должны путешествовать по всему миру
+										в поисках фрагментов древних артефактов, многие из которых содержат
+										интереснейшие частицы истории мира.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-archaeology">от 200<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/professions/archaeology.html" class="btn-archaeology">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-riding" style="width: 18rem;">
+								<a href="html/professions/riding.html"><img src="img/logo/bg/professions/riding.png"
+										class="card-img-top riding" alt="Верховая езда"></a>
+								<div class="card-body">
+									<a class="card-link riding-link" href="html/professions/riding.html">
+										<h3 class="card-title card-title-riding">Верховая езда</h3>
+									</a>
+									<p class="card-text card-text-riding">Верховая езда — это пассивный навык, который
+										позволяет игрокам использовать верховых животных для передвижения по всему миру.
+										Чем выше ваш навык верховой езды, тем быстрее ваши верховые животные могут
+										передвигаться по миру.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-riding">от 200<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/professions/riding.html" class="btn-riding">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-cooking" style="width: 18rem;">
+								<a href="html/professions/cooking.html"><img src="img/logo/bg/professions/cooking.png"
+										class="card-img-top cooking" alt="Кулинария"></a>
+								<div class="card-body">
+									<a class="card-link cooking-link" href="html/professions/cooking.html">
+										<h3 class="card-title card-title-cooking">Кулинария</h3>
+									</a>
+									<p class="card-text card-text-cooking">Кулинария - это вторичная профессия, с
+										помощью которой можно комбинировать различные ингредиенты, такие как рыба или
+										мясо, превращая их во вкусную еду и напитки, восстанавливающие здоровье или
+										ману, а так же, дающие полезные боевые баффы.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-cooking">от 200<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/professions/cooking.html" class="btn-cooking">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-first-aid" style="width: 18rem;">
+								<a href="html/professions/first-aid.html"><img
+										src="img/logo/bg/professions/first-aid.png" class="card-img-top first-aid"
+										alt="Первая помощь"></a>
+								<div class="card-body">
+									<a class="card-link first-aid-link" href="html/professions/first-aid.html">
+										<h3 class="card-title card-title-first-aid">Первая помощь</h3>
+									</a>
+									<p class="card-text card-text-cooking">Первая помощь — это вторичная профессия.
+										Превращение ткани в бинты. Она очень полезна классам, у которых нет собственного
+										лечащего заклинаний(хила).</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-first-aid">от 200<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/professions/first-aid.html" class="btn-first-aid">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-fishing" style="width: 18rem;">
+								<a href="html/professions/fishing.html"><img src="img/logo/bg/professions/fishing.png"
+										class="card-img-top fishing" alt="Рыбная ловля"></a>
+								<div class="card-body">
+									<a class="card-link fishing-link" href="html/professions/fishing.html">
+										<h3 class="card-title card-title-fishing">Рыбная ловля</h3>
+									</a>
+									<p class="card-text card-text-fishing">Рыбная ловля - это вторичная собирательная
+										профессия, которая позволяет игрокам рыбачить в различных водоёмах по всему
+										миру.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-fishing">от 200<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/professions/fishing.html" class="btn-fishing">Подробнее</a>
+								</div>
+							</div>
+
 						</div>
 					</div>
-					<div class="form-btn form-group row">
-						<div class="col-sm-12 modal-form-btn mx-auto mt-2">
-							<button type="submit" class="modal-btn">Зарегистрироваться</button>
+
+					<!-- таб контент голд -->
+					<div class="tab-pane fade" id="pills-gold" role="tabpanel" aria-labelledby="pills-gold-tab">
+						<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
+							<div class="card card-gold-horde" style="width: 18rem;">
+								<a href="html/gold/horde.html"><img src="img/logo/bg/gold/horde-bg.png"
+										class="card-img-top horde" alt="gold-horde"></a>
+								<div class="card-body">
+									<a class="card-link gold-horde-link" href="html/gold/horde.html">
+										<h3 class="card-title card-title-gold-horde">Орда</h3>
+									</a>
+									<p class="card-text card-text-gold-horde">Золото для игроков Орды. Любой сервер. За
+										Орду!</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-gold-horde">от 1000<img class="gold"
+											src="img/logo/bg/gold/gold.png" alt="gold"></p>
+									<a href="html/gold/horde.html" class="btn-gold-horde">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-gold-alliance" style="width: 18rem;">
+								<a href="html/gold/alliance.html"><img src="img/logo/bg/gold/alliance-bg.png"
+										class="card-img-top alliance" alt="gold-alliance"></a>
+								<div class="card-body">
+									<a class="card-link gold-alliance-link" href="html/gold/alliance.html">
+										<h3 class="card-title card-title-gold-alliance">Альянс</h3>
+									</a>
+									<p class="card-text card-text-gold-alliance">Золото для игроков Альянса. Любой
+										сервер. За Альянс!</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-gold-alliance">от 1000<img class="gold"
+											src="img/logo/bg/gold/gold.png" alt="gold"></p>
+									<a href="html/gold/alliance.html" class="btn-gold-alliance">Подробнее</a>
+								</div>
+							</div>
 						</div>
 					</div>
-				</form>
-				<div class="modal-questions d-flex justify-content-center align-items-center">
-					<p class="modal-text text-dark mr-3">У вас уже есть аккаунт?</p>
-				  	<p class="modal-text modal-text-enter" data-toggle="modal" data-target="#modal-enter" data-dismiss="modal">Войти</p>
-				</div>  
+
+					<!-- таб контент pvp -->
+					<div class="tab-pane fade" id="pills-pvp" role="tabpanel" aria-labelledby="pills-pvp-tab">
+						<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
+							<div class="card card-honor" style="width: 18rem;">
+								<a href="html/pvp/honor.html"><img src="img/logo/bg/pvp/mark-of-honor-bg.png"
+										class="card-img-top honor" alt="honor"></a>
+								<div class="card-body">
+									<a class="card-link" href="html/pvp/honor.html">
+										<h3 class="card-title card-title-honor">Честь</h3>
+									</a>
+									<p class="card-text card-text-honor">Очки чести необходимые для покупки PvP
+										экипировки.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-honor">от 100<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/pvp/honor.html" class="btn-honor">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-arena" style="width: 18rem;">
+								<a class="arena-link" href="html/pvp/arena.html"><img src="img/logo/bg/pvp/arena-bg.png"
+										class="card-img-top arena" alt="arena"></a>
+								<div class="card-body">
+									<a class="card-link" href="html/pvp/arena.html">
+										<h3 class="card-title card-title-arena">Арена</h3>
+									</a>
+									<p class="card-text card-text-arena">Очки Арены необходимые для покупки мощной и
+										самой лучшей PvP экипировки.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-arena">от 100<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/pvp/arena.html" class="btn-arena">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-rbg" style="width: 18rem;">
+								<a href="html/pvp/rbg.html"><img src="img/logo/bg/pvp/rbg-bg.png"
+										class="card-img-top rbg" alt="rbg"></a>
+								<div class="card-body">
+									<a class="card-link" href="html/pvp/rbg.html">
+										<h3 class="card-title card-title-rbg">Рейтинговые Поля Боя</h3>
+									</a>
+									<p class="card-text card-text-rbg">Рейтинговые Поля Боя - рейтинговые бои для
+										покупки уникальной PvP экипировки и званий таких как Гладиатор.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-rbg">от 100<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/pvp/rbg.html" class="btn-rbg">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- таб контент эпохальные подземелья -->
+					<div class="tab-pane fade" id="pills-dungeons" role="tabpanel" aria-labelledby="pills-dungeons-tab">
+						<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
+							<div class="card card-mythic-10" style="width: 18rem;">
+								<a href="html/dungeons/m+10.html"><img src="img/logo/bg/dungeons/mythic-10.jpg"
+										class="card-img-top mythic-10" alt="mythic-10"></a>
+								<div class="card-body">
+									<a class="card-link mythic10-link" href="html/dungeons/m+10.html">
+										<h3 class="card-title card-title-mythic-10">Эпохальные Подземелья М +10</h3>
+									</a>
+									<p class="card-text card-text-mythic-10">Любые Эпохальные Подземелья М +10 в таймер
+									</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-mythic-10">от 500<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/dungeons/m+10.html" class="btn-mythic-10">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-mythic-15" style="width: 18rem;">
+								<a href="html/dungeons/m+15.html"><img src="img/logo/bg/dungeons/mythic-15.jpg"
+										class="card-img-top mythic-15" alt="mythic-15"></a>
+								<div class="card-body">
+									<a class="card-link mythic-15-link" href="html/dungeons/m+15.html">
+										<h3 class="card-title card-title-mythic-15">Эпохальные Подземелья М +15</h3>
+									</a>
+									<p class="card-text card-text-mythic-15">Любые Эпохальные Подземелья М +15 в таймер
+									</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-mythic-15">от 1000<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/dungeons/m+15.html" class="btn-mythic-15">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- таб контент рейды -->
+					<div class="tab-pane fade" id="pills-raids" role="tabpanel" aria-labelledby="pills-raids-tab">
+						<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
+							<div class="card card-raids-classic" style="width: 18rem;">
+								<a href="html/raids/classic.html"><img
+										src="img/logo/bg/raids/classic/temple-of-ahn_qiraj.jpg"
+										class="card-img-top classic" alt="Classic"></a>
+								<div class="card-body">
+									<a class="card-link raids-classic-link" href="html/raids/classic.html">
+										<h3 class="card-title card-title-raids-classic">Classic</h3>
+									</a>
+									<p class="card-text card-text-raids-classic">Закажите гарантированное прохождение
+										любого рейда из дополнения <span class="text-color-classic">Classic.</span></p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-raids-classic">от 50<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids/classic.html" class="btn-raids-classic">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-raids-burning-crusade" style="width: 18rem;">
+								<a href="html/raids/burning-crusade.html"><img
+										src="img/logo/bg/raids/burning-crusade/black-temple.jpg"
+										class="card-img-top burning-crusade" alt="The Burning Crusade"></a>
+								<div class="card-body">
+									<a class="card-link raids-classic-link" href="html/raids/burning-crusade.html">
+										<h3 class="card-title card-title-raids-burning-crusade">The Burning Crusade</h3>
+									</a>
+									<p class="card-text card-text-raids-burning-crusade">Закажите гарантированное
+										прохождение любого рейда из дополнения <span
+											class="text-color-burning-crusade">The Burning Crusade.</span></p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-raids-burning-crusade">от 100<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids/burning-crusade.html"
+										class="btn-raids-burning-crusade">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-raids-wrath-of-the-lich-king" style="width: 18rem;">
+								<a href="html/raids/wrath-of-the-lich-king.html"><img
+										src="img/logo/bg/raids/wrath-of-the-lich-king/icecrown-citadel.jpg"
+										class="card-img-top wrath-of-the-lich-king" alt="Wrath of the Lich King"></a>
+								<div class="card-body">
+									<a class="card-link raids-wrath-of-the-lich-king-link"
+										href="html/raids/wrath-of-the-lich-king.html">
+										<h3 class="card-title card-title-raids-wrath-of-the-lich-king">Wrath of the Lich
+											King</h3>
+									</a>
+									<p class="card-text card-text-raids-wrath-of-the-lich-king">Закажите гарантированное
+										прохождение любого рейда из дополнения <span
+											class="text-color-wrath-of-the-lich-king">Wrath of the Lich King.</span></p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-raids-wrath-of-the-lich-king">от 150<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids/wrath-of-the-lich-king.html"
+										class="btn-raids-wrath-of-the-lich-king">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-raids-cataclysm" style="width: 18rem;">
+								<a href="html/raids/cataclysm.html"><img src="img/logo/bg/raids/cataclysm/firelands.jpg"
+										class="card-img-top cataclysm" alt="Cataclysm"></a>
+								<div class="card-body">
+									<a class="card-link raids-cataclysm-link" href="html/raids/cataclysm.html">
+										<h3 class="card-title card-title-raids-cataclysm">Cataclysm</h3>
+									</a>
+									<p class="card-text card-text-raids-cataclysm">Закажите гарантированное прохождение
+										любого рейда из дополнения <span class="text-color-cataclysm">Cataclysm.</span>
+									</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-raids-cataclysm">от 200<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids/cataclysm.html" class="btn-raids-cataclysm">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-raids-mists-of-pandaria" style="width: 18rem;">
+								<a href="html/raids/mists-of-pandaria.html"><img
+										src="img/logo/bg/raids/mists-of-pandaria/throne-of-thunder.jpg"
+										class="card-img-top mists-of-pandaria" alt="Mists of Pandaria"></a>
+								<div class="card-body">
+									<a class="card-link raids-mists-of-pandaria-link"
+										href="html/raids/mists-of-pandaria.html">
+										<h3 class="card-title card-title-raids-mists-of-pandaria">Mists of Pandaria</h3>
+									</a>
+									<p class="card-text card-text-raids-mists-of-pandaria">Закажите гарантированное
+										прохождение любого рейда из дополнения <span
+											class="text-color-mists-of-pandaria">Mists of Pandaria.</span></p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-raids-mists-of-pandaria">от 250<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids/mists-of-pandaria.html"
+										class="btn-raids-mists-of-pandaria">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-raids-warlord-of-draenor" style="width: 18rem;">
+								<a href="html/raids/warlord-of-draenor.html"><img
+										src="img/logo/bg/raids/warlord-of-draenor/blackrock-foundry.jpg"
+										class="card-img-top warlord-of-draenor" alt="Warlords of Draenor"></a>
+								<div class="card-body">
+									<a class="card-link raids-warlord-of-draenor-link"
+										href="html/raids/warlord-of-draenor.html">
+										<h3 class="card-title card-title-raids-warlord-of-draenor">Warlords of Draenor
+										</h3>
+									</a>
+									<p class="card-text card-text-raids-warlord-of-draenor">Закажите гарантированное
+										прохождение любого рейда из дополнения <span
+											class="text-color-warlord-of-draenor">Warlords of Draenor.</span></p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-raids-warlord-of-draenor">от 300<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids/warlord-of-draenor.html"
+										class="btn-raids-warlord-of-draenor">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-raids-legion" style="width: 18rem;">
+								<a href="html/raids/legion.html"><img
+										src="img/logo/bg/raids/legion/antorus-the-burning-throne.png"
+										class="card-img-top legion" alt="Legion"></a>
+								<div class="card-body">
+									<a class="card-link raids-legion-link" href="html/raids/legion.html">
+										<h3 class="card-title card-title-raids-legion">Legion</h3>
+									</a>
+									<p class="card-text card-text-raids-legion">Закажите гарантированное прохождение
+										любого рейда из дополнения <span class="text-color-legion">Legion.</span></p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-raids-legion">от 350<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids/legion.html" class="btn-raids-legion">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-raids-bfa" style="width: 18rem;">
+								<a href="html/raids/bfa.html"><img src="img/logo/bg/raids/bfa/ny'alotha.jpg"
+										class="card-img-top bfa" alt="Battle for Azeroth"></a>
+								<div class="card-body">
+									<a class="card-link raids-bfa-link" href="html/raids/bfa.html">
+										<h3 class="card-title card-title-raids-bfa">Battle for Azeroth</h3>
+									</a>
+									<p class="card-text card-text-raids-bfa">Закажите гарантированное прохождение любого
+										рейда из дополнения <span class="text-color-bfa">Battle for Azeroth.</span></p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-raids-bfa">от 400<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids/bfa.html" class="btn-raids-bfa">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-raids-shadowlands" style="width: 18rem;">
+								<a href="html/raids/shadowlands.html"><img
+										src="img/logo/bg/raids/shadowlands/sanctum-of-domination.jpg"
+										class="card-img-top shadowlands" alt="Shadowlands"></a>
+								<div class="card-body">
+									<a class="card-link raids-shadowlands-link" href="html/raids/shadowlands.html">
+										<h3 class="card-title card-title-raids-shadowlands">Shadowlands</h3>
+									</a>
+									<p class="card-text card-text-raids-shadowlands">Закажите гарантированное
+										прохождение любого рейда из дополнения <span
+											class="text-color-shadowlands">Shadowlands.</span></p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-raids-shadowlands">от 500<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/raids/shadowlands.html" class="btn-raids-shadowlands">Подробнее</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- таб контент прокачка персонажей -->
+					<div class="tab-pane fade" id="pills-lvl-up" role="tabpanel" aria-labelledby="pills-lvl-up-tab">
+						<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
+							<div class="card card-lvl-up-full" style="width: 18rem;">
+								<a href="html/lvl-up/lvl-up-full.html"><img src="img/logo/bg/lvl-up/lvl-up.jpg"
+										class="card-img-top lvl-up-full" alt="lvl-up-full"></a>
+								<div class="card-body">
+									<a class="card-link lvl-up-full-link" href="html/lvl-up/lvl-up-full.html">
+										<h3 class="card-title card-title-lvl-up-full">1-60 Уровень</h3>
+									</a>
+									<p class="card-text card-text-lvl-up-full">Прокачка 1-60 в Shadowlands. Экипировка
+										150 уровня. Отличный набор для начинающего приключенца!</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-lvl-up-full">от 500<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/lvl-up/lvl-up-full.html" class="btn-lvl-up-full">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-lvl-up" style="width: 18rem;">
+								<a href="html/lvl-up/lvl-up.html"><img src="img/logo/bg/lvl-up/lvl-up-gear.jpg"
+										class="card-img-top lvl-up" alt="lvl-up"></a>
+								<div class="card-body">
+									<a class="card-link lvl-up-link" href="html/lvl-up/lvl-up.html">
+										<h3 class="card-title card-title-lvl-up">50-60 Уровень</h3>
+									</a>
+									<p class="card-text card-text-lvl-up">Прокачка 50-60 в Shadowlands. Экипировка 220
+										уровня. Отличный набор для экспертного приключенца!</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-lvl-up">от 500<img class="dollar"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/lvl-up/lvl-up.html" class="btn-lvl-up">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- таб контент достижения -->
+					<div class="tab-pane fade" id="pills-achievments" role="tabpanel"
+						aria-labelledby="pills-achievments-tab">
+						<div class="card-box d-flex flex-wrap justify-content-center justify-content-xl-start">
+							<div class="card card-achievments-quests" style="width: 18rem;">
+								<a href="html/achievments/quests.html"><img src="img/logo/bg/achievments/quests.jpg"
+										class="card-img-top quests" alt="quests"></a>
+								<div class="card-body">
+									<a class="card-link achievments-quests-link" href="html/achievments/quests.html">
+										<h3 class="card-title card-title-achievments-quests">Задания</h3>
+									</a>
+									<p class="card-text card-text-achievments-quests">Закажите выполнение всех Заданий.
+									</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-achievments-quests">от 300<img class="gold"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/achievments/quests.html" class="btn-achievments-quests">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-achievments-max-equipments" style="width: 18rem;">
+								<a href="html/achievments/equipment-max-lvl.html"><img
+										src="img/logo/bg/achievments/max-equipment.png"
+										class="card-img-top max-equipments" alt="max-equipments"></a>
+								<div class="card-body">
+									<a class="card-link achievments-max-equipments-link"
+										href="html/achievments/equipment-max-lvl.html">
+										<h3 class="card-title card-title-achievments-max-equipments">Экипировка 1000
+											уровня</h3>
+									</a>
+									<p class="card-text card-text-achievments-max-equipments">Закажите выполнение
+										достижения на сбор экипировки 1000 уровня.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-achievments-max-equipments">от 300<img class="gold"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/achievments/equipment-max-lvl.html"
+										class="btn-achievments-max-equipments">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-achievments-max-mounts" style="width: 18rem;">
+								<a href="html/achievments/max-mounts.html"><img
+										src="img/logo/bg/achievments/max-mounts.jpg" class="card-img-top max-mounts"
+										alt="max-mounts"></a>
+								<div class="card-body">
+									<a class="card-link achievments-max-mounts-link"
+										href="html/achievments/max-mounts.html">
+										<h3 class="card-title card-title-achievments-max-mounts">1000 маунтов</h3>
+									</a>
+									<p class="card-text card-text-achievments-max-mounts">Закажите сбор 1000 средств
+										передвижения.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-achievments-max-mounts">от 300<img class="gold"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/achievments/max-mounts.html"
+										class="btn-achievments-max-mounts">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-achievments-raids-explorer" style="width: 18rem;">
+								<a href="html/achievments/raids-explorer.html"><img
+										src="img/logo/bg/achievments/raids-explorer.jpg"
+										class="card-img-top raids-explorer" alt="raids-explorer"></a>
+								<div class="card-body">
+									<a class="card-link achievments-raids-explorer-link"
+										href="html/achievments/raids-explorer.html">
+										<h3 class="card-title card-title-achievments-raids-explorer">Исследователь
+											рейдов</h3>
+									</a>
+									<p class="card-text card-text-achievments-raids-explorer">Закажите сбор всех
+										комплектов рейдовых доспехов.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-achievments-raids-explorer">от 500<img class="gold"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/achievments/raids-explorer.html"
+										class="btn-achievments-raids-explorer">Подробнее</a>
+								</div>
+							</div>
+
+							<div class="card card-achievments-great-feats" style="width: 18rem;">
+								<a href="html/achievments/great-feats.html"><img
+										src="img/logo/bg/achievments/great-feats.jpg" class="card-img-top great-feats"
+										alt="great-feats"></a>
+								<div class="card-body">
+									<a class="card-link achievments-great-feats-link"
+										href="html/achievments/great-feats.html">
+										<h3 class="card-title card-title-achievments-great-feats">Великие подвиги</h3>
+									</a>
+									<p class="card-text card-text-achievments-great-feats">Закажите выполнение любых
+										Великих подвигов.</p>
+								</div>
+								<div class="card-footer d-flex justify-content-between align-items-center">
+									<p class="price price-achievments-great-feats">от 1000<img class="gold"
+											src="img/logo/bg/gold/dollar.png" alt="dollar"></p>
+									<a href="html/achievments/great-feats.html"
+										class="btn-achievments-great-feats">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn-save" data-dismiss="modal">Сохранить</button>
-				<button type="button" class="btn-close" data-dismiss="modal">Закрыть</button>
+	</section>
+
+	<section class="registrations py-5">
+		<div class="container">
+			<div class="registrations__info" id="how-its-work">
+				<h2 class="registrations__header text-center">Шаги оформления заказа</h2>
+				<div class="registrations__box__info">
+					<div class="registrations__step mt-5 d-flex justify-content-between">
+						<div class="registrations__list">
+							<img class="registrations__img" src="img/icons/registrations.svg" alt="registrations">
+							<h3 class="registrations__title">1. Регистрация</h3>
+							<p class="registrations__text">Зарегистрируйтесь бесплатно и получите скидку на первый заказ
+							</p>
+						</div>
+						<div class="registrations__list">
+							<img class="registrations__img" src="img/icons/details.svg" alt="details">
+							<span class="br"></span>
+							<h3 class="registrations__title">2. Детали</h3>
+							<p class="registrations__text">Пообщайтесь с исполнителем до оплаты, чтобы уточнить все
+								детали</p>
+						</div>
+						<div class="registrations__list">
+							<img class="registrations__img" src="img/icons/payment.svg" alt="payment">
+							<span class="br"></span>
+							<h3 class="registrations__title">3. Оплата</h3>
+							<p class="registrations__text">Оформите заказ и оплатите его</p>
+						</div>
+						<div class="registrations__list">
+							<img class="registrations__img" src="img/icons/implementation.svg" alt="implementation">
+							<span class="br"></span>
+							<h3 class="registrations__title">4. Выполнениe</h3>
+							<p class="registrations__text">Дождитесь, пока исполнитель завершит заказ</p>
+						</div>
+						<div class="registrations__list">
+							<img class="registrations__img" src="img/icons/confirmation.svg" alt="confirmation">
+							<span class="br"></span>
+							<h3 class="registrations__title">5. Подтверждение</h3>
+							<p class="registrations__text">Подтвердите выполнение заказа. Исполнитель получит деньги
+								лишь после этого</p>
+						</div>
+						<div class="registrations__list">
+							<img class="registrations__img" src="img/icons/feedback.svg" alt="feedback">
+							<span class="br"></span>
+							<h3 class="registrations__title">6. Отзыв</h3>
+							<p class="registrations__text">Оставьте отзыв о работе исполнителя, чтобы помочь другим
+								сделать правильный выбор</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="why__we__info py-3 px-2 mt-5">
+				<h2 class="registrations__header text-center">Почему Мы</h2>
+				<div class="why__we__box__info">
+					<div class="why__we mt-lg-5 d-flex flex-column flex-lg-row justify-content-between">
+						<div class="why__we__list mt-5 mt-lg-0">
+							<img class="why__we__img" src="img/icons/ok.svg" alt="ok">
+							<h3 class="why__we__title">Самые низкие цены. Без посредников!</h3>
+						</div>
+						<div class="why__we__list mt-5 mt-lg-0">
+							<img class="why__we__img" src="img/icons/communication.svg" alt="communication">
+							<h3 class="why__we__title">Общайтесь с исполнителями напрямую до оформления заказа</h3>
+						</div>
+						<div class="why__we__list mt-5 mt-lg-0">
+							<img class="why__we__img" src="img/icons/community.svg" alt="community">
+							<h3 class="why__we__title">Опытная и дружелюбная служба поддержки всегда поможет</h3>
+						</div>
+						<div class="why__we__list mt-5 mt-lg-0">
+							<img class="why__we__img" src="img/icons/protection.svg" alt="protection">
+							<h3 class="why__we__title">Мы пускаем только исполнителей, которые используют все меры
+								предосторожности для безопасности вашего аккаунта</h3>
+						</div>
+						<div class="why__we__list mt-5 mt-lg-0">
+							<img class="why__we__img" src="img/icons/money.svg" alt="money">
+							<h3 class="why__we__title">100% гарантия возврата средств на случай, если услуга не
+								доставлена</h3>
+						</div>
+						<div class="why__we__list mt-5 mt-lg-0">
+							<img class="why__we__img" src="img/icons/law.svg" alt="law">
+							<h3 class="why__we__title">Наша собственная система арбитража поможет решить спорные
+								ситуации</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="about__text my-5">Прокачка в WoW помогает игрокам получить все, что оказывается недоступным по
+				разным причинам. Одним игрокам не хватает времени на фарм, другие не играют в гильдиях, но хотят лучший
+				гир. Причин много, а желания одни. Для этого и существует WowForAll — наш подход изменил представление о
+				бустинге WoW. Как торговая площадка мы позволяем продавцам размещать свои услуги на собственных
+				условиях. Это снижает цену — ведь посредников между продавцом и покупателем нет. Как итог: с WowForAll
+				вы экономите свое время по самой честной цене. А если вас не устроили имеющиеся предложения, создайте
+				Аукцион на своих условиях. Пусть наши продавцы сами поборются за него и предложат лучшую цену. Всё что
+				нужно — пройти базовую регистрацию, пополнить баланс удобным способом и выбрать исполнителя. WowForAll
+				выступит гарантом сделки, останется только наслаждаться результатом.</p>
+		</div>
+	</section>
+
+	<div class="modal modal-registrations fade" id="modal" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">Станьте участником WowForAll</h3>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group row">
+							<div class="col-sm-12 mx-auto">
+								<input type="email" placeholder="Электронная почта"
+									class="form-control form-control-modal" id="inputEmail1" required>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-sm-12 mx-auto">
+								<input type="password" placeholder="Пароль" class="form-control form-control-modal"
+									id="inputPassword1" required>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<div class="col-sm-12 mx-auto">
+								<div class="form-check d-flex align-items-center">
+									<input class="form-check-input" type="checkbox" id="gridCheck1">
+									<label class="form-check-label" for="gridCheck1">
+										Я соглашаюсь с <a href="html/user-agreement/user-agreement.html"
+											class="modal-user-ok">Пользовательским соглашением</a> и <a
+											href="html/user-agreement/privacy-policy.html"
+											class="modal-user-ok">Политикой конфиденциальности</a>
+									</label>
+								</div>
+								<div class="form-check d-flex align-items-center">
+									<input class="form-check-input" type="checkbox" id="gridCheck2">
+									<label class="form-check-label" for="gridCheck2">
+										Я хочу получать информацию об акциях, скидках и персональных предложениях
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-btn form-group row">
+							<div class="col-sm-12 modal-form-btn mx-auto mt-2">
+								<button type="submit" class="modal-btn">Зарегистрироваться</button>
+							</div>
+						</div>
+					</form>
+					<div class="modal-questions d-flex justify-content-center align-items-center">
+						<p class="modal-text text-dark mr-3">У вас уже есть аккаунт?</p>
+						<p class="modal-text modal-text-enter" data-toggle="modal" data-target="#modal-enter"
+							data-dismiss="modal">Войти</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn-save" data-dismiss="modal">Сохранить</button>
+					<button type="button" class="btn-close" data-dismiss="modal">Закрыть</button>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<div class="modal modal-enter fade" id="modal-enter" tabindex="-1">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h3 class="modal-title">Войти</h3>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
+	<div class="modal modal-enter fade" id="modal-enter" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">Войти</h3>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group row">
+							<div class="col-sm-12 mx-auto">
+								<input type="email" placeholder="Электронная почта"
+									class="form-control form-control-modal" id="inputEmail2" required>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-sm-12 mx-auto">
+								<input type="password" placeholder="Пароль" class="form-control form-control-modal"
+									id="inputPassword2" required>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<div class="col-sm-12 d-flex justify-content-between align-items-center">
+								<div class="form-check d-flex align-items-center">
+									<input class="form-check-input form-check-input-enter" type="checkbox"
+										id="gridCheck3">
+									<label class="form-check-label form-check-label-enter" for="gridCheck3">
+										Запомнить
+									</label>
+								</div>
+								<div class="form-check d-flex align-items-center">
+									<p class="modal-user-forget-password" data-dismiss="modal"
+										data-target="#forget-password" data-toggle="modal">Я забыл пароль</p>
+								</div>
+							</div>
+						</div>
+						<div class="form-btn form-group row">
+							<div class="col-sm-12 modal-form-btn mx-auto mt-2">
+								<button type="submit" class="modal-btn">Войти</button>
+
+							</div>
+						</div>
+					</form>
+					<button type="button" class="modal-btn modal-btn-registration" data-target="#modal"
+						data-toggle="modal" data-dismiss="modal">Зарегистрироваться</button>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn-save" data-dismiss="modal">Сохранить</button>
+					<button type="button" class="btn-close" data-dismiss="modal">Закрыть</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal-forget-password fade" id="forget-password" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title">Восстановить Пароль</h3>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+				</div>
+				<div class="modal-body">
+					<p class="modal-text mb-3">Введите пожалуйста ваш e-mail и мы отправим на него ссылку для
+						восстановления пароля</p>
+					<form>
+						<div class="form-group row">
+							<div class="col-sm-12 mx-auto">
+								<input type="email" placeholder="Электронная почта"
+									class="form-control form-control-modal" id="inputEmail3" required>
+							</div>
+						</div>
+
+						<div class="form-btn form-group row">
+							<div class="col-sm-12 modal-form-btn mx-auto mt-2">
+								<button type="submit" class="modal-btn">Сбросить пароль</button>
+							</div>
+
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn-close" data-dismiss="modal">Закрыть</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="footer py-4">
+		<div class="container">
+			<div class="footer-dropdown">
+				<button class="footer__btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+					aria-expanded="false">
+					Русский
 				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Русский</a>
+					<a class="dropdown-item" href="#">English</a>
+				</div>
 			</div>
-			<div class="modal-body">
-				<form>
-					<div class="form-group row">
-						<div class="col-sm-12 mx-auto">
-							<input type="email" placeholder="Электронная почта" class="form-control form-control-modal" id="inputEmail2" required>
-						</div>
-					</div>
-					<div class="form-group row"> 
-						<div class="col-sm-12 mx-auto">
-							<input type="password" placeholder="Пароль" class="form-control form-control-modal" id="inputPassword2" required>
-						</div>
-					</div>
+			<div class="footer__top">
+				<img class="footer__logo" src="img/logo/logo-classic.png" alt="logo-classic">
+				<img class="footer__logo" src="img/logo/logo-burning-crusade.png" alt="logo-burning-crusade">
+				<img class="footer__logo" src="img/logo/logo-wrath-of-the-lich-king.png"
+					alt="logo-wrath-of-the-lich-king">
+				<img class="footer__logo" src="img/logo/logo-cataclysm.png" alt="logo-cataclysm">
+				<img class="footer__logo" src="img/logo/logo-mist-of-pandaria.png" alt="logo-mist-of-pandaria">
+				<img class="footer__logo" src="img/logo/logo-warlords-of-draenor.png" alt="logo-warlords-of-draenor">
+				<img class="footer__logo" src="img/logo/logo-legion.png" alt="logo-legion">
+				<img class="footer__logo" src="img/logo/logo-bfa.png" alt="logo-bfa">
+				<img class="footer__logo" src="img/logo/logo-shadowland.png" alt="logo-shadowland">
+			</div>
+			<div class="footer__bottom">
 
-					<div class="form-group row">
-						<div class="col-sm-12 d-flex justify-content-between align-items-center">
-							<div class="form-check d-flex align-items-center">
-								<input class="form-check-input form-check-input-enter" type="checkbox" id="gridCheck3">
-								<label class="form-check-label form-check-label-enter" for="gridCheck3">
-									Запомнить
-								</label>
-							</div>		
-							<div class="form-check d-flex align-items-center">	
-								<p class="modal-user-forget-password" data-dismiss="modal" data-target="#forget-password" data-toggle="modal">Я забыл пароль</p> 
-							</div>	
-						</div>
-					</div>
-					<div class="form-btn form-group row">
-						<div class="col-sm-12 modal-form-btn mx-auto mt-2">
-							<button type="submit" class="modal-btn">Войти</button>
-							
-						</div>
-					</div>
-				  </form>
-				  <button type="button" class="modal-btn modal-btn-registration" data-target="#modal" data-toggle="modal" data-dismiss="modal">Зарегистрироваться</button>
 			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn-save" data-dismiss="modal">Сохранить</button>
-				<button type="button" class="btn-close" data-dismiss="modal">Закрыть</button>
+			<div class="footer-copyright my-4">
+				<p class="footer__text">&copy; WowForAll Все права защищены декабрь 2021г</p>
 			</div>
 		</div>
-	</div>
-</div>
-
-<div class="modal modal-forget-password fade" id="forget-password" tabindex="-1">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h3 class="modal-title">Восстановить Пароль</h3>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-			</div>
-			<div class="modal-body">
-			<p class="modal-text mb-3">Введите пожалуйста ваш e-mail и мы отправим на него ссылку для восстановления пароля</p>
-				<form>
-					<div class="form-group row">
-						<div class="col-sm-12 mx-auto">
-							<input type="email" placeholder="Электронная почта" class="form-control form-control-modal" id="inputEmail3" required>
-						</div>
-					</div>
-
-					<div class="form-btn form-group row">
-						<div class="col-sm-12 modal-form-btn mx-auto mt-2">
-							<button type="submit" class="modal-btn">Сбросить пароль</button>
-						</div>
-						
-					</div>
-				  </form>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn-close" data-dismiss="modal">Закрыть</button>
-			</div>
-		</div>
-	</div>
-</div>
+		</footer>
 
 
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+			integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+			crossorigin="anonymous"></script>
 
-<div class="footer py-4">
-	<div class="container">
-		<div class="footer-dropdown">
-			<button class="footer__btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-				Русский
-			</button>
-			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				<a class="dropdown-item" href="#">Русский</a>
-				<a class="dropdown-item" href="#">English</a>
-			</div>
-		</div>
-		<div class="footer__top">
-			<img class="footer__logo" src="img/logo/logo-classic.png" alt="logo-classic">
-			<img class="footer__logo" src="img/logo/logo-burning-crusade.png" alt="logo-burning-crusade">
-			<img class="footer__logo" src="img/logo/logo-wrath-of-the-lich-king.png" alt="logo-wrath-of-the-lich-king">
-			<img class="footer__logo" src="img/logo/logo-cataclysm.png" alt="logo-cataclysm">
-			<img class="footer__logo" src="img/logo/logo-mist-of-pandaria.png" alt="logo-mist-of-pandaria">
-			<img class="footer__logo" src="img/logo/logo-warlords-of-draenor.png" alt="logo-warlords-of-draenor">
-			<img class="footer__logo" src="img/logo/logo-legion.png" alt="logo-legion">
-			<img class="footer__logo" src="img/logo/logo-bfa.png" alt="logo-bfa">
-			<img class="footer__logo" src="img/logo/logo-shadowland.png" alt="logo-shadowland">
-		</div>	
-		<div class="footer__bottom">
-			
-		</div>
-		<div class="footer-copyright my-4">
-			<p class="footer__text">&copy; WowForAll Все права защищены декабрь 2021г</p>
-		</div>
-	</div>		
-</footer>
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-
-<script src="js/scroll.js"></script>
+		<script src="js/scroll.js"></script>
 
 </body>
 
